@@ -1,0 +1,85 @@
+[
+    {
+        "address": "vcenter1.vmware.local",
+        "type": "vCenter",
+        "version": "6.5.0",
+        "uuid": "03d502e0-045e-051d-9206-4e0700080009",
+        "guid": "ABA29C85-4F3E-4607-B71A-834F60DF639F",
+        "hosts": [
+            {
+                "type": "ESXi",
+                "version": "5.5.0",
+                "nodeName": "node_1",
+                "details": {
+                    "hostname": "esx1.vmware.local",
+                    "network": {
+                        "B3:EF:4C:89:5C:95": [
+                            "10.0.1.128",
+                            "fe80::e2d5:5eff:fe1d:924e"
+                        ]
+                    }
+                },
+                "state" : "poweredOn",
+                "uuid" : "2cae16f9-f155-4123-9767-092a638dedaa",
+                "virtualMachines": [
+                    {
+                        "uuid": "564d7c92-77a5-68ed-68ba-efea20b33673",
+                        "name": "jenkins-SM-Win-2019-x64",
+                        "type": "Microsoft Windows Server 2012 (64-bit)",
+                        "locationId": "564d7c92-77a5-68ed-68ba-efea20b33673",
+                        "instanceUuid": "527e6a49-e43f-fc52-a6ff-6e769a71db82",
+                        "state": "poweredOff"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "address": "esxi2.vmware.local",
+        "type": "ESXi",
+        "uuid": "03d502e0-045e-051d-9206-4e0700080009",
+        "guid": "ABA29C85-4F3E-4607-B71A-834F60DF639F",
+        "hosts": [
+            {
+                "type": "ESXi",
+                "version": "6.7.0",
+                "nodeName": "node_1",
+                "details": {
+                    "hostname": "esxi2.vmware.local",
+                    "network": {
+                        "B3:EF:4C:89:5C:95": [
+                            "10.0.1.64",
+                            "ca44::c4d8:5eff:fe1d:924e"
+                        ]
+                    }
+                },
+                "virtualMachines": [
+                    {
+                        "uuid": "564d9cfb-8a61-1ef0-3267-24dd9950fbd3",
+                        "name": "QA-reg-Win-2008-x64",
+                        "type": "Microsoft Windows Server 2008 R2 (64-bit)",
+                        "locationId": "564d9cfb-8a61-1ef0-3267-24dd9950fbd3",
+                        "instanceUuid": "52210f50-50a4-a5cf-b371-1d045aa52c72",
+                        "state": "poweredOn",
+                        "details": {
+                            "os": "Microsoft Windows Server 2008 R2 (64-bit)",
+                            "hostname": "SM-win2008r2-x64",
+                            "ip": "10.31.39.232",
+                            "network": [
+                                {
+                                    "name": "VM Network",
+                                    "mac": "00:0c:29:50:fb:d3",
+                                    "connected": true,
+                                    "ip": [
+                                        "fe80::a07e:c5b4:143f:eb7d",
+                                        "10.31.39.232"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

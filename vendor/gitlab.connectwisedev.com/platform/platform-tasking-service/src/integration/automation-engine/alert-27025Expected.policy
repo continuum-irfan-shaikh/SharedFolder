@@ -1,0 +1,85 @@
+{
+	"policyid": "alert-27025",
+	"description": "Emergency low disk space issue observed On Server",
+	"type": "policy",
+	"systemidentifier": {
+	    
+		    "condition_id": 27025
+	    
+	},
+	"name": "Low Server disk space",
+	"sourcesystem":"tasking",
+	"version": "1",
+	"eventTopic": "alerting",
+	"variables": {
+         
+        		"clientID": {
+        		    "type":"message",
+        		    "key":"client_id",
+                    "dataType":"string"
+        		},
+        
+        		"endpointID": {
+        		    "type":"message",
+        		    "key":"endpoint_id",
+                    "dataType":"string"
+        		},
+        
+        		"partnerID": {
+        		    "type":"message",
+        		    "key":"partner_id",
+                    "dataType":"string"
+        		},
+        
+        		"siteID": {
+        		    "type":"message",
+        		    "key":"site_id",
+                    "dataType":"string"
+        		}
+        
+	},
+	"actions": [
+        {
+            "Name":"action1",
+            "Mode":"PARALLEL",
+            "Protocol":"http",
+            "Endpoint":"127.0.0.1:12121",
+            "Method":"POST",
+            "Context":"tasking/v1",
+            "EndResource":"execute-trigger",
+            "PathVariables": [
+             
+                {
+                    "partners": $partnerID
+                },
+             
+                {
+                    "clients": $clientID
+                },
+             
+                {
+                    "sites": $siteID
+                },
+             
+                {
+                    "endpoints": $endpointID
+                },
+             
+                {
+                    "triggers": "alert-27025"
+                }
+            ],
+            "payload": {
+                
+				"dummy": 1
+            },
+		    "headers": {
+			    "uid": "AUTOMATION_ENGINE",
+			    "realm":"//activedirectory"
+		    }
+        }
+ 		
+        
+    
+	]
+}

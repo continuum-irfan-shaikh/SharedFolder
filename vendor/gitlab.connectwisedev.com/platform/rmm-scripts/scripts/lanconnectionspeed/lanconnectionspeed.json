@@ -1,0 +1,23 @@
+{
+  "id": "ca2fedb0-4f9f-4ce9-9cf1-c8676c290a23",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "To retrieves Lan Connection Speed on the target system",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The Lan connection speed info was obtained",
+  "internal": false,
+  "name": "Retrieve LAN connection speed",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JEFkYXB0ZXJzID0gR2V0LVdtaU9iamVjdCAtQ2xhc3MgV2luMzJfTmV0d29ya0FkYXB0ZXIgfApXaGVyZSB7ICRfLlNwZWVkIC1uZSAkbnVsbCAtYW5kICRfLk1BQ0FkZHJlc3MgLW5lICRudWxsIC1hbmQgJF8uQWRhcHRlclR5cGUgLW1hdGNoICdFdGhlcm5ldCd9CmlmICgkQWRhcHRlcnMgLWVxICRudWxsKXsKICAgIFJldHVybiAiTEFOIEFkYXB0ZXJzIHdlcmUgbm90IGZvdW5kZWQiCn0gRWxzZSB7CiAgICBGb3JFYWNoICgkQWRhcHRlciBpbiAkQWRhcHRlcnMpewogICAgICAgIElmICgkQWRhcHRlci5OZXRDb25uZWN0aW9uU3RhdHVzIC1lcSAyKXsKICAgICAgICAgICAgSWYgKCRBZGFwdGVyLlNwZWVkIC1nZSAxMDAwMDAwMDAwKXsKICAgICAgICAgICAgICAgICRTcGVlZCA9IFttYXRoXTo6Um91bmQoKCRBZGFwdGVyLlNwZWVkLzEwMDAwMDAwMDApLDEpCiAgICAgICAgICAgICAgICAkU3BlZWRUeXBlID0gJ2dicHMnCiAgICAgICAgICAgIH0gRWxzZUlmICgkQWRhcHRlci5TcGVlZCAtZ2UgMTAwMDAwMCl7CiAgICAgICAgICAgICAgICAkU3BlZWQgPSBbbWF0aF06OlJvdW5kKCgkQWRhcHRlci5TcGVlZC8xMDAwMDAwKSwxKQogICAgICAgICAgICAgICAgJFNwZWVkVHlwZSA9ICdtYnBzJwogICAgICAgICAgICB9IEVsc2UgewogICAgICAgICAgICAgICAgJFNwZWVkID0gW21hdGhdOjpSb3VuZCgoJEFkYXB0ZXIuU3BlZWQvMTAwMCksMSkKICAgICAgICAgICAgICAgICRTcGVlZFR5cGUgPSAna2JwcycKICAgICAgICAgICAgfQogICAgICAgICAgICAkQWRhcHRlciB8IEFkZC1NZW1iZXIgLU1lbWJlclR5cGUgTm90ZVByb3BlcnR5IC1OYW1lIFNwZWVkVHlwZSAtVmFsdWUgIiRTcGVlZCAkU3BlZWRUeXBlIgogICAgICAgIH0gRWxzZSB7CiAgICAgICAgICAgICRBZGFwdGVyIHwgQWRkLU1lbWJlciAtTWVtYmVyVHlwZSBOb3RlUHJvcGVydHkgLU5hbWUgU3BlZWRUeXBlIC1WYWx1ZSAiMCBrYnBzIgogICAgICAgIH0KICAgIH0KfQokQWRhcHRlcnMgfCBGb3JtYXQtVGFibGUgLVByb3BlcnR5IE5hbWUsQHtMYWJlbD0iU3BlZWQiOyBFeHByZXNzaW9uID0geygkXy5TcGVlZFR5cGUpfX0K",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

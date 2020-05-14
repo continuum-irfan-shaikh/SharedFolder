@@ -1,0 +1,22 @@
+{
+    "Action": "patching_execution_result",
+    "Topic": "patching_execution_result",
+    "RegID": "",
+    "LegacyRegID": "",
+    "DcDateTimeUtc": "2018-09-19T07:40:29.713883776Z",
+    "PartnerID": "50016369",
+    "ClientID": "50110217",
+    "SiteID": "50110217",
+    "EndpointID": "191f658f-b90e-4190-bcb4-dd26cf7b5201",
+    "AgentID": "191f658f-b90e-4190-bcb4-dd26cf7b5201",
+    "RemoteAddr": "10.129.132.221",
+    "TransactionID": "95da493f-7452-4429-9908-c71ea8eb17e2",
+    "Message": {
+        "executionID": "2a935560-3ee9-11ea-abac-acde48001122",
+        "status": "Success",
+        "stdout": "Process finished with return code: 0",
+        "stderr": "",
+        "metadata": "{\"appName\":\"Google Chrome\",\"version\":\"79.0.3945.130\",\"runInstallImmediately\":false,\"runFreshInstall\":false,\"executedBy\":\"\", \"deployProcessID\": \"95aa2be9-a8fd-4cfb-a8fb-e08a07c5245a\"}",
+        "timestampUTC": "2018-09-19T07:40:28.8383362Z"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "targets": [
+        {
+            "id":"%s",
+            "type":"MANAGED_ENDPOINT"
+        }
+    ],
+    "originId": "c288321d-da8c-46ac-9987-5658dff335ba",
+    "regularity": "Recurrent",
+    "type": "script",
+    "startRunTime": "template",
+    "schedule": "5 4 * * *"
+}

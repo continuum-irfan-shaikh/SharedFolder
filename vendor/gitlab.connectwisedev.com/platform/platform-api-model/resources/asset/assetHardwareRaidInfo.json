@@ -1,0 +1,9 @@
+{ "name": "assetHardwareRaidInfo",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "type", "type": "string"},
+       { "name": "serialNumber", "type": "string"},
+       { "name": "vendor", "type": "string"}
+     ]
+}

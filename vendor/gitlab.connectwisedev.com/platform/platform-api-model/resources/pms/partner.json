@@ -1,0 +1,32 @@
+{ "name": "partner",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "Partner_ActivatedOn", "type": "string"},
+      { "name": "Partner_Address", "type": "string"},
+      { "name": "Partner_City", "type": "string"},
+      { "name": "Partner_Country", "type": "string"},
+      { "name": "Partner_DisabledOn", "type": "string"},
+      { "name": "Partner_StartDate", "type": "string"},
+      { "name": "Partner_EmailId", "type": "string"},
+      { "name": "Partner_Freezed_EffectiveDate", "type": "string"},
+      { "name": "Partner_Freezed_Reason", "type": "string"},
+      { "name": "Partner_HDRegion", "type": "string"},
+      { "name": "Partner_Freezed", "type": "boolean"},
+      { "name": "Partner_Currently_Active", "type": "boolean"},
+      { "name": "Partner_Code", "type": "string"},
+      { "name": "Partner_Id", "type": "int"},
+      { "name": "Partner_Name", "type": "string"},
+      { "name": "Partner_Mobileno", "type": "string"},
+      { "name": "Partner_SalesforceId", "type": "string"},
+      { "name": "Partner_State", "type": "string"},
+      { "name": "Status", "type": "int"},
+      { "name": "Partner_TelNo", "type": "string"},
+      { "name": "TimeStamp", "type": "string"},
+      { "name": "Partner_UnFreezed_EffectiveDate", "type": "string"},
+      { "name": "Partner_ZipCode", "type": "string"},
+      { "name": "Operation", "type": "int"},
+      { "name": "Partner_Currency", "type": "string"}
+    ]
+  }
+  

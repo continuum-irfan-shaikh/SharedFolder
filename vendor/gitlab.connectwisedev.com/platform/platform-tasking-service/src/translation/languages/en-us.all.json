@@ -1,0 +1,246 @@
+[
+  {
+    "id": "error_cant_decode_input_data",
+    "translation": "Can not decode input data"
+  },
+  {
+    "id": "error_endpoint_id_has_bad_format",
+    "translation": "Managed Endpoint has bad format"
+  },
+  {
+    "id": "error_cannot_get_all_tasks_by_managed_endpoint",
+    "translation": "Can not get all tasks by managed endpoint"
+  },
+  {
+    "id": "error_cant_get_task_instances",
+    "translation": "Can not get TaskInstances"
+  },
+  {
+    "id": "error_cant_get_task_by_task_instance_ids",
+    "translation": "Can not get Tasks by TaskInstanceIDs"
+  },
+  {
+    "id": "error_cant_get_count_by_task_id",
+    "translation": "Cant get Task Instances count by Task ID and Partner"
+  },
+  {
+    "id": "error_task_template_exists",
+    "translation": "Task template already exists"
+  },
+  {
+    "id": "error_cant_get_task_definition_template",
+    "translation": "Template is not found"
+  },
+  {
+    "id": "error_cant_get_templates_for_execution_ms",
+    "translation": "Can't get templates"
+  },
+  {
+    "id": "error_not_found",
+    "translation": "Can't find anything"
+  },
+  {
+    "id": "error_cant_get_templates_by_type",
+    "translation": "Can't get Task Definition Templates by Type and Partner"
+  },
+  {
+    "id": "error_wrong_template_type",
+    "translation": "Wrong Task Definition Template Type"
+  },
+  {
+    "id": "error_cant_get_endpoints_by_partner_id",
+    "translation": "Can not get endpoints"
+  },
+  {
+    "id": "error_cant_get_task_execution_results_for_managed_endpoint",
+    "translation": "Can not get task execution results for managed endpoint"
+  },
+  {
+    "id": "error_cant_create_new_task",
+    "translation": "Can't create a new task"
+  },
+  {
+    "id": "error_cant_save_task_to_db",
+    "translation": "Can't save task to db"
+  },
+  {
+    "id": "error_cant_send_task_to_execution_ms",
+    "translation": "Can't send task instance to execution MS"
+  },
+  {
+    "id": "error_task_instance_has_bad_format",
+    "translation": "Task Instance ID has bad format"
+  },
+  {
+    "id": "error_cannot_get_Е_of_tasks_by_managed_endpoint",
+    "translation": "Can not get list of Tasks by Managed Endpoint"
+  },
+  {
+    "id": "error_cant_get_task_execution_results",
+    "translation": "Can't get task execution results by Task ID and Partner ID"
+  },
+  {
+    "id": "error_cant_get_task_by_task_id",
+    "translation": "Can't get Task by Task ID and Partner ID"
+  },
+  {
+    "id": "error_task_is_not_found_by_task_id",
+    "translation": "Task is not found by Task ID and Partner ID"
+  },
+  {
+    "id": "error_count_var_has_bad_format",
+    "translation": "Variable 'count' should be non-negative integer"
+  },
+  {
+    "id": "error_task_id_has_bad_format",
+    "translation": "Task ID has bad format"
+  },
+  {
+    "id": "error_endpoint_bad_format_no_args",
+    "translation": "Managed Endpoint ID has bad format"
+  },
+  {
+    "id": "error_task_instance_id_has_bad_format",
+    "translation": "Task Instance ID has bad format"
+  },
+  {
+    "id": "error_no_partnerID_found",
+    "translation": "No Partner ID found"
+  },
+  {
+    "id": "error_access_denied_for_partner",
+    "translation": "Access denied: Partner is not authorized due to ACL on resource"
+  },
+  {
+    "id": "error_cant_save_task_definition_to_db",
+    "translation": "Can't save task definition to DB"
+  },
+  {
+    "id": "error_task_definition_not_found",
+    "translation": "Task Definition is not found"
+  },
+  {
+    "id": "error_task_definition_by_partner_not_found",
+    "translation": "Task Definitions by partner is not found"
+  },
+  {
+    "id": "error_cant_delete_task_definition",
+    "translation": "Cant delete task definition"
+  },
+  {
+    "id": "error_cant_prepare_task_for_sending_on_execution",
+    "translation": "Couldn't prepare task for sending on execution"
+  },
+  {
+    "id": "error_cant_update_task",
+    "translation": "Can't update Task"
+  },
+  {
+    "id": "error_task_definition_id_has_bad_format",
+    "translation": "Task Definition ID has bad format"
+  },
+  {
+    "id": "error_cant_update_task_instances",
+    "translation": "Can't update task instances"
+  },
+  {
+    "id": "error_cant_process_task_execution_results",
+    "translation": "Can't process execution results"
+  },
+  {
+    "id": "error_cant_get_trigger_types",
+    "translation": "Can't fetch trigger types"
+  },
+  {
+    "id": "error_cant_process_trigger_definitions",
+    "translation": "Can't process trigger definitions"
+  },
+  {
+    "id": "updated",
+    "translation": "Updated"
+  },
+  {
+    "id": "error_uid_header_is_empty",
+    "translation": "UID header can't be empty"
+  },
+  {
+    "id": "error_cant_get_count_by_partner_id",
+    "translation": "Can't get Task Count for each Target by Partner ID"
+  },
+  {
+    "id": "error_cant_get_tasks_summary_data",
+    "translation": "Can't get Tasking Summary Data for Partner ID"
+  },
+  {
+    "id": "error_cant_open_targets",
+    "translation": "Can't get managed endpoints for targets"
+  },
+  {
+    "id": "error_time_frame_bad_format",
+    "translation": "Bad time frame"
+  },
+  {
+    "id": "error_no_endpoints_for_targets",
+    "translation": "No Managed Endpoint found for targets"
+  },
+  {
+    "id": "error_cant_export_tasks_summary_data_to_xlsx",
+    "translation": "Can't export Tasks Summary Data to .xlsx format for PartnerID"
+  },
+  {
+    "id": "error_cant_get_task_summary_details",
+    "translation": "Can't get Task Summary Details for PartnerID and for TaskID"
+  },
+  {
+    "id": "error_cant_get_partners_ids",
+    "translation": "Can't get partners id"
+  },
+  {
+    "id": "error_cannot_get_user_info",
+    "translation": "Cannot get information about current user"
+  },
+  {
+    "id": "error_cant_delete_task",
+    "translation": "Can't delete task"
+  },
+  {
+    "id": "error_cant_delete_task_instance",
+    "translation": "Can't delete task instance"
+  },
+  {
+    "id": "error_cant_delete_execution_results",
+    "translation": "Can't delete task execution results"
+  },
+  {
+    "id": "error_cant_get_user_sites",
+    "translation": "Can't get user sites"
+  },
+  {
+    "id": "error_cant_get_user_end_points_by_sites",
+    "translation": "Can't get user end points by sites"
+  },
+  {
+    "id": "error_cant_validate_user_parameters",
+    "translation": "Can't validate user parameters"
+  },
+  {
+    "id": "error_cant_get_user",
+    "translation": "Can't get user"
+  },
+  {
+    "id": "error_cant_get_active_triggers",
+    "translation": "Can't get active triggers"
+  },
+  {
+    "id": "error_cannot_get_closest_tasks",
+    "translation": "Can't get closest tasks"
+  },
+  {
+    "id": "error_internal_server_error",
+    "translation": "Internal server error"
+  },
+  {
+    "id": "error_cant_encrypt_credentials",
+    "translation": "Can't encrypt credentials"
+  }
+]

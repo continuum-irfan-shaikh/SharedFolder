@@ -1,0 +1,16 @@
+{ "name": "assetDrivePartition",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description":"Name of the partition e.g. C:"},
+    { "name": "label", "type": "string",  "description":"Label or VolumeName of the partition"},
+    { "name": "fileSystem", "type": "string",  "description":"FileSystem of the partition e.g. NTFS"},
+    { "name": "description", "type": "string",  "description":"A textual description of the partition"},
+    { "name": "dfsize", "type": "int64", "description": "DF Size of the partition"},
+    { "name": "freeSpaceBytes", "type": "int64", "description": "Free space of the partition"},
+    { "name": "usedSpaceBytes", "type": "int64", "description": "Used space of the partition"},
+    { "name": "sizeBytes", "type": "long",  "description":"Size of the partition in bytes"}, 
+    { "name": "vendor", "type": "string", "description": "Vendor of the optical or floppy drive"},
+    { "name": "version", "type": "string", "description": "Version of the optical or floppy drive"}
+  ]
+}

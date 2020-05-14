@@ -1,0 +1,24 @@
+{
+  "id": "c288321d-da8c-46ac-9987-5658dff335ba",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance",
+    "Security"
+  ],
+  "description": "Log Off any user on a system",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "All users were successfully logged out",
+  "internal": false,
+  "name": "Log off user",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "SWYoKGd3bWkgd2luMzJfb3BlcmF0aW5nc3lzdGVtIC1Db21wdXRlck5hbWUgJGVudjpDT01QVVRFUk5BTUUpLldpbjMyU2h1dGRvd24oNCkpewogICAgUmV0dXJuICJMb2cgb2ZmIHN1Y2Nlc3NmdWxseSBkb25lIgp9",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

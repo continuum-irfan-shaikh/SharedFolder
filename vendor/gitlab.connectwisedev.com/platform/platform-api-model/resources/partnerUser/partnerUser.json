@@ -1,0 +1,23 @@
+{
+  "name": "partnerUser",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {"name": "userId", "type": "number"},
+    {"name": "email", "type": "string"},
+    {"name": "designation", "type": "string"},
+    {"name": "fullName", "type": "string" },
+    {"name": "city", "type": "string" },
+    {"name": "address", "type": "string"},
+    {"name": "partnerId", "type": "number"},
+    {"name": "isNocUser", "type": "boolean" },
+    {"name": "isEnabled", "type": "boolean" },
+    {"name": "sendSms", "type": "boolean" },
+    {"name": "mobilePhone", "type": "string"},
+    {"name": "officePhone", "type": "string"},
+    {"name": "extension", "type": "string"},
+    {"name": "primExtension", "type": "string"},
+    {"name": "zipCode", "type": "string"},
+    {"name": "createdAt", "type": "string"}
+  ]
+}

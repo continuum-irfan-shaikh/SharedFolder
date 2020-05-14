@@ -1,0 +1,8 @@
+{ "name": "messageBoardPayload",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "operation", "type": "int"},
+      { "name": "data", "type": "messageBoard"}
+    ]
+  }

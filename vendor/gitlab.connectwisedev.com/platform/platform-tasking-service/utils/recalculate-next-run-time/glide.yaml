@@ -1,0 +1,76 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/recalculate-next-run-time
+ignore:
+  - github.com/cpuguy83/go-md2man
+import:
+  - package: github.com/urfave/cli
+  - package: gitlab.connectwisedev.com/platform/platform-tasking-service
+    version: 4fdcdc563709ab73b36c81e4508031d551e0b759
+  - package: gitlab.connectwisedev.com/platform/Platform-Infrastructure-lib
+    version: 943bb3488e6a70838fa7599f6da5eeac32180c35
+  - package: github.com/bsm/sarama-cluster
+    version: 8cd6c692710bfa7fbc1bfb6abd7c26d7d2fe0602
+  - package: github.com/Shopify/sarama
+    version: 9daa115cef80e66cc176ea27ebd0ec45605dde46
+  - package: github.com/kelseyhightower/envconfig
+    version: ^1.3.0
+  - package: github.com/urfave/negroni
+    version: ^0.2.0
+  - package: github.com/pkg/errors
+    version: ^0.8.0
+  - package: github.com/meatballhat/negroni-logrus
+    version: 259659cbe5df2a5732a3c677d040058215be1ee7
+  - package: github.com/gorilla/mux
+    version: ^1.3.0
+  - package: golang.org/x/sync
+  - package: github.com/golang/snappy
+    version: 553a641470496b2327abcac10b36396bd98e45c9
+  - package: github.com/sirupsen/logrus
+    version: 3d4380f53a34dcdc95f0c1db702615992b38d9a4
+  - package: github.com/rs/cors
+    version: ^1.1.0
+  - package: gitlab.connectwisedev.com/platform/platform-common-lib
+    version: 9a69950f4011a2c8df4e7eb7a65ab3c5bbeb0c82
+    subpackages:
+      - lock
+      - queue
+      - leader-election
+      - scheduler
+      - zookeeper
+      - logging
+      - kafka
+      - messaging
+      - user
+  - package: gitlab.connectwisedev.com/platform/platform-api-model
+    version: 99ddc05f8b36a3008375860ee9f7d8547b9f7ef2
+  - package: github.com/ContinuumLLC/godep-govalidator
+    version: acafb75b6e41efc7db97f711c860c07511a9e0d8
+  - package: github.com/coocood/freecache
+    version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+  - package: gopkg.in/jarcoal/httpmock.v1
+    version: cf52904a3cf0f78f199ecade6a6df8e245d5b25a
+  - package: github.com/nicksnyder/go-i18n
+    version: ^1.9.0
+    subpackages:
+      - i18n
+  - package: github.com/bradfitz/gomemcache
+    version: 1952afaa557dc08e8e0d89eafab110fb501c1a2b
+    subpackages:
+      - memcache
+  - package: github.com/robfig/cron
+    version: 736158dc09e10f1911ca3a1e1b01f11b566ce5db
+  - package: github.com/grsmv/goweek
+    version: 523a631ad28c04485c02e046120dd9abff12de68
+  - package: github.com/stretchr/testify
+  - package: github.com/golang/mock
+    version: ^v1.2.0
+    subpackages:
+      - gomock
+      - mockgen
+  - package: github.com/xeipuuv/gojsonschema
+    version: f58b4a9e3d67bfbe3744e3cb0fc0bba167ad253f
+  - package: github.com/gorilla/websocket
+    version: 95ba29eb981bbb27d92e1f70bf8a1949452d926b
+  - package: gopkg.in/natefinch/lumberjack.v2
+    version: 7d6a1875575e09256dc552b4c0e450dcd02bd10e
+  - package: github.com/onsi/gomega
+    version: 1.4.1

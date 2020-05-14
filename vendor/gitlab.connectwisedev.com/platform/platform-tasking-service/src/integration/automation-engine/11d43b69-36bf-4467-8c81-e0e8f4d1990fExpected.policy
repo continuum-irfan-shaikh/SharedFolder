@@ -1,0 +1,93 @@
+{
+	"policyid": "11d43b69-36bf-4467-8c81-e0e8f4d1990f",
+	"description": "A new Endpoint enters one of dynamic groups selected in the Task Targets list",
+	"type": "policy",
+	"systemidentifier": {
+	    
+		    "type": "ENDPOINT-ADDED"
+	    
+	},
+	"name": "Endpoint Entering Dynamic Group",
+	"sourcesystem":"tasking",
+	"version": "1",
+	"eventTopic": "dynamic_group_change",
+	"variables": {
+         
+        		"clientID": {
+        		    "type":"message",
+        		    "key":"client_id",
+                    "dataType":"string"
+        		},
+        
+        		"dynamicGroupID": {
+        		    "type":"message",
+        		    "key":"dynamic_group_id",
+                    "dataType":"string"
+        		},
+        
+        		"endpointID": {
+        		    "type":"message",
+        		    "key":"endpoint_id",
+                    "dataType":"string"
+        		},
+        
+        		"partnerID": {
+        		    "type":"message",
+        		    "key":"partner_id",
+                    "dataType":"string"
+        		},
+        
+        		"siteID": {
+        		    "type":"message",
+        		    "key":"site_id",
+                    "dataType":"string"
+        		}
+        
+	},
+	"actions": [
+        {
+            "Name":"action1",
+            "Mode":"PARALLEL",
+            "Protocol":"http",
+            "Endpoint":"127.0.0.1:12121",
+            "Method":"POST",
+            "Context":"tasking/v1",
+            "EndResource":"execute-trigger",
+            "PathVariables": [
+             
+                {
+                    "partners": $partnerID
+                },
+             
+                {
+                    "clients": $clientID
+                },
+             
+                {
+                    "sites": $siteID
+                },
+             
+                {
+                    "endpoints": $endpointID
+                },
+             
+                {
+                    "triggers": "11d43b69-36bf-4467-8c81-e0e8f4d1990f"
+                }
+            ],
+            "payload": {
+                
+                    "dynamicGroupID": $dynamicGroupID,
+                
+				"dummy": 1
+            },
+		    "headers": {
+			    "uid": "AUTOMATION_ENGINE",
+			    "realm":"//activedirectory"
+		    }
+        }
+ 		
+        
+    
+	]
+}

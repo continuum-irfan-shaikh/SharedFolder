@@ -1,0 +1,30 @@
+{
+    "name": "cherwellReporterIncidentMapping",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [{
+            "name": "NOCTicketID",
+            "type": "int64"
+        },
+        {
+            "name": "IncidentID",
+            "type": "string"
+        },
+        {
+            "name": "ContactID",
+            "type": "string"
+        },
+        {
+            "name": "CreatedBy",
+            "type": "string"
+        },
+        {
+            "name": "CreatedOn",
+            "type": "string"
+        },
+        {
+            "name": "Origin",
+            "type": "string"
+        }
+    ]
+}

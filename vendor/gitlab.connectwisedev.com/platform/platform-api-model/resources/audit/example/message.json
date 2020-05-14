@@ -1,0 +1,5 @@
+{
+    "object": "Agent Service",
+    "code": "mailbox.message.recieved",
+    "value": "Mailbox Message Recieved for endpoint ${EndpointID}"
+}

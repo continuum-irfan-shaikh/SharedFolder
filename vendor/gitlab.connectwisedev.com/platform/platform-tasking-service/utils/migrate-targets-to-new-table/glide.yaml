@@ -1,0 +1,6 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-tatgets-to-new-table
+import:
+  - package: github.com/gocql/gocql
+    version: 59441a623b364472525164bb62b6da9d552eb2ca
+  - package: github.com/urfave/cli
+    version: ^1.19.1

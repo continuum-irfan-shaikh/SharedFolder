@@ -1,0 +1,32 @@
+{
+    "partnerId": "P1",
+    "clientId": "C1",
+    "siteId": "S1",
+    "agentId": "db84c87c-568e-4442-a45d-934674660b85",
+    "endpointId": "db84c87c-568e-4442-a45d-934674660b85",
+    "manifestVersion": "1.1.0.382",
+    "productVersion" : "1.1.0",
+    "agentTimestampUTC": "2018-05-24T12:24:53.489110938Z",
+    "dcTimestampUTC": "2018-05-24T12:25:53.489110938Z",
+    "components": [
+        {"name": "platform-agent-core", "version": "1.0.912", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-agent-manager", "version": "1.0.20", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-eventlog-plugin", "version": "1.0.99", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-performance-plugin", "version": "1.0.101", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-scripting-plugin", "version": "1.0.52", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-asset-plugin", "version": "1.0.200", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-systemstate-plugin", "version": "1.0.20", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"}
+    ],
+    "files": [
+        {"path": "config/platform_agent_core_cfg.json",                     "checksum": "E0E18C544FA9A53E21F86534FC73CA562A72D20044C9270A6BBA373E1FDFC961"},
+        {"path": "plugin/asset/asset_agent_plugin_cfg.json",                "checksum": "FAEF5538CA1A48C9CC4A701B4595B4E49925747487A7B8A01E5A764CC8174547"},
+        {"path": "plugin/filetransfer/file-transfer_agent_plugin_cfg.json", "checksum": "698319AC9FDCA730AC47B26C98ACC9634513810A1B71C5AC48D26F11D9ACE8DA"},
+        {"path": "plugin/patching/patching_agent_plugin_cfg.json",          "checksum": "C2B3C085D18D033441C636D7157D08A3B26085AD005A02E0EB791A5B28FB7D91"},
+        {"path": "plugin/performance/performance_agent_plugin_cfg.json",    "checksum": "3D5C3E4AAF16C47B0168F44EC509315CB8185169837D8A6BA4B688F88B4310DD"},
+        {"path": "plugin/scripting/scripting_agent_plugin_cfg.json",        "checksum": "61161847985F65AD977BA8050521721E39FFEB0851A161A9BD58A3E61D001C96"},
+        {"path": "plugin/sysevents/sysevents_agent_plugin_cfg.json",        "checksum": "84D52179C5C94871BCA8D23D57BC255C12D4A7C0C70273E69AEFFDB7DDC40877"},
+        {"path": "plugin/systemstate/systemstate_agent_plugin_cfg.json",    "checksum": "42AEC68F1C467AB84D8A0A1A582A64DF50A90486682893D948E51661EAFFBAF8"},
+        {"path": "plugin/version/version_agent_plugin_cfg.json",            "checksum": "6213EC5405513188EC8FCE493DF9ECF1910F3ABD465C3C224477B55108D80C4F"},
+        {"path": "plugin/webroot/webroot_agent_plugin_cfg.json",            "checksum": "19B784865F19D6429A41513BD078AE35653E1F5C5415915AF5D9DA07987DF9A0"}
+    ]
+}

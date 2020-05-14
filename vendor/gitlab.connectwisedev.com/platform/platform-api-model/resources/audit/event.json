@@ -1,0 +1,117 @@
+{
+  "name": "event",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "A unique id to identify an event for a domain"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Some of the values are Automation, Site Create, Endpoint Create etc"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Event Description"
+    },
+    {
+      "name": "partnerID",
+      "type": "string",
+      "description": "Partner ID"
+    },
+    {
+      "name": "clientID",
+      "type": "string",
+      "description": "Client ID"
+    },
+    {
+      "name": "siteID",
+      "type": "string",
+      "description": "Site ID"
+    },
+    {
+      "name": "agentID",
+      "type": "string",
+      "description": "Agent ID"
+    },
+    {
+      "name": "endpointID",
+      "type": "string",
+      "description": "Endpoint ID"
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "description": "Originator / User machine IP Address"
+    },
+    {
+      "name": "messageCode",
+      "type": "string",
+      "description": "Applicable values should be defiled in the Audit service and message can only be created by the Audit service, so that we can support i18N"
+    },
+    {
+      "name": "messageDescription",
+      "type": "string",
+      "description": "Only for the additional information to debug an event internally"
+    },
+    {
+      "name": "object",
+      "type": "string",
+      "description": "This is an entity in the domain space, like endpoint, task, sequence, alert, mailbox, ticket, auto-update etc"
+    },
+    {
+      "name": "startTime",
+      "type": "Time",
+      "description": "Event start time"
+    },
+    {
+      "name": "endTime",
+      "type": "Time",
+      "description": "Event end time"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "N/A, IN-PROGRESS, SUCCESS, FAILURE"
+    },
+    {
+      "name": "statusCode",
+      "type": "string",
+      "description": "Error code in case of failure and success code in case of Success"
+    },
+    {
+      "name": "statusDescription",
+      "type": "string",
+      "description": "Error or Status description"
+    },
+    {
+      "name": "errorCode",
+      "type": "string",
+      "description": "Error code in case of failure and success code in case of Success"
+    },
+    {
+      "name": "user",
+      "type": "string",
+      "description": "It could be a actual logged-in user or an originator service"
+    },
+    {
+      "name": "transactionID",
+      "type": "string",
+      "description": ""
+    },
+    {
+      "name": "service",
+      "type": "string",
+      "description": "Will be a binary/executable name"
+    },
+    {
+      "name": "createdOn",
+      "type": "Time",
+      "description": "Created On timestamp to be added by the Audit service while creating Audit event"
+    }
+  ]
+}

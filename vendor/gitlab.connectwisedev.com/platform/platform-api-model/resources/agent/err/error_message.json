@@ -1,0 +1,14 @@
+{ 
+ "name": "errorMessage",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "timestampUTC", "type": "date"},
+    { "name": "source", "type": "string"},
+    { "name": "type", "type": "string"},
+    { "name": "subType", "type": "string"},
+    { "name": "errorCode", "type": "string"},
+    { "name": "errorTrace", "type": "string"},
+    { "name": "metadata", "type": "map[string][]string"}
+  ]
+}

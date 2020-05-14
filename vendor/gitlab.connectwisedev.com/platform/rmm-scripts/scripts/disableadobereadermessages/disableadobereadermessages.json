@@ -1,0 +1,23 @@
+{
+  "id": "68d811fa-6763-485f-943c-e32310bb420e",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Management"
+  ],
+  "description": "Turns off update messages for Adobe Reader",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Adobe Reader policies was updated",
+  "internal": false,
+  "name": "Disable Adobe Reader update messages",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JFJlZ1BhdGggPSAiSEtMTTpcU29mdHdhcmVcUG9saWNpZXNcQWRvYmVcQWNyb2JhdCBSZWFkZXJcRENcRmVhdHVyZUxvY2tkb3duIgokS2V5TmFtZSA9ICJiVXBkYXRlciIKSWYoLU5vdChUZXN0LVBhdGggLVBhdGggJFJlZ1BhdGgpKXsKICAgIFJldHVybiAiQWRvYmUgUmVhZGVyIGlzIGN1cnJlbnRseSBub3QgaW5zdGFsbGVkIgp9IEVsc2UgewogICAgTmV3LUl0ZW0gLVBhdGggJFJlZ1BhdGggLUZvcmNlIHwgTmV3LUl0ZW1Qcm9wZXJ0eSAtTmFtZSAkS2V5TmFtZSAtUHJvcGVydHlUeXBlIERXb3JkIC1WYWx1ZSAwIHwgT3V0LU51bGwKfQpTZXQtSXRlbVByb3BlcnR5IC1QYXRoICRSZWdQYXRoIC1OYW1lICRLZXlOYW1lIC1WYWx1ZSAwClJldHVybiBHZXQtSXRlbVByb3BlcnR5ICRSZWdQYXRoCg==",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

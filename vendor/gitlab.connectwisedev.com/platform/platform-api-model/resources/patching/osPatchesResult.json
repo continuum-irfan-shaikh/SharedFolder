@@ -1,0 +1,22 @@
+{
+  "name": "Windows Assessment Result",
+  "type": "resource",
+  "version": "1.0",
+  "attributes": [
+    {
+      "name": "installedPatches",
+      "type": "windowsPatchDetails[]",
+      "description": "List of installed patches"
+    },
+    {
+      "name": "missingPatches",
+      "type": "windowsPatchDetails[]",
+      "description": "List of missing patches"
+    },
+    {
+      "name": "catalogOnlyIDs",
+      "type": "string[]",
+      "description": "List of catalog only update IDs"
+    }
+  ]
+}

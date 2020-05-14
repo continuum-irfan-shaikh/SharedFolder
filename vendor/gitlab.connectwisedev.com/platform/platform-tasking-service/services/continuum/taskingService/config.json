@@ -1,0 +1,13 @@
+{
+    "ListenURL":          ":12121",
+    "LogFilePath":         "platform-tasking-service.log",
+    "LogLevel":            "debug",
+    "CassandraURL":        "127.0.0.1:9042",
+    "Version": {
+        "SolutionName":    "Tasking",
+        "ServiceName":     "Tasking Microservice",
+        "ServiceProvider": "Continuum LLC"
+    },
+
+    "DefaultLanguage": "en-US"
+}

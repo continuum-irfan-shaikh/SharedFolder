@@ -1,0 +1,5 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-targets-and-target-type
+import:
+- package: github.com/gocql/gocql
+- package: github.com/urfave/cli
+  version: ^1.19.1

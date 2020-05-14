@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS platform_tasking_db.active_triggers;

@@ -1,0 +1,23 @@
+{
+  "id": "b8033f0b-be48-47af-8a61-59dc2533e0b6",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Gather information on all drives on a system",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Drive information detail was obtained",
+  "internal": false,
+  "name": "Retrieve drive information",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "R2V0LVdtaU9iamVjdCBXaW4zMl9EaXNrRHJpdmUgfCAlIHsKICAkZGlzayA9ICRfCiAgJHBhcnRpdGlvbnMgPSAiQVNTT0NJQVRPUlMgT0YgIiArCiAgICAgICAgICAgICAgICAie1dpbjMyX0Rpc2tEcml2ZS5EZXZpY2VJRD0nJCgkZGlzay5EZXZpY2VJRCknfSAiICsKICAgICAgICAgICAgICAgICJXSEVSRSBBc3NvY0NsYXNzID0gV2luMzJfRGlza0RyaXZlVG9EaXNrUGFydGl0aW9uIgogIEdldC1XbWlPYmplY3QgLVF1ZXJ5ICRwYXJ0aXRpb25zIHwgJSB7CiAgICAkcGFydGl0aW9uID0gJF8KICAgICRkcml2ZXMgPSAiQVNTT0NJQVRPUlMgT0YgIiArCiAgICAgICAgICAgICAgIntXaW4zMl9EaXNrUGFydGl0aW9uLkRldmljZUlEPSckKCRwYXJ0aXRpb24uRGV2aWNlSUQpJ30gIiArCiAgICAgICAgICAgICAgIldIRVJFIEFzc29jQ2xhc3MgPSBXaW4zMl9Mb2dpY2FsRGlza1RvUGFydGl0aW9uIgogICAgR2V0LVdtaU9iamVjdCAtUXVlcnkgJGRyaXZlcyB8ICUgewogICAgICBOZXctT2JqZWN0IC1UeXBlIFBTQ3VzdG9tT2JqZWN0IC1Qcm9wZXJ0eSAgQHsKICAgICAgCiAgICAgICAgICAgICdEaXNrIE1vZGVsJyAgID0gJGRpc2suTW9kZWwKICAgICAgICAgICAgJ0Rpc2sgU2VyaWFsIE51bWJlcicgPSAkXy52b2x1bWVzZXJpYWxudW1iZXIKICAgICAgICAgICAgJ0Rpc2sgU2l6ZScgICAgPSBbU3RyaW5nXShbTWF0aF06OlJvdW5kKCRkaXNrLnNpemUvMUdCLCAyKSkgKyAnIEdCJwogICAgICAgICAgICAnRGlzayc9ICRkaXNrLkRldmljZUlECiAgICAgICAgICAgICdEcml2ZSBMZXR0ZXInID0gJF8uRGV2aWNlSUQKICAgICAgICAgICAgJ0ZyZWVTcGFjZScgICA9IFtTdHJpbmddKFtNYXRoXTo6Um91bmQoJF8uRnJlZVNwYWNlLzFHQiwgMikpICsgJyBHQicKICAgICAgICAgICAgJ1BhcnRpdGlvbicgICA9ICRwYXJ0aXRpb24uTmFtZQogICAgICAgICAgICAnUmF3IFNpemUnICAgICA9IFtTdHJpbmddKFtNYXRoXTo6Um91bmQoJHBhcnRpdGlvbi5zaXplLzFHQiwgMikpICsgJyBHQicKICAgICAgICAgICAgJ1ZvbHVtZSBOYW1lJyAgPSAkXy5Wb2x1bWVOYW1lCiAgICAgICAgICAgICdWb2x1bWUgU2l6ZSc9IFtTdHJpbmddKFtNYXRoXTo6Um91bmQoJF8uU2l6ZS8xR0IsIDIpKSArICcgR0InCiAgICAgICAgICAgIAogICAgICB9IHxTZWxlY3Qtb2JqZWN0IAogICAgfQogIH0KfQo=",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

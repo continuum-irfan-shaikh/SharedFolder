@@ -1,0 +1,36 @@
+{
+	"id": "5e4e1c2a-6175-455d-997f-0d89aaf9545d",
+	"description": "Configs for windows machines",
+	"tag": "scripting",
+	"targets": [
+		{
+			"partnerID": "1",
+			"clientID": "1"
+		},
+		{
+			"partnerID": "1",
+			"clientID": "2"
+		}
+	],
+	"condition": "OSType == 'windows'",
+	"configurations": [
+		{
+			"packageName": "platform-version-plugin",
+			"fileName": "plugin/version/version_agent_plugin_cfg.json",
+			"minSupportedVersion": "1.0.56",
+			"maxSupportedVersion": "1.0.60",
+			"patch": [{
+				"op": "add",
+				"path": "/foo",
+				"value": "bar"
+			}]
+		},
+		{
+			"packageName": "platform-scripting-plugin"
+		}
+	],
+	"createdTime": "2019-06-06T11:21:00Z",
+	"createdBy": "Igor Gubernat",
+	"modifiedTime": "2019-06-06T11:22:30Z",
+	"modifiedBy": "Igor Gubernat"
+}

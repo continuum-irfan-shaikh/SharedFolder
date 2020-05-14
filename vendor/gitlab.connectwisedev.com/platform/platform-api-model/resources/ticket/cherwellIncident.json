@@ -1,0 +1,106 @@
+{
+    "name": "cherwellIncident",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [{
+            "name": "NOCID",
+            "type": "int64"
+        },
+        {
+            "name": "NOCType",
+            "type": "string"
+        },
+        {
+            "name": "PartnerID",
+            "type": "int"
+        },
+        {
+            "name": "ClientID",
+            "type": "int"
+        },
+        {
+            "name": "SiteID",
+            "type": "int"
+        },
+        {
+            "name": "IncidentStatus",
+            "type": "string"
+        },
+        {
+            "name": "LegacyStatus",
+            "type": "string"
+        },
+        {
+            "name": "AssignedTo",
+            "type": "string"
+        },
+        {
+            "name": "Title",
+            "type": "string"
+        },
+        {
+            "name": "Description",
+            "type": "string"
+        },
+        {
+            "name": "Source",
+            "type": "string"
+        },
+        {
+            "name": "PSATicketID",
+            "type": "string"
+        },
+        {
+            "name": "PSAType",
+            "type": "string"
+        },
+        {
+            "name": "Priority",
+            "type": "string"
+        },
+        {
+            "name": "IncidentType",
+            "type": "string"
+        },
+        {
+            "name": "ServiceCatalog",
+            "type": "string"
+        },
+        {
+            "name": "CreatedBy",
+            "type": "string"
+        },
+        {
+            "name": "CreatedOn",
+            "type": "string"
+        },
+        {
+            "name": "UpdatedOn",
+            "type": "string"
+        },
+        {
+            "name": "IncidentID",
+            "type": "string"
+        },
+        {
+            "name": "Origin",
+            "type": "string"
+        },
+        {
+            "name": "ResourceID",
+            "type": "int"
+        },
+        {
+            "name": "ConditionID",
+            "type": "int"
+        },
+        {
+            "name":"PartnerCode",
+            "type":"string"
+        },
+        {
+            "name":"SiteCode",
+            "type":"string"
+        }
+    ]
+}

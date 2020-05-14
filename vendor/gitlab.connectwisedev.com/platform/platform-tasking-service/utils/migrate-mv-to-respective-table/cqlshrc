@@ -1,0 +1,16 @@
+[csv]
+field_size_limit = 1000000
+
+[copy]
+header = false
+numprocesses = 5
+maxattempts = 10
+
+[copy-to]
+pagetimeout = 10
+pagesize = 10
+
+[copy-from]
+ingestrate = 2000
+maxbatchsize = 1
+minbatchsize = 1

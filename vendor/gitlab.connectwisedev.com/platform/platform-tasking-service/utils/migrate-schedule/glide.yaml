@@ -1,0 +1,7 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-schedule
+import:
+- package: github.com/gocql/gocql
+- package: github.com/urfave/cli
+  version: ^1.19.1
+- package: gitlab.connectwisedev.com/platform/platform-api-model
+  version: ee7eaf6f8ff8378974967f3c670f2bc57b2cd522

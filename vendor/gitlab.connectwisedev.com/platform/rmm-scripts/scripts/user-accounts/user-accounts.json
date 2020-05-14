@@ -1,0 +1,23 @@
+{
+  "id": "a86f2ecc-d843-4738-9072-25c783054131",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Collect a record of all local user accounts on an end client desktop",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The list of local user accounts was obtained",
+  "internal": false,
+  "name": "Retrieve list of local user accounts",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "R2V0LVdtaU9iamVjdCAtQ2xhc3MgV2luMzJfVXNlckFjY291bnQgLUZpbHRlciAgIkxvY2FsQWNjb3VudD0nVHJ1ZSciICAK",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

@@ -1,0 +1,1 @@
+ALTER TABLE tasks_execution_history DROP output;

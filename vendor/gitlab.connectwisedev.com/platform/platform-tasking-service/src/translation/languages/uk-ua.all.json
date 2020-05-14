@@ -1,0 +1,250 @@
+[
+  {
+    "id": "error_cant_decode_input_data",
+    "translation": "Неможливо декодувати вхідні дані"
+  },
+  {
+    "id": "error_endpoint_id_has_bad_format",
+    "translation": "ID керованої машина має недопустимий формат"
+  },
+  {
+    "id": "error_cannot_get_all_tasks_by_managed_endpoint",
+    "translation": "Неможливо отримати завдання для керованої машини"
+  },
+  {
+    "id": "error_cant_get_task_instances",
+    "translation": "Неможливо отримати TaskInstances"
+  },
+  {
+    "id": "error_cant_get_task_by_task_instance_ids",
+    "translation": "Неможливо отримати Tasks за TaskInstance IDs"
+  },
+  {
+    "id": "error_cant_get_count_by_task_id",
+    "translation": "Неможливо отримати кількість Task Instances для поточного завдання та партнеру"
+  },
+  {
+    "id": "error_cant_get_trigger_types",
+    "translation": "Не можу отримати trigger types"
+  },
+  {
+    "id": "error_not_found",
+    "translation": "Не можу нічого знайти"
+  },
+  {
+    "id": "error_task_template_exists",
+    "translation": "Кастомний темплейт вже існує"
+  },
+  {
+    "id": "error_cant_get_task_definition_template",
+    "translation": "Неможливо отримати шаблони завдання"
+  },
+  {
+    "id": "error_cant_get_templates_for_execution_ms",
+    "translation": "Неможливо отримати шаблон для виконання завдання"
+  },
+  {
+    "id": "error_cant_get_templates_by_type",
+    "translation": "Неможливо отримати шаблони завдання для поточного партнеру"
+  },
+  {
+    "id": "error_cant_process_trigger_definitions",
+    "translation": "Неможливо опрацювати trigger definitions"
+  },
+  {
+    "id": "error_wrong_template_type",
+    "translation": "Помилковий тип шаблону завдання"
+  },
+  {
+    "id": "error_cant_get_endpoints_by_partner_id",
+    "translation": "Не вдалося отримати список машин"
+  },
+  {
+    "id": "error_cant_get_task_execution_results_for_managed_endpoint",
+    "translation": "Не вдалося отримати результати виконання завдання керованої машини"
+  },
+  {
+    "id": "error_cant_create_new_task",
+    "translation": "Не вдалося створити завдання"
+  },
+  {
+    "id": "error_cant_edit_task",
+    "translation": "Не вдалося відредагувати завдання"
+  },
+  {
+    "id": "error_cant_save_task_to_db",
+    "translation": "Не вдалося зберегти завдання в базі даних"
+  },
+  {
+    "id": "error_cant_send_task_to_execution_ms",
+    "translation": "Не вдалося відправити завдання на виконання"
+  },
+  {
+    "id": "error_task_instance_has_bad_format",
+    "translation": "ID має неправильний формат"
+  },
+  {
+    "id": "error_cannot_get_list_of_tasks_by_managed_endpoint",
+    "translation": "Неможливо отримати список завдань для керованої машини"
+  },
+  {
+    "id": "error_cant_get_task_execution_results",
+    "translation": "Неможливо отримати результати виконання завдання для вказаної задачі"
+  },
+  {
+    "id": "error_cant_get_task_by_task_id",
+    "translation": "Неможливо отримати завдання по Task ID та Partner ID"
+  },
+  {
+    "id": "error_task_is_not_found_by_task_id",
+    "translation": "Не знайдено завдання по Task ID та Partner ID"
+  },
+  {
+    "id": "error_count_var_has_bad_format",
+    "translation": "Змінна 'count' має бути невід'ємним цілим числом"
+  },
+  {
+    "id": "error_task_id_has_bad_format",
+    "translation": "Task ID має недопустимий формат"
+  },
+  {
+    "id": "error_endpoint_bad_format_no_args",
+    "translation": "Managed Endpoint ID має недопустимий формат"
+  },
+  {
+    "id": "error_task_instance_id_has_bad_format",
+    "translation": "Task Instance ID має недопустимий формат"
+  },
+  {
+    "id": "error_no_partnerID_found",
+    "translation": "Partner ID не визначено"
+  },
+  {
+    "id": "error_access_denied_for_partner",
+    "translation": "Доступ заборонено: Партнер не авторизований згідно списку доступу ресурсу"
+  },
+  {
+    "id": "error_cant_save_task_definition_to_db",
+    "translation": "Неможливо зберегти Task Definition в базі даних"
+  },
+  {
+    "id": "error_task_definition_not_found",
+    "translation": "Не вдалося знайти Task Definition"
+  },
+  {
+    "id": "error_task_definition_by_partner_not_found",
+    "translation": "Не вдалося знайти Task Definitions для партнера"
+  },
+  {
+    "id": "error_cant_delete_task_definition",
+    "translation": "Не вдалося видалити Task Definition"
+  },
+  {
+    "id": "error_cant_prepare_task_for_sending_on_execution",
+    "translation": "Не вдалося приготувати завдання для відправки на виконання"
+  },
+  {
+    "id": "error_cant_update_task",
+    "translation": "Не вдалося оновити завдання"
+  },
+  {
+    "id": "error_cant_update_task_instances",
+    "translation": "Не вдалося оновити кілька task instance"
+  },
+  {
+    "id": "error_task_definition_id_has_bad_format",
+    "translation": "Task Definition ID має недопустимий формат"
+  },
+  {
+    "id": "error_cant_process_task_execution_results",
+    "translation": "Не вдалося оновити результати виконання"
+  },
+  {
+    "id": "updated",
+    "translation": "Оновлено"
+  },
+  {
+    "id": "error_uid_header_is_empty",
+    "translation": "UID хедер не може бути порожнім"
+  },
+  {
+    "id": "error_cant_get_count_by_partner_id",
+    "translation": "Не вдалося отримати кількість завдань для партнера"
+  },
+  {
+    "id": "error_cant_get_tasks_summary_data",
+    "translation": "Не вдалося отримати дані по Tasking Summary для Partner ID"
+  },
+  {
+    "id": "error_cant_open_targets",
+    "translation": "Не вдалося отримати керуючи машини для списку targets"
+  },
+  {
+    "id": "error_time_frame_bad_format",
+    "translation": "Неправильний часовий діапазон"
+  },
+  {
+    "id": "error_no_endpoints_for_targets",
+    "translation": "Не знайдено жодної керованої машини для списку targets"
+  },
+  {
+    "id": "error_cant_export_tasks_summary_data_to_xlsx",
+    "translation": "Не вдалося експортувати Tasks Summary Data в формат .xlsx для PartnerID"
+  },
+  {
+    "id": "error_cant_get_task_summary_details",
+    "translation": "Не вдалося отримати Task Summary Details для PartnerID та для TaskID"
+  },
+  {
+    "id": "error_cant_get_partners_ids",
+    "translation": "Не вдалося отримати PartnerIDs"
+  },
+  {
+    "id": "error_cannot_get_user_info",
+    "translation": "Не вдалося отримати інформацію про поточного юзера"
+  },
+  {
+    "id": "error_cant_delete_task",
+    "translation": "Не вдалося видалити завдання"
+  },
+  {
+    "id": "error_cant_delete_task_instance",
+    "translation": "Не вдалося видалити task instance"
+  },
+  {
+    "id": "error_cant_delete_execution_results",
+    "translation": "Не вдалося видалити результати виконаних завдань"
+  },
+  {
+    "id": "error_cant_get_user_sites",
+    "translation": "Не вдалося отримати сайти користувача"
+  },
+  {
+    "id": "error_cant_validate_user_parameters",
+    "translation": "Не вдалося валідувати параметри користувача"
+  },
+  {
+    "id": "error_cant_get_user",
+    "translation": "Не вдалося отримати користувача"
+  },
+  {
+    "id": "error_cant_get_user_end_points_by_sites",
+    "translation": "Не вдалося отримати кінцеві комп'ютери коритувача по сайтам"
+  },
+  {
+    "id": "error_cant_get_active_triggers",
+    "translation": "Не вдалось отримати список активних тригерів партнера"
+  },
+  {
+    "id": "error_cannot_get_closest_tasks",
+    "translation": "Неможливо отримати найближчі Tasks"
+  },
+  {
+    "id": "error_internal_server_error",
+    "translation": "Внтурішня помилка сервера"
+  },
+  {
+    "id": "error_cant_encrypt_credentials",
+    "translation": "Не вдається зашифрувати облікові дані"
+  }  
+]

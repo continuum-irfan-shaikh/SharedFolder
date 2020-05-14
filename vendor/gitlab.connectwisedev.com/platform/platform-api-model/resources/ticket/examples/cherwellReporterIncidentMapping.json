@@ -1,0 +1,13 @@
+{
+    "ResType": 5005,
+    "ResDescription": "Contact Ticket Mapping changes",
+    "OperationType": 1,
+    "Data": {
+        "NOCTicketID": 201809110000002,
+        "IncidentID": "CH12345",
+        "ContactID": "PEU_1234",
+        "CreatedBy": "alpha",
+        "CreatedOn": "",
+        "Origin": "CHERWELL"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "name": "cherwellJournal",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "NoteID",
+            "type": "string"
+        },
+        {
+            "name": "NOCID",
+            "type": "int64"
+        },
+        {
+            "name": "NOCType",
+            "type": "string"
+        },
+        {
+            "name": "IncidentID",
+            "type": "string"
+        },
+        {
+            "name": "Description",
+            "type": "string"
+        },
+        {
+            "name": "CreatedBy",
+            "type": "string"
+        },
+        {
+            "name": "CreatedOn",
+            "type": "string"
+        },
+        {
+            "name": "Source",
+            "type": "string"
+        },
+        {
+            "name": "Origin",
+            "type": "string"
+        },
+        {
+            "name": "Type",
+            "type": "string"
+        }
+    ]
+}

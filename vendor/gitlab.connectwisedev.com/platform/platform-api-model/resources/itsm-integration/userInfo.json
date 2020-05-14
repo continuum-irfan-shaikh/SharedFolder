@@ -1,0 +1,8 @@
+{
+  "name": "userInfo",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {"name": "status", "type": "string"}
+  ]
+}

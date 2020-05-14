@@ -1,0 +1,67 @@
+{
+    "partnerId": "ABC",
+    "clientId": "ABC",
+    "siteId": "ABC",
+    "endpointId": "7f86cde2-4db3-4101-9bc4-01e4869a6753",
+    "name": "QA-reg-Win-2008-x64",
+    "type": "Microsoft Windows Server 2008 R2 (64-bit)",
+    "os": "Microsoft Windows Server 2008 R2 (64-bit)",
+    "hostname": "RMM-PN-LT-029",
+    "state": "poweredOn",
+    "uuid": "564d9cfb-8a61-1ef0-3267-24dd9950fbd100",
+    "hasAgent": true,
+    "IsMonitored": true,
+    "networks": [
+        {
+            "name": "VM Network",
+            "macAddress": "60:F6:77:4A:24:23",
+            "connected": true,
+            "ipv4": "10.4.36.11",
+            "ipv6": "fe80::8daa:9908:869a:67bc"
+        }
+    ],
+    "Parent": {
+        "partnerId": "ABC",
+        "clientId": "ABC",
+        "siteId": "ABC",
+        "endpointId": "NA",
+        "uuid": "03d502e0-045e-051d-9206-4e0700080009",
+        "guid": "ABA29C85-4F3E-4607-B71A-834F60DF639F",
+        "hostname": "esxi2.vmware.local",
+        "version": "6.7.0",
+        "hasAgent": false,
+        "IsMonitored": false,
+        "type": "ESXi",
+        "networks": [
+            {
+                "macAddress": "B3:EF:4C:89:5C:95",
+                "ipv4": "10.0.1.64",
+                "ipv6": "ca44::c4d8:5eff:fe1d:924e"
+            }
+        ],
+        "Parent": {
+            "partnerId": "ABC",
+            "clientId": "ABC",
+            "siteId": "ABC",
+            "endpointId": "NA",
+            "uuid": "03d502e0-045e-051d-9206-4e0700080010",
+            "guid": "ABA29C85-4F3E-4607-B71A-834F60DF639F",
+            "hostname": "VCenter.local",
+            "type": "VCenter",
+            "version": "6.7.0",
+        
+            "hasAgent": false,
+            "IsMonitored": false,
+        
+            "networks": [
+                {
+                    "name": "",
+                    "macAddress": "B3:EF:4C:89:5C:11",
+                    "connected": false,
+                    "ipv4": "10.0.0.64",
+                    "ipv6": "ca44::c4d8:5eff:fe1d:9a2e"
+                }
+            ]
+        }
+    }
+}

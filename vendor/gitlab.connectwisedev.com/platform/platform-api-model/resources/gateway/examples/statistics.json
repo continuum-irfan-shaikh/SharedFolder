@@ -1,0 +1,41 @@
+{
+    "downloadFolderSizeInBytes": 0,
+    "hostedPackages": [
+      {
+        "checksum": "string",
+        "hashAlgorithm": "string",
+        "requestedURL": "string",
+        "filename": "string",
+        "fileSizeInBytes": "string",
+        "fileLocation": "string",
+        "downloadTimeStampUTC": "2020-01-20T07:41:18.327Z",
+        "lastAccessedTimeStampUTC": "2020-01-20T07:41:18.327Z",
+        "status": "string",
+        "downloadRetryCount": 0,
+        "serveCount": 0,
+        "deleted": true,
+        "errorCode": "string",
+        "errorMessage": "string",
+        "httpStatus": 0
+      }
+    ],
+    "blackListedPackages": [
+      {
+        "checksum": "string",
+        "hashAlgorithm": "string",
+        "requestedURL": "string",
+        "filename": "string",
+        "fileSizeInBytes": "string",
+        "fileLocation": "string",
+        "downloadTimeStampUTC": "2020-01-20T07:41:18.327Z",
+        "lastAccessedTimeStampUTC": "2020-01-20T07:41:18.327Z",
+        "status": "string",
+        "downloadRetryCount": 0,
+        "serveCount": 0,
+        "deleted": true,
+        "errorCode": "string",
+        "errorMessage": "string",
+        "httpStatus": 0
+      }
+    ]
+  }

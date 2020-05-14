@@ -1,0 +1,17 @@
+{
+    "ResType": 5003,
+    "ResDescription": "Ticket Notes change data",
+    "OperationType": 1,
+    "Data": {
+        "NoteID": "123",
+        "NOCID": 201809110000002,
+        "NOCType": "Ticket",
+        "IncidentID": "CH12345",
+        "Description": "",
+        "CreatedBy": "alpha",
+        "CreatedOn": "",
+        "Source": "",
+        "Origin": "CHERWELL",
+        "Type": "Partner"
+    }
+}

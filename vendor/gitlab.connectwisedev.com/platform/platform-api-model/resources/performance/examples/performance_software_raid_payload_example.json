@@ -1,0 +1,16 @@
+{
+	"createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+	"type": "performanceSoftwareRaid",
+	"name": "softwarerad",
+	"endpointID": "",
+	"partnerID": "",
+	"clientID": "",
+	"siteID": "",
+	"Status": 1,
+	"rebootCount": 1,
+	"Type": "mdadm",
+	"Uptime": "9 days",
+	"Data": "",
+	"LastAccessedDateUTC": "2016-10-04T11:24:53.489110939Z"
+}

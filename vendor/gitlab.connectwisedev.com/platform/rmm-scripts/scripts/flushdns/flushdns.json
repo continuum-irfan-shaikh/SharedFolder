@@ -1,0 +1,23 @@
+{
+  "id": "e59ea261-d85e-4fc2-98b9-4abc2e568250",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Flush the DNS cache",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Successfully flushed the DNS Cache",
+  "internal": false,
+  "name": "Flush DNS cache",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "aXBjb25maWcgL2ZsdXNoZG5z",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

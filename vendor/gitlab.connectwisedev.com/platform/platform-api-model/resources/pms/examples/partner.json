@@ -1,0 +1,32 @@
+{
+    "ResType":101,
+    "ResDescription":"Partner response for cdc",
+    "EventOriginatedAt":"2018-12-13T03:26:19.937Z",
+    "Data":{
+       "Operation":4,
+       "Partner_ActivatedOn":null,
+       "Partner_Address":"4171 Market St.",
+       "Partner_City":"Ventura",
+       "Partner_Code":"VoiceSmartNetworks",
+       "Partner_Country":"US",
+       "Partner_Currency":"USDOLLAR",
+       "Partner_Currently_Active":true,
+       "Partner_DisabledOn":null,
+       "Partner_EmailId":"mwadnizak@voicesmartnetworks.com",
+       "Partner_Freezed":false,
+       "Partner_Freezed_EffectiveDate":null,
+       "Partner_Freezed_Reason":"",
+       "Partner_HDRegion":null,
+       "Partner_Id":8801,
+       "Partner_Mobileno":"8056777333",
+       "Partner_Name":"Voice Smart Network",
+       "Partner_SalesforceId":null,
+       "Partner_StartDate":"2011-04-27T13:07:00Z",
+       "Partner_State":"CA",
+       "Partner_TelNo":"8056777333",
+       "Partner_UnFreezed_EffectiveDate":null,
+       "Partner_ZipCode":"90003",
+       "Status":0,
+       "TimeStamp":"2018-12-13T03:26:19.937Z"
+    }
+ }

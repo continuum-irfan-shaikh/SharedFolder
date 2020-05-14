@@ -1,0 +1,7 @@
+**/*.cover
+**/*.out
+**/*.xml
+**/*.lock
+/script-generator/vendor
+.idea/
+rmm-scripts-artifact.zip

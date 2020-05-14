@@ -1,0 +1,13 @@
+{
+    "Partner": "1",
+    "Client": "123",
+    "Site": "123",
+    "Endpoint": "db84c87c-568e-4442-a45d-934674660b85",
+    "Object": "Mailbox",
+    "Timeframe": {
+        "Start": "2019-01-01T12:24:53.489110938Z",
+        "End": "2019-01-01T12:29:55.489110938Z"
+    },
+    "EventType": "created",
+    "Service": "Agent Service"
+}

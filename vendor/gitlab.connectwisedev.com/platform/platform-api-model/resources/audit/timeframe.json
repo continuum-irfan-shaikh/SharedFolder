@@ -1,0 +1,17 @@
+{
+  "name": "Timeframe",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {
+      "name": "startTime",
+      "type": "Time",
+      "description": "Event start time"
+    },
+    {
+      "name": "endTime",
+      "type": "Time",
+      "description": "Event end time"
+    }
+  ]
+}

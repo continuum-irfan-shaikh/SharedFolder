@@ -1,0 +1,12 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/recalculate-tasks
+import:
+- package: github.com/gocql/gocql
+  version: 59441a623b364472525164bb62b6da9d552eb2ca
+- package: github.com/urfave/cli
+  version: ^1.19.1
+- package: gitlab.connectwisedev.com/platform/platform-tasking-service
+  version: 6bee47e89a75a1ef1cf987f45ed9a1d9199899c9
+- package: gitlab.connectwisedev.com/platform/platform-api-model
+  version: a3bbb5b3db838e7e34358784949f1963984280e0
+- package: github.com/cespare/xxhash
+  version: 48099fad606eafc26e3a569fad19ff510fff4df6

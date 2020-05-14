@@ -1,0 +1,103 @@
+{
+  "id": "22a1c7d6-d791-4326-a6a0-efc3db1ae1c6",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Defragment selected drives on desktops and servers",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 172800,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The disk defragmentation was initiated",
+  "internal": false,
+  "name": "Defragment drive",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGRyaXZlcyA9IEAoJGRyaXZlcykKCmZvciAoJGk9MDskaSAtbGUgJGRyaXZlcy5sZW5ndGgtMTskaSsrKSB7CgkkZHJpdmVzWyRpXSA9ICRkcml2ZXNbJGldICsgIjoiCn0KCiRkcml2ZXNPYmplY3RzID0gR2V0LVdtaU9iamVjdCB3aW4zMl92b2x1bWUgfCBXaGVyZS1PYmplY3QgeyAkXy5Ecml2ZVR5cGUgLWVxIDMgLWFuZCAkXy5Ecml2ZUxldHRlciAtbmUgJG51bGx9CiRhdmFpbGFibGVEcml2ZXMgPSBAKCkKRm9yRWFjaCAoJG9iaiBpbiAkZHJpdmVzT2JqZWN0cykgewoJJGF2YWlsYWJsZURyaXZlcyArPSAkb2JqLkRyaXZlTGV0dGVyCn0KCkZvckVhY2ggKCRkcml2ZSBpbiAkZHJpdmVzKSB7CglpZiAoJGF2YWlsYWJsZURyaXZlcyAtY29udGFpbnMgJGRyaXZlKSB7CgkJJHJlc3VsdCA9IEdldC1XbWlPYmplY3Qgd2luMzJfdm9sdW1lIC1maWx0ZXIgImRyaXZlbGV0dGVyPSckZHJpdmUnIiB8IEludm9rZS1XbWlNZXRob2QgLU5hbWUgRGVmcmFnIHwgU2VsZWN0LU9iamVjdCAtRXhwYW5kUHJvcGVydHkgUmV0dXJuVmFsdWUKCQlzd2l0Y2ggKCRyZXN1bHQpIHsKCQkJMCAgeyRyZXN1bHRNc2cgPSAnU3VjY2Vzcyc7IGJyZWFrfQoJCQkxICB7JHJlc3VsdE1zZyA9ICdBY2Nlc3MgRGVuaWVkJzsgYnJlYWt9CgkJCTIgIHskcmVzdWx0TXNnID0gJ05vdCBTdXBwb3J0ZWQnOyBicmVha30KCQkJMyAgeyRyZXN1bHRNc2cgPSAnVm9sdW1lIERpcnR5IEJpdCBTZXQnOyBicmVha30KCQkJNCAgeyRyZXN1bHRNc2cgPSAnTm90IEVub3VnaCBGcmVlIFNwYWNlJzsgYnJlYWt9CgkJCTUgIHskcmVzdWx0TXNnID0gJ0NvcnJ1cHQgTUZUIERldGVjdGVkJzsgYnJlYWt9CgkJCTYgIHskcmVzdWx0TXNnID0gJ0NhbGwgQ2FuY2VsbGVkJzsgYnJlYWt9CgkJCTcgIHskcmVzdWx0TXNnID0gJ0NhbmNlbGxhdGlvbiBSZXF1ZXN0IFJlcXVlc3RlZCBUb28gTGF0ZSc7IGJyZWFrfQoJCQk4ICB7JHJlc3VsdE1zZyA9ICdEZWZyYWcgSW4gUHJvZ3Jlc3MnOyBicmVha30KCQkJOSAgeyRyZXN1bHRNc2cgPSAnRGVmcmFnIEVuZ2luZSBVbmF2YWlsYWJsZSc7IGJyZWFrfQoJCQkxMCB7JHJlc3VsdE1zZyA9ICdEZWZyYWcgRW5naW5lIEVycm9yJzsgYnJlYWt9CgkJCWRlZmF1bHQgeyRyZXN1bHRNc2cgPSAnVW5rbm93biBFcnJvcid9CgkJfQoJCWlmICgkcmVzdWx0IC1lcSAwKSB7CgkJCVdyaXRlLU91dHB1dCAiVm9sdW1lICRkcml2ZSAkcmVzdWx0TXNnIgoJCX0gZWxzZSB7CgkJCVdyaXRlLUVycm9yICJWb2x1bWUgJGRyaXZlICRyZXN1bHRNc2ciCgkJfQoJfSBlbHNlIHsKCQlXcml0ZS1FcnJvciAiVGhlcmUgaXMgbm8gZGlzayB3aXRoIHZvbHVtZSAkZHJpdmUiCgl9Cn0K",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "drives": {
+        "type": "array",
+        "minItems": 1,
+        "title": "Drives",
+        "items": {
+          "type": "string",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "enumNames": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "drives"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "drives": {
+      "ui:widget": "checkboxes",
+      "ui:options": {
+        "inline": true
+      }
+    }
+  }
+}

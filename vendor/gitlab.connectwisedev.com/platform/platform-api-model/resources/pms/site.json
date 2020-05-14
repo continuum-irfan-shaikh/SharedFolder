@@ -1,0 +1,29 @@
+{ "name": "site",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "Site_CallerGreeting", "type": "string"},
+      { "name": "Site_MainPhoneno", "type": "string"},
+      { "name": "Client_Id", "type": "int"},
+      { "name": "Site_CreationDate", "type": "string"},
+      { "name": "Site_DisabledOn", "type": "string"},
+      { "name": "Site_Status", "type": "boolean"},
+      { "name": "Partner_Id", "type": "int"},
+      { "name": "Site_Proxy", "type": "boolean"},
+      { "name": "Site_Address", "type": "string"},
+      { "name": "Site_Address2", "type": "string"},
+      { "name": "Site_City", "type": "string"},
+      { "name": "Site_Country", "type": "string"},
+      { "name": "Site_Id", "type": "int"},
+      { "name": "Site_Name", "type": "string"},
+      { "name": "Site_Postalcode", "type": "string"},
+      { "name": "Site_State", "type": "string"},
+      { "name": "Site_Code", "type": "string"},
+      { "name": "Status", "type": "int"},
+      { "name": "TimeStamp", "type": "string"},
+      { "name": "Site_Timezone", "type": "string"},
+      { "name": "Site_Proxy_UserName", "type": "string"},
+      { "name": "Operation", "type": "int"}
+    ]
+  }
+  

@@ -1,0 +1,9 @@
+{
+  "name": "file",
+  "type":  "resource",
+  "version": "2.0",
+    "attributes": [
+      { "name": "path", "type": "string"},
+      { "name": "checksum", "type": "string"}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+  "taskID": {
+    "previous": {
+      "name": "firstName",
+      "runDate": 56897412,
+      "status": "success"
+    },
+    "next": {
+      "name": "secondName",
+      "runDate": 66897412
+    }
+  }
+}

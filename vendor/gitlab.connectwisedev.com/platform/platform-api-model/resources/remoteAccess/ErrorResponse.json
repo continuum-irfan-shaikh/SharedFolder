@@ -1,0 +1,9 @@
+{
+    "name":"errorResponse",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "message", "type": "string"},
+        { "name": "hostId", "type": "long"}
+    ]
+}

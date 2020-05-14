@@ -1,0 +1,13 @@
+{
+  "name": "delta",
+  "type":  "resource",
+  "version": "2.0",
+    "attributes": [
+      { "name": "packageName", "type": "string" },
+      { "name": "fileName", "type": "string" },
+      { "name": "minSupportedVersion", "type": "string" },
+      { "name": "maxSupportedVersion", "type": "string" },
+      { "name": "operation", "type": "string" },
+      { "name": "patch", "type": "json.RawMessage" }
+   ]
+}

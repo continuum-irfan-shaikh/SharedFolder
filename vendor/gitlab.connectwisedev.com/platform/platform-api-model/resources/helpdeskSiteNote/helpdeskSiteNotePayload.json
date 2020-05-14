@@ -1,0 +1,8 @@
+{ "name": "helpdeskSiteNotePayload",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "action", "type": "int"},
+      { "name": "data", "type": "helpdeskSiteNote"}
+    ]
+  }

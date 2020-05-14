@@ -1,0 +1,75 @@
+{
+  "id": "9c429534-4c01-11ea-898f-e0d55e1ce78a",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Security"
+  ],
+  "description": "Installs/Uninstalls Webroot SecureAnywhere on/from MAC OS machines",
+  "engine": "bash",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 600,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Webroot SecureAnywhere has successfully been installed",
+  "internal": false,
+  "name": "Webroot SecureAnywhere (MAC)",
+  "tags": [
+    "MAC OS"
+  ],
+  "sequence": true,
+  "content": "IyEvYmluL3NoIC1lCgppZiBbICIkYWN0aW9uIiA9IHVuaW5zdGFsbCBdCnRoZW4KICAgIHN1ZG8gbGF1bmNoY3RsIHVubG9hZCAvTGlicmFyeS9MYXVuY2hEYWVtb25zL2NvbS53ZWJyb290LnNlY3VyaXR5Lm1hYy5wbGlzdAogICAgc3VkbyBrZXh0dW5sb2FkIC9TeXN0ZW0vTGlicmFyeS9FeHRlbnNpb25zL1NlY3VyZUFueXdoZXJlLmtleHQKICAgIHN1ZG8gcm0gL3Vzci9sb2NhbC9iaW4vV1NEYWVtb24KICAgIHN1ZG8gcm0gL3Vzci9sb2NhbC9iaW4vV0ZEYWVtb24KICAgIHN1ZG8ga2lsbGFsbCAtOSBXU0RhZW1vbgogICAgc3VkbyBraWxsYWxsIC05IFdmRGFlbW9uCiAgICBzdWRvIGtpbGxhbGwgLTkgIldlYnJvb3QgU2VjdXJlQW55d2hlcmUiCiAgICBzdWRvIHJtIC1yZiAvU3lzdGVtL0xpYnJhcnkvRXh0ZW5zaW9ucy9TZWN1cmVBbnl3aGVyZS5rZXh0CiAgICBzdWRvIHJtIC1yZiAiL0FwcGxpY2F0aW9ucy9XZWJyb290IFNlY3VyZUFueXdoZXJlLmFwcCIKICAgIHN1ZG8gcm0gL0xpYnJhcnkvTGF1bmNoQWdlbnRzL2NvbS53ZWJyb290LldSTWFjQXBwLnBsaXN0CiAgICBzdWRvIHJtIC9MaWJyYXJ5L0xhdW5jaERhZW1vbnMvY29tLndlYnJvb3Quc2VjdXJpdHkubWFjLnBsaXN0CiAgICBlY2hvICJXZWJyb290IFNlY3VyZUFueXdoZXJlIGhhcyBzdWNjZXNzZnVsbHkgYmVlbiB1bmluc3RhbGxlZCIKICAgIGV4aXQgMApmaQoKQkFTRV9ESVI9Ii9vcHQvbG9jYWwvc2hhcmUvY29udGludXVtX21hYyIKd2Vicm9vdF9wYXRoPSIkQkFTRV9ESVIvZG93bmxvYWRzIgpkbWdfcGF0aD0iJHdlYnJvb3RfcGF0aC93ZWJyb290Igp3ZWJfYXRjaF9kdGNoPSIvVm9sdW1lcy9XZWJyb290IFNlY3VyZUFueXdoZXJlLyIKCiNjaGVja2luZyBpbnRlcm5ldCBhdmFpbGFiaWxpdHkKaWYgZXZhbCAicGluZyAtYyAxIHd3dy5nb29nbGUuY29tID4vZGV2L251bGwiOyB0aGVuCmVjaG8gIiAgIgplbHNlCmVjaG8gIkNvdWxkIG5vdCBpbnN0YWxsIHdlYnJvb3QsIGFzIHRoZXJlIGlzIG5vIGFjdGl2ZSBpbnRlcm5ldCBjb25uZWN0aW9uLiIKZXhpdCAxCmZpCgojQ2hlY2tpbmcgd2Vicm9vdCBpZiBpdCBpcyBhbHJlYWR5IGluc3RhbGxlZAppZiBbIC1mIC9MaWJyYXJ5L0xhdW5jaERhZW1vbnMvY29tLndlYnJvb3Quc2VjdXJpdHkubWFjLnBsaXN0IF0gfHwgWyAtZiAvTGlicmFyeS9MYXVuY2hBZ2VudHMvY29tLndlYnJvb3QuV1JNYWNBcHAucGxpc3QgXSB8fCBbIC1mIC9BcHBsaWNhdGlvbnMvV2Vicm9vdFwgU2VjdXJlQW55d2hlcmUuYXBwIF0KdGhlbgogICAgZWNobyAiSW5zdGFsbGF0aW9uIEZhaWxlZCA6IHdlYnJvb3QgYWxyZWFkeSBpbnN0YWxsZWQiCiAgICBleGl0IDEKZmkKCmlmIFsgLWQgL1ZvbHVtZXMvV2Vicm9vdFwgU2VjdXJlQW55d2hlcmUvIF0KdGhlbgplY2hvICIgSW5zdGFsbGF0aW9uIEZhaWxlZCA6IFdlYnJvb3QgYWxyZWFkeSBhdHRhY2gga2luZGx5IGRldGFjaCBpdCBhbmQgcnVuIHRoZSBzY3JpcHQgYWdhaW4iCmV4aXQgMQpmaQoKI3RvIGNoZWNrIHdoZXRoZXIgZGlyZWN0b3J5IGlzIHByZXNlbnQgb3Igbm90CmlmIFsgISAtZCAkZG1nX3BhdGggXQp0aGVuCiAgICBta2RpciAkZG1nX3BhdGgKZmkKCiNEb3dubG9hZCBXU0EgbWFjIGNsaWVudApjZCAkZG1nX3BhdGg7IGN1cmwgLU8gaHR0cDovL2FueXdoZXJlLndlYnJvb3RjbG91ZGF2LmNvbS96ZXJvbC93c2FtYWNzbWUuZG1nCgojbW91bnQgdGhlIGRtZwpoZGl1dGlsIGF0dGFjaCAkZG1nX3BhdGgvd3NhbWFjc21lLmRtZwoKZGl0dG8gL1ZvbHVtZXMvV2Vicm9vdFwgU2VjdXJlQW55d2hlcmUgL0FwcGxpY2F0aW9ucy8KCiNUcmlnZ2VyIHRoZSB3ZWJyb290IEluc3RhbGxhdGlvbi4Kc3VkbyAiL0FwcGxpY2F0aW9ucy9XZWJyb290IFNlY3VyZUFueXdoZXJlLmFwcC9Db250ZW50cy9NYWNPUy9XZWJyb290IFNlY3VyZUFueXdoZXJlIiBpbnN0YWxsIC1rZXljb2RlPSIkbGljZW5zZWNvZGUiIC1zaWxlbnQKCnJldFZhbD0kPwplY2hvICRyZXRWYWwKCmlmIFsgJHJldFZhbCAtbmUgMCBdCnRoZW4KICAgIGVjaG8gIkluc3RhbGxhdGlvbiBGYWlsZWQgOiB3ZWJyb290IGluc3RhbGxhdGlvbiBmYWlsZWQiCiAgICBleGl0IDUKI2Vsc2UKIyBlY2hvICIgSW5zdGFsbGF0aW9uIFN1Y2Nlc2Z1bGx5IDogV2Vicm9vdCBpbnN0YWxsYXRpb24gc3VjY2Vzc2Z1bCIKZmkKCgp3ZWJyb290ZmlsZT0iL0FwcGxpY2F0aW9ucy9XZWJyb290Ki5hcHAiCgppZiBbIC1lICR3ZWJyb290ZmlsZSBdCnRoZW4KICAgIGVjaG8gIkluc3RhbGxhdGlvbiBTdWNjZXNmdWxseSA6IFdlYnJvb3QgaW5zdGFsbGVkIHN1Y2Nlc3NmdWxseSIKZWxzZQogICAgZXhpdCA2CmZpCgojVW5tb3VudCB0aGUgRE1HCgpoZGl1dGlsIGRldGFjaCAvVm9sdW1lcy9XZWJyb290XCBTZWN1cmVBbnl3aGVyZS8KCnJtIC1yZiAkZG1nX3BhdGgvKgoKZXhpdCAw",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "Action": {
+        "title": "Action",
+        "type": "string",
+        "enum": [
+          "install",
+          "uninstall"
+        ],
+        "enumNames": [
+          "Install",
+          "Uninstall"
+        ],
+        "required": [
+          "Action"
+        ]
+      }
+    },
+    "dependencies": {
+      "Action": {
+        "oneOf": [
+          {
+            "properties": {
+              "Action": {
+                "enum": [
+                  "install"
+                ]
+              },
+              "licensecode": {
+                "type": "string",
+                "title": "License code"
+              }
+            }
+          },
+          {
+            "properties": {
+              "Action": {
+                "enum": [
+                  "uninstall"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "uiSchema": {
+    "licensecode": {
+      "ui:autofocus": true,
+      "ui:emptyValue": ""
+    }
+  },
+  "isHDScript": false
+}

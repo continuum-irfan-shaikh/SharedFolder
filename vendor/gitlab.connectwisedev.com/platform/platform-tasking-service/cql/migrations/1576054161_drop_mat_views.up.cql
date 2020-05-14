@@ -1,0 +1,3 @@
+DROP MATERIALIZED VIEW IF EXISTS platform_tasking_db.task_instances_started_at;
+DROP MATERIALIZED VIEW IF EXISTS platform_tasking_db.task_instances_by_id;
+DROP MATERIALIZED VIEW IF EXISTS platform_tasking_db.script_execution_results_by_task_instance_id;

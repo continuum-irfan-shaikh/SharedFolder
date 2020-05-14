@@ -1,0 +1,22 @@
+{
+    "name": "packageDetails",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+      { "name": "checksum", "type": "string", "description": "Checksum of the package"},
+      { "name": "hashAlgorithm", "type": "string", "description": "Algorirthm used to calculate the hash"},
+      { "name": "requestedURL", "type": "string", "description": "requested url for the package"},
+      { "name": "filename", "type": "string", "description": "filename of package after download"},
+      { "name": "fileSizeInBytes", "type": "string", "description": "size of package"},
+      { "name": "fileLocation", "type": "string", "description": "location of the package"},
+      { "name": "downloadTimeStampUTC", "type": "string", "description": "download time stamp"},
+      { "name": "lastAccessedTimeStampUTC", "type": "string", "description": "last accessed timestamp"},
+      { "name": "status", "type": "string", "description": "status of package"},
+      { "name": "downloadRetryCount", "type": "int", "description": "download retury if faild to download"},
+      { "name": "serveCount", "type": "int", "description": "serve count of package"},
+      { "name": "deleted", "type": "boolean", "description": "package status i.e. false/true"},
+      { "name": "errorCode", "type": "string", "description": "error code received during doenload"},
+      { "name": "errorMessage", "type": "string", "description": "error message received on faild download"},
+      { "name": "httpStatus", "type": "string", "description": "http status received while downloading package"}
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "51a74346-e19b-11e7-9809-0800279505d9",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Root"
+  ],
+  "description": "Runs custom PowerShell scripts",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "PowerShell script",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "string",
+        "title": "PowerShell Script"
+      },
+      "expectedExecutionTimeSec": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 10000,
+        "title": "Expected time of script execution in seconds",
+        "default": 300
+      }
+    },
+    "required": [
+      "body",
+      "expectedExecutionTimeSec"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "body": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true,
+      "ui:help": "You are responsible for the consequences of running the script",
+      "ui:widget": "textarea",
+      "ui:options": {
+        "rows": 15
+      }
+    },
+    "expectedExecutionTimeSec": {
+      "classNames": "col-sm-6",
+      "ui:widget": "updown",
+      "minToSec": true,
+      "ui:help": "Expected execution time in seconds"
+    }
+  }
+}

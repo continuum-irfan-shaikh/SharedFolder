@@ -1,0 +1,22 @@
+{
+  "name": "message",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {
+      "name": "object",
+      "type": "string",
+      "description": "Object Name"
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Message Code"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "Message Description"
+    }
+  ]
+}

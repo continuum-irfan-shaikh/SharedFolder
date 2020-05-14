@@ -1,0 +1,21 @@
+{
+  "action": "NEW",
+  "data": {
+    "userId": 1,
+    "email": "jdoe@continuum.net",
+    "designation": "Senior Engineer",
+    "fullName": "John Doe",
+    "city": "Dallas",
+    "address": "some address",
+    "partnerId": 10032,
+    "isNocUser": true,
+    "isEnabled": false,
+    "sendSms": true,
+    "mobilePhone": "663214596",
+    "officePhone": "911",
+    "extension": "",
+    "primExtension": "",
+    "zipCode": "14456",
+    "createdAt": "012-04-23T18:25:43.511Z"
+  }
+}

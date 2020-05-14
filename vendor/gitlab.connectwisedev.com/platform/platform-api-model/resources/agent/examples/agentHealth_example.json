@@ -1,0 +1,46 @@
+{
+    "timestampUTC": "2020-02-03T08:04:20.248Z",
+    "agentCore": {
+      "state": {
+        "timestampUTC": "2020-02-03T08:04:20.248Z",
+        "online": true,
+        "activeBroker": true,
+        "activeHeartbeat": true
+      },
+      "heartbeatStatus": {
+        "timestampUTC": "2020-02-03T08:04:20.248Z",
+        "totalAttempts": 200,
+        "success": 175,
+        "networkFailure": 20,
+        "otherFailure": 5
+      },
+      "offlineMessages": {
+        "timestampUTC": "2020-02-03T08:04:20.248Z",
+        "count": 20
+      },
+      "pendingMailboxMessages": {
+        "timestampUTC": "2020-02-03T08:04:20.248Z",
+        "count": 5
+      }
+    },
+    "shortRunningPlugins": {
+      "Asset": {
+       "totalInvocation": 0,
+       "successfulInvocation": 0,
+       "failedInvocation": 0,
+       "otherFailures": 0
+      },
+      "Performance": {
+       "totalInvocation": 0,
+       "successfulInvocation": 0,
+       "failedInvocation": 0,
+       "otherFailures": 0
+      }
+     },
+    "longRunningPlugins": {},
+    "serviceDetail": {
+       "timestampUTC": "2020-02-03T08:04:20.248Z",
+       "numberOfServiceRestarts": 3
+     },
+     "recommendedAction": "Restart"
+  }

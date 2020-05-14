@@ -1,0 +1,9 @@
+{
+    "name":"registrationData",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "endpointId", "type": "string"},
+        { "name": "success", "type": "bool"}
+    ]
+}

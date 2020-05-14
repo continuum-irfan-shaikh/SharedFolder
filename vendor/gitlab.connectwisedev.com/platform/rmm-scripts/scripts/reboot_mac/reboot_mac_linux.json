@@ -1,0 +1,24 @@
+{
+  "id": "70770a0e-4f05-11ea-b369-e0d55e1ce78a",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Restarts MAC or Linux machine",
+  "engine": "bash",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Success",
+  "internal": false,
+  "name": "Restart MAC/Linux",
+  "tags": [
+    "MAC OS",
+    "Linux"
+  ],
+  "sequence": true,
+  "content": "c3VkbyBzaHV0ZG93biAtciBub3cK",
+  "jsonSchema": {},
+  "uiSchema": {},
+  "isHDScript": false
+}

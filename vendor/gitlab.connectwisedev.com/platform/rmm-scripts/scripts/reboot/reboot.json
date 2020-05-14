@@ -1,0 +1,37 @@
+{
+  "id": "749eecc3-9388-4a06-a50c-d51e0fcb1c1e",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Restart a Windows or a Mac machine",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The machine reboot was initiated",
+  "internal": false,
+  "name": "Reboot machine",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGNvbXB1dGVybmFtZXMgPSAkZW52OmNvbXB1dGVybmFtZQoKSUYgKCRmb3JjZSkgewogICAgV3JpdGUtT3V0cHV0ICJTdWNjZXNzZnVsbHkgcmVzdGFydGVkIgogICAgUmVzdGFydC1Db21wdXRlciAtQ29tcHV0ZXJOYW1lICRjb21wdXRlcm5hbWVzIC1Gb3JjZTokdHJ1ZQp9IEVMU0UgewogICAgc2h1dGRvd24uZXhlIC1yIC10IDMwMCAtYyAnVGhpcyBzeXN0ZW0gd2lsbCBiZSByZXN0YXJ0ZWQgaW4gNSBtaW51dGVzLi4uIFBsZWFzZSBzYXZlIGFsbCB3b3JrIGluIHByb2dyZXNzLiBBbnkgdW5zYXZlZCBjaGFuZ2VzIHdpbGwgYmUgbG9zdCcKICAgIFdyaXRlLU91dHB1dCAiUmVzdGFydCBpcyBzY2hlZHVsZWQgYW5kIHdpbGwgYmUgcGVyZm9ybWVkIGluIDUgbWludXRlcyIKfQo=",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "force": {
+        "type": "boolean",
+        "title": "Force"
+      }
+    },
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "force": {
+      "classNames": "col-sm-3",
+      "ui:autofocus": true
+    }
+  }
+}

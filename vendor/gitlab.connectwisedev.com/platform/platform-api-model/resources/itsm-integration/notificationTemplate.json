@@ -1,0 +1,33 @@
+{
+  "name": "userInfo",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {"name": "id", "type": "string"},
+    {"name": "createdDateTime", "type": "string"},
+    {"name": "createdBy", "type": "string"},
+    {"name": "lastModDateTime", "type": "string"},
+    {"name": "createdById", "type": "string"},
+    {"name": "createdCulture", "type": "string"},
+    {"name": "lastModBy", "type": "string"},
+    {"name": "lastModById", "type": "string"},
+    {"name": "ownedBy", "type": "string"},
+    {"name": "ownedById", "type": "string"},
+    {"name": "ownedByTeam", "type": "string"},
+    {"name": "ownedByTeamId", "type": "string"},
+    {"name": "notificationTemplateId", "type": "string"},
+    {"name": "data", "type": "string"},
+    {"name": "siteId", "type": "string"},
+    {"name": "partnerId", "type": "string"},
+    {"name": "templateKey", "type": "string"},
+    {"name": "templateId", "type": "string"},
+    {"name": "templateType", "type": "string"},
+    {"name": "userKey", "type": "string"},
+    {"name": "serviceId", "type": "string"},
+    {"name": "clientId", "type": "string"},
+    {"name": "templateName", "type": "string"},
+    {"name": "partnerRecId", "type": "string"},
+    {"name": "siteTimezone", "type": "string"},
+    {"name": "scheduledActions", "type": "scheduledAction[]"}
+  ]
+}

@@ -1,0 +1,11 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/get-trigger-and-recurrent-tasks-quantity
+import:
+  - package: github.com/gocql/gocql
+    version: bd5f930c6137a4b1cd4bd7bd5ff9ffdfc84f8ca9
+  - package: github.com/urfave/cli
+    version: e6cf83ec39f6e1158ced1927d4ed14578fda8edb
+  - package: gitlab.connectwisedev.com/platform/platform-tasking-service
+  - package: gitlab.connectwisedev.com/platform/platform-common-lib
+    version: f702cb4612138a314ddb81a9b12ab15e2ddd28b6
+  - package: gitlab.connectwisedev.com/platform/platform-api-model
+    version: ae7d6026025cbb09086cec9104efd9226c0661e5

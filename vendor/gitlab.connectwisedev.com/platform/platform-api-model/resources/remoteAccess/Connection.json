@@ -1,0 +1,11 @@
+{
+    "name":"connection",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "gatewayUrl", "type": "string"},
+        { "name": "sessionTicketId", "type": "long"},
+        { "name": "remoteAccessHostId", "type": "long"},
+        { "name": "partnerId", "type": "long"}
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "FixedFileInfo": {
+    "FileVersion": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0,
+      "Build": 0
+    },
+    "ProductVersion": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0,
+      "Build": 0
+    },
+    "FileType": "01"
+  },
+  "StringFileInfo": {
+    "FileDescription": "Platform Tasking Service",
+    "LegalCopyright": "@Continuum IT Management Platform",
+    "OriginalFilename": "platform-tasking-service.exe",
+    "ProductVersion": "1.0.#",
+    "ProductName": "Tasking"
+  },
+  "VarFileInfo": {
+    "Translation": {
+      "LangID": "0409"
+    }
+  }
+}

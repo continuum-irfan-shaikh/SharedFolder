@@ -1,0 +1,11 @@
+{ 
+   "name": "performanceSensorsInfoType",
+   "type":  "resource",
+   "version": "2.0",	
+    "attributes": [
+    { "name": "@typeName", "type": "string"}
+    { "name": "@tempVol", "type": "string"}
+	{ "name": "@range", "type": "string"}
+    { "name": "@alarmStatus", "type": "string"}
+    ]
+}

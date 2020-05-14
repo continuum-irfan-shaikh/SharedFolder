@@ -1,0 +1,23 @@
+{
+    "id": "680158e8-d53f-4e17-b4c5-3ccf2073d833",
+    "type": "Created",
+    "description": "Mailbox Message Recieved",
+    "partnerID": "1",
+    "clientID": "123",
+    "siteID": "123",
+    "agentID": "680158e8-d53f-4e17-b4c5-3ccf2073d833",
+    "endpointID": "680158e8-d53f-4e17-b4c5-3ccf2073d833",
+    "address": "1.1.1.1",
+    "messageCode": "mailbox.message.recieved",
+    "messageDescription": "Mailbox Message Recieved for endpoint ${EndpointID}",
+    "startTime": "2019-01-01T12:24:53.489110938Z",
+    "endTime": "2019-01-01T12:24:53.489110938Z",
+    "status": "N/A",
+    "statusCode": "200",
+    "statusDescription": "Successfully Created",
+    "errorCode": "N/A",
+    "user": "Agent Service",
+    "transactionID": "680158e8-d53f-4e17-b4c5-3ccf2073d833",
+    "service": "Agent Service",
+    "createdOn": "2019-01-01T12:24:53.489110938Z"
+}

@@ -1,0 +1,1 @@
+ALTER TABLE tasks2 DROP resources_type;

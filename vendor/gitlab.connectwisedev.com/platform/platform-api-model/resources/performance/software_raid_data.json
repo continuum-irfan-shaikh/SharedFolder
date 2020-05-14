@@ -1,0 +1,17 @@
+{ 
+   "name": "performanceSoftwareRaid",
+   "type":  "resource",
+   "version": "2.0",
+   "attributes": [
+    { "name": "endpointID", "type": "string"},
+    { "name": "partnerID", "type": "string"},
+    { "name": "clientID", "type": "string"},
+    { "name": "siteID", "type": "string"},
+    { "name": "status", "type": "int"},
+    { "name": "rebootCount", "type": "int"},
+    { "name": "type", "type": "string"},
+    { "name": "uptime", "type": "string"},
+    { "name": "data", "type": "string"},
+    { "name": "lastAccessedDateUTC", "type": "string"}
+    ]
+}

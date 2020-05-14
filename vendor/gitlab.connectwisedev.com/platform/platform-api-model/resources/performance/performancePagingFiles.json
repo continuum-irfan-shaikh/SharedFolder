@@ -1,0 +1,11 @@
+{
+    "name": "performancePagingFiles",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "CreateTimeUTC", "type": "string"},
+       { "name": "CreatedBy", "type": "string"},
+       { "name": "Metric", "type": "performancePagingFileMetric"},
+       { "name": "PagingFiles", "type": "performancePagingFile[]"}
+    ]
+}

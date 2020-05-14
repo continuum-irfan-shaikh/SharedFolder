@@ -1,0 +1,15 @@
+{ 
+   "name": "performanceSensors",
+   "type":  "resource",
+   "version": "2.0",
+    "attributes": [
+    { "name": "endpointID", "type": "string"},
+    { "name": "partnerID", "type": "string"},
+    { "name": "clientID", "type": "string"},
+    { "name": "siteID", "type": "string"},
+    { "name": "lastAccessedDateUTC", "type": "string"}
+    { "name": "createdBy", "type": "string"}
+    { "name": "createTimeUTC", "type": "string"}
+    { "name": "sensorsInfo", "type": "performanceSensorsInfoType"}
+    ]
+}

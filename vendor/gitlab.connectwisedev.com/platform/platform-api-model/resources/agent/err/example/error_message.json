@@ -1,0 +1,15 @@
+{
+  "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+  "source": "Agent Core",
+  "type": "Auto Update",
+  "subType": "Download Failure",
+  "errorCode": "503",
+  "errorTrace": "Server Unreachable",
+  "metadata": {
+    "Download": [
+      "platform-agent-core.zip",
+      "platform-asset-plugin.zip",
+      "platform-version-plugin.zip"
+    ]
+  }
+}

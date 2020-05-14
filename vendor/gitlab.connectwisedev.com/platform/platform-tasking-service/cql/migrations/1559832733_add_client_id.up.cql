@@ -1,0 +1,1 @@
+ALTER TABLE endpoints ADD client_id TEXT;

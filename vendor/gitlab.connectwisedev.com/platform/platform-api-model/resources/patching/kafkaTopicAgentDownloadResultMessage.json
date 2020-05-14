@@ -1,0 +1,29 @@
+{
+    "Action":"string",
+    "Topic":"string",
+    "RegID":"string",
+    "PartnerID":"string",
+    "SiteID":"string",
+    "ClientID":"string",
+    "EndpointID":"string",
+    "EndpointType":"string",
+    "AgentInstalledUTC":"0001-01-01T00:00:00Z",
+    "AgentID":"string",
+    "LegacyRegID":"string",
+    "DcDateTimeUtc":"0001-01-01T00:00:00Z",
+    "RemoteAddr":"string",
+    "TransactionID":"string",
+    "Checksum":"string",
+    "OSName":"string",
+    "OSType":"string",
+    "OSVersion":"string",
+    "message":{
+       "executionID":"string",
+       "status":"string",
+       "error":"string",
+       "filePath":"string",
+       "timestampUTC":"0001-01-01T00:00:00Z",
+       "metadata":"string"
+    }
+ }
+ 

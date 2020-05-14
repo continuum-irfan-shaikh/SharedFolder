@@ -1,0 +1,24 @@
+{
+  "id": "d58f604d-51a7-4f11-96ef-7b8019a640ed",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Management",
+    "Security"
+  ],
+  "description": "Disable Windows Firewall",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Windows Firewall was reconfigured",
+  "internal": false,
+  "name": "Disable Windows Firewall",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "bmV0c2guZXhlIGFkdmZpcmV3YWxsIHNldCBBbGxQcm9maWxlcyBzdGF0ZSBvZmYgPiAkbnVsbApSZXR1cm4gbmV0c2guZXhlIGFkdmZpcmV3YWxsIHNob3cgQWxsUHJvZmlsZXM=",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

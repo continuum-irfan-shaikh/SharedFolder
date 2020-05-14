@@ -1,0 +1,5 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/monthly-report
+import:
+- package: github.com/mohae/struct2csv
+- package: github.com/urfave/cli
+  version: ^1.19.1

@@ -1,0 +1,23 @@
+{
+  "id": "35a2fc61-ab8d-44ce-86dc-949a1c531abf",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Retrieves data on all connected local and network printers",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The list of machine printers was obtained",
+  "internal": false,
+  "name": "Retrieve all printers",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "R2V0LVdNSU9iamVjdCAtQ2xhc3MgV2luMzJfUHJpbnRlciAtQ29tcHV0ZXJOYW1lICRlbnY6Y29tcHV0ZXJuYW1lCg==",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

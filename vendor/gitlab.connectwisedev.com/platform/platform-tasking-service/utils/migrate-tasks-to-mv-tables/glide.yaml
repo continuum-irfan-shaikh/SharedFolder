@@ -1,0 +1,4 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-tasks-to-mv-tables
+import:
+- package: github.com/urfave/cli
+  version: ^1.19.1

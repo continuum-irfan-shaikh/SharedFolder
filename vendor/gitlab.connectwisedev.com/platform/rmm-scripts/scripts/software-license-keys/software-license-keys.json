@@ -1,0 +1,23 @@
+{
+  "id": "eb53ada5-e412-4766-8da6-60f782780e98",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Retrieve software license keys",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "Retrieve software license keys",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JFN0YXRlcyA9IEB7MCA9ICJVbmxpY2Vuc2VkIjsgMSA9ICJMaWNlbnNlZCI7IDIgPSAiT09CR3JhY2UiOyAzID0gIk9PVEdyYWNlIjsgNCA9ICJOb25HZW51aW5lR3JhY2UiOyA1ID0gIk5vdGlmaWNhdGlvbiI7IDYgPSAiRXh0ZW5kZWRHcmFjZSJ9CiRQcm9kdWN0cyA9IChHZXQtV21pT2JqZWN0IC1DbGFzcyBTb2Z0d2FyZUxpY2Vuc2luZ1Byb2R1Y3QgLVByb3BlcnR5IE5hbWUsQXBwbGljYXRpb25JRCxMaWNlbnNlU3RhdHVzLFByb2R1Y3RLZXlJRCkKRm9yRWFjaCAoJFByb2R1Y3QgaW4gJFByb2R1Y3RzKXsKCSRMaWNlbnNlU3RhdHVzID0gJFN0YXRlcy5JdGVtKFtpbnRdJFByb2R1Y3QuTGljZW5zZVN0YXR1cykKCSRQcm9kdWN0IHwgRm9ybWF0LUxpc3QgLVByb3BlcnR5IE5hbWUsQXBwbGljYXRpb25JRCxQcm9kdWN0S2V5SUQsQHtMYWJlbD0iTGljZW5zZVN0YXR1cyI7IEV4cHJlc3Npb24gPSB7JExpY2Vuc2VTdGF0dXN9fQp9",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

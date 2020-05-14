@@ -1,0 +1,19 @@
+{
+    "payload":{
+       "partnerID":"string",
+       "assignItems":[],
+       "deployProcessUUID":"00000000-0000-0000-0000-000000000000",
+       "originID":"string",
+       "executedBy":"string",
+       "webhookURL":"string",
+       "apps":{
+          "":{
+             "appName":"string",
+             "policyID":"00000000-0000-0000-0000-000000000000",
+             "isFreshInstall":false
+          }
+       },
+       "requirePolicy":false
+    },
+    "transactionID":"string"
+ }

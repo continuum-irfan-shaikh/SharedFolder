@@ -1,0 +1,11 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-task-instance-statuses
+import:
+- package: github.com/gocql/gocql
+  version: 59441a623b364472525164bb62b6da9d552eb2ca
+- package: github.com/urfave/cli
+  version: ^1.19.1
+- package: gitlab.connectwisedev.com/platform/platform-tasking-service
+  version: d62092f6d1d91d86957c03015428c8424c3bb007
+- package: gitlab.connectwisedev.com/platform/platform-scripting-service
+- package: gitlab.connectwisedev.com/platform/platform-api-model
+  version: 717eb6a78b07dcb55ccb31c54520c1dfb498a627

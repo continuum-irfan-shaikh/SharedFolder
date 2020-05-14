@@ -1,0 +1,38 @@
+{"Action": "sysevent",
+    "Topic": "systemEvent",
+    "RegID": "161711bd-c9a4-407e-a438-c1ad2c743b48",
+    "LegacyRegID": "4939357",
+    "DcDateTimeUtc": "2018-12-07T15:36:56.50519709Z",
+    "PartnerID": "866",
+    "ClientID": "6614",
+    "SiteID": "6614",
+    "EndpointID": "161711bd-c9a4-407e-a438-c1ad2c743b48",
+    "EndpointType": "Server",
+    "AgentID": "161711bd-c9a4-407e-a438-c1ad2c743b48",
+    "RemoteAddr": "66.214.27.30",
+    "TransactionID": "",
+    "Message": [{
+                  "serviceName": "AdobeARMservice",
+                  "displayName": "Adobe Acrobat Update Service",
+                  "executablePath": "\"C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\armsvc.exe\"",
+                  "startupType": "Automatic",
+                  "serviceStatus": "Running",
+                  "logOnAs": "LocalSystem",
+                  "stopEnableAction": false,
+                  "delayedAutoStart": false,
+                  "win32ExitCode": 0,
+                  "serviceSpecificExitCode": 0
+                },
+                {
+                "serviceName": "AJRouter",
+                "displayName": "AllJoyn Router Service",
+                "executablePath": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+                "startupType": "Manual",
+                "serviceStatus": "Stopped",
+                "logOnAs": "NT AUTHORITY\\LocalService",
+                "stopEnableAction": false,
+                "delayedAutoStart": false,
+                "win32ExitCode": 0,
+                "serviceSpecificExitCode": 0
+                }]
+  }

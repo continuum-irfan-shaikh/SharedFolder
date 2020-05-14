@@ -1,0 +1,6 @@
+package: gitlab.connectwisedev.com/RMM/rmm-scripts/script-generator
+import:
+- package: github.com/gocql/gocql
+  version: f596bd36e19ecaa7a9be478cf137fedc75036b02
+- package: github.com/spf13/cobra
+  version: v0.0.3

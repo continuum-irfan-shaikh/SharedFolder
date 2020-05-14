@@ -1,0 +1,84 @@
+{
+  "id": "6a72b01d-4d7f-11ea-9b1e-e0d55e1ce78a",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Application"
+  ],
+  "description": "Installs or uninstalls Adobe Acrobat Reader DC",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 1800,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Executed successfully",
+  "internal": false,
+  "name": "Adobe Acrobat Reader DC",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "PCMgIAouU1lOT1BTSVMgIAogICAgQWRvYmUgQWNyb2JhdCBSZWFkZXIgREMgaW5zdGFsbGF0aW9uCi5ERVNDUklQVElPTiAgCiAgICBBZG9iZSBBY3JvYmF0IFJlYWRlciBEQyBpbnN0YWxsYXRpb24KLk5PVEVTICAKICAgIEZpbGUgTmFtZSAgOiBJbnN0YWxsQWRvYmVBY3JvYmF0UmVhZGVyREMucHMxCiAgICBBdXRob3IgICAgIDogRHVyZ2VzaGt1bWFyIFBhdGVsICAKICAgIFJlcXVpcmVzICAgOiBQb3dlclNoZWxsIFYyIG9yIGdyZWF0ZXIuICAgCi5QQVJBTUVURVJTCiAgICAKLkhFTFAKIz4KCjwjIEpTT04gU0NIRU1BCiRhY3Rpb24gPSAnaW5zdGFsbCcgICNEcm9wIERvd24KVmVyc2lvbiAKMTkKCiRzdWJ2ZXJzaW9uICAgICNEcm9wIERvd24KMTkuMDEwLjIwMDk4CgpFeGFtcGxlczotCiRhY3Rpb24gPSAiaW5zdGFsbCIKJHZlcnNpb24gPSAiMTkiICAjTm90IHVzZWQgaW4gc2NyaXB0LiBKdXN0IHVzZWQgZm9yIEpTT04gVUkgZm9yIHVzZXIKJHN1YnZlcnNpb24gPSAiMTkuMDEwLjIwMDk4IgoKIz4KCmlmICgiJGFjdGlvbiIgLWVxICJ1bmluc3RhbGwiKSB7CiAgICAkTXlBcHAgPSBHZXQtV21pT2JqZWN0IC1DbGFzcyBXaW4zMl9Qcm9kdWN0IHwgV2hlcmUtT2JqZWN0eyRfLk5hbWUgLWVxICJBZG9iZSBBY3JvYmF0IFJlYWRlciBEQyJ9CiAgICBpZiAoISRNeUFwcCkgewogICAgICAgIFdyaXRlLUVycm9yICJBZG9iZSBBY3JvYmF0IFJlYWRlciBEQyBub3QgZm91bmQgb24gdGhlIG1hY2hpbmUiCiAgICAgICAgRXhpdCAxOwogICAgfQoKCiAgICAkTXlBcHAgPSBHZXQtV21pT2JqZWN0IC1DbGFzcyBXaW4zMl9Qcm9kdWN0IHwgV2hlcmUtT2JqZWN0eyRfLk5hbWUgLWVxICJBZG9iZSBBY3JvYmF0IFJlYWRlciBEQyJ9CiAgICAkTXlBcHAuVW5pbnN0YWxsKCkKICAgIFdyaXRlLU91dHB1dCAiQWRvYmUgQWNyb2JhdCBSZWFkZXIgREMgaGFzIHN1Y2Nlc3NmdWxseSBiZWVuIHVuaW5zdGFsbGVkIgogICAgRXhpdDsKfQoKaWYgKCRlbnY6UFJPQ0VTU09SX0FSQ0hJVEVXNjQzMiAtZXEgIkFNRDY0IikgewogICAgaWYgKCRteUludm9jYXRpb24uTGluZSkgewogICAgICAgICYiJGVudjpzeXN0ZW1yb290XHN5c25hdGl2ZVx3aW5kb3dzcG93ZXJzaGVsbFx2MS4wXHBvd2Vyc2hlbGwuZXhlIiAtTm9uSW50ZXJhY3RpdmUgLU5vUHJvZmlsZSAkbXlJbnZvY2F0aW9uLkxpbmUKICAgIH0KICAgIGVsc2UgewogICAgICAgICYiJGVudjpzeXN0ZW1yb290XHN5c25hdGl2ZVx3aW5kb3dzcG93ZXJzaGVsbFx2MS4wXHBvd2Vyc2hlbGwuZXhlIiAtTm9uSW50ZXJhY3RpdmUgLU5vUHJvZmlsZSAtZmlsZSAiJCgkbXlJbnZvY2F0aW9uLkludm9jYXRpb25OYW1lKSIgJGFyZ3MKICAgIH0KICAgIGV4aXQgJGxhc3RleGl0Y29kZQp9CgokcHJvZHVjdF9uYW1lID0gIkFkb2JlIEFjcm9iYXQgUmVhZGVyIERDIgoKI0dldCBhbHJlYWR5IGluc3RhbGxlZCBwcm9kdWN0CmZ1bmN0aW9uIGdldC1wcm9kdWN0IHsKICAgIGlmICgoZ3dtaSB3aW4zMl9vcGVyYXRpbmdzeXN0ZW0gfCBzZWxlY3Qgb3NhcmNoaXRlY3R1cmUpLm9zYXJjaGl0ZWN0dXJlIC1lcSAiNjQtYml0IikgewogICAgICAgICRhID0gR2V0LUNoaWxkSXRlbSAtUGF0aCBIS0xNOlxTT0ZUV0FSRVxXb3c2NDMyTm9kZVxNaWNyb3NvZnRcV2luZG93c1xDdXJyZW50VmVyc2lvblxVbmluc3RhbGwgfCBHZXQtSXRlbVByb3BlcnR5IHwgV2hlcmUtT2JqZWN0IHsgJF8uRGlzcGxheU5hbWUgLW1hdGNoICRwcm9kdWN0X25hbWUgfSB8IFNlbGVjdC1PYmplY3QgLUV4cGFuZFByb3BlcnR5IERpc3BsYXlWZXJzaW9uCiAgICB9CiAgICBlbHNlIHsKICAgICAgICAkYSA9IEdldC1DaGlsZEl0ZW0gLVBhdGggSEtMTTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NcQ3VycmVudFZlcnNpb25cVW5pbnN0YWxsIHwgR2V0LUl0ZW1Qcm9wZXJ0eSB8IFdoZXJlLU9iamVjdCB7ICRfLkRpc3BsYXlOYW1lIC1tYXRjaCAkcHJvZHVjdF9uYW1lIH0gfCBTZWxlY3QtT2JqZWN0IC1leHBhbmRQcm9wZXJ0eSBEaXNwbGF5VmVyc2lvbgogICAgfQogICAgcmV0dXJuICRhCn0KCiRpbnN0YWxsZWR2ZXJzaW9uID0gZ2V0LXByb2R1Y3QKCiNFeGl0IGlzIHNhbWUgdmVyc2lvbiBpcyBpbnN0YWxsZWQKaWYgKCIkaW5zdGFsbGVkdmVyc2lvbiIgLWVxICIkc3VidmVyc2lvbiIpIHsKICAgIFdyaXRlLU91dHB1dCAiQWRvYmUgQWNyb2JhdCBSZWFkZXIgREMgdiRzdWJ2ZXJzaW9uIGFscmVhZHkgaW5zdGFsbGVkIG9uIHN5c3RlbSAkRU5WOkNPTVBVVEVSTkFNRSIKICAgIEV4aXQ7Cn0KCiNIYXNoIHRhYmxlIGZvciB2ZXJzaW9uIGFuZCByZWxhdGVkIGRvd25sb3dhZCBsaW5rCiR2ZXJzaW9uID0gQHsKICAgICcxOS4wMTAuMjAwOTgnID0gImh0dHA6Ly9hcmRvd25sb2FkLmFkb2JlLmNvbS9wdWIvYWRvYmUvcmVhZGVyL3dpbi9BY3JvYmF0REMvMTkwMTAyMDA5OC9BY3JvUmRyREMxOTAxMDIwMDk4X2VuX1VTLmV4ZSIKICAgICMnMTgwMTEyMDA1OCcgPSAiaHR0cDovL2FyZG93bmxvYWQuYWRvYmUuY29tL3B1Yi9hZG9iZS9yZWFkZXIvd2luL0Fjcm9iYXREQy8xODAxMTIwMDU4L0Fjcm9SZHJEQzE4MDExMjAwNThfZW5fVVMuZXhlIgoKfQoKJEVycm9yQWN0aW9uUHJlZmVyZW5jZSA9ICdTdG9wJwoKI1VybCB0byBkb3dubG9hZCByZXF1aXJlZCBleGUKJHVybCA9ICR2ZXJzaW9uWyIkc3VidmVyc2lvbiJdCgojRG93bmxvYWQgcGF0aCB3aGVyZSBleGUgd2lsbCBiZSBkb3dubG9hZGVkLgokZG93bmxvYWRwYXRoID0gIkM6XFdpbmRvd3NcVGVtcFxBZG9iZUFjcm9SZHJEQ19lbl9VUy5leGUiCgojVGhpcyBmdW5jdGlvbiBkb3dubG9hZHMgdGhlIGZpbGUKZnVuY3Rpb24gZG93bmxvYWRmaWxlIHsKCiAgICAkRXJyb3JBY3Rpb25QcmVmZXJlbmNlID0gIlN0b3AiCiAgICAkd2MgPSBOZXctT2JqZWN0IFN5c3RlbS5OZXQuV2ViQ2xpZW50CiAgICB0cnkgewogICAgICAgICR3Yy5Eb3dubG9hZEZpbGUoIiR1cmwiLCAiJGRvd25sb2FkcGF0aCIpCiAgICB9CiAgICBjYXRjaCB7CiAgICAgICAgJEVycm9yQWN0aW9uUHJlZmVyZW5jZSA9ICJDb250aW51ZSIKICAgICAgICAkXy5FeGNlcHRpb24uTWVzc2FnZQogICAgfQoKICAgIGlmIChUZXN0LVBhdGggJGRvd25sb2FkcGF0aCkgewogICAgICAgIHJldHVybiAkdHJ1ZQogICAgfQogICAgZWxzZSB7CiAgICAgICAgV3JpdGUtT3V0cHV0ICJBZG9iZSBBY3JvYmF0IFJlYWRlciBEQyB2JHN1YnZlcnNpb24gaW5zdGFsbGF0aW9uIGZpbGUgZG93bmxvYWQgaGFzIGJlZW4gZmFpbGVkLiBDaGVjayBpbnRlcm5ldCBjb25uZWN0aW9uIGFuZCB0cnkgYWdhaW4uIgogICAgICAgIEV4aXQ7CiAgICB9Cn0KCnRyeSB7CiAgICAjRG93bmxvYWQgdGhlIGZpbGUgZm9yIEFkb2JlIFJlYWRlciBEQwogICAgaWYgKGRvd25sb2FkZmlsZSkgewoKICAgICAgICAjSW5zdGFsbCBwcm9jZXNzIHdpdGggc2lsZW50IHBhcmFtZXRlcnMKICAgICAgICAkcHJvY2VzcyA9IFN0YXJ0LVByb2Nlc3MgJGRvd25sb2FkcGF0aCAtYXJnICIvc0FsbCAvcnMiIC1XYWl0IC1QYXNzVGhydSAtRXJyb3JBY3Rpb24gJ1N0b3AnCgogICAgICAgICNTdWNjZXNmdWwgb3IgRXJyb3Igb3V0cHV0CiAgICAgICAgaWYgKCgkcHJvY2Vzcy5leGl0Y29kZSAtZXEgMCkgLW9yICgkcHJvY2Vzcy5leGl0Y29kZSAtZXEgMTY0MSkgLW9yICgkcHJvY2Vzcy5leGl0Y29kZSAtZXEgMzAxMCkgICkgewogICAgICAgICAgICBXcml0ZS1PdXRwdXQgIkFkb2JlIEFjcm9iYXQgUmVhZGVyIERDIHYkc3VidmVyc2lvbiBpbnN0YWxsYXRpb24gc3VjY2Vzc2Z1bCBvbiBzeXN0ZW0gJEVOVjpDT01QVVRFUk5BTUUuIgogICAgICAgIH0KICAgICAgICBlbHNlIHsKICAgICAgICAgICAgV3JpdGUtRXJyb3IgIkZhaWxlZCB0byBpbnN0YWxsIEFkb2JlIEFjcm9iYXQgUmVhZGVyIERDIHYkc3VidmVyc2lvbiBvbiBzeXN0ZW0gJEVOVjpDT01QVVRFUk5BTUUiCiAgICAgICAgICAgIFdyaXRlLUVycm9yICJFeGl0IENvZGU6LSAkKCRwcm9jZXNzLmV4aXRjb2RlKSIKICAgICAgICB9CiAgICAgICAgI1JlbW92ZSBkb3dubG9hZGVkIGZpbGUKICAgICAgICBpZiAoVGVzdC1QYXRoICRkb3dubG9hZHBhdGgpIHsKICAgICAgICAgICAgUmVtb3ZlLUl0ZW0gJGRvd25sb2FkcGF0aCAtRm9yY2UgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUKICAgICAgICB9CiAgICB9Cn0KY2F0Y2ggewogICAgJF8uRXhjZXB0aW9uLk1lc3NhZ2UKfQo=",
+  "jsonSchema": {
+    "type": "object",
+    "title": "Adobe Acrobat Reader DC",
+    "properties": {
+      "Action": {
+        "title": "Action",
+        "type": "string",
+        "enum": [
+          "install",
+          "uninstall"
+        ],
+        "enumNames": [
+          "Install",
+          "Uninstall"
+        ],
+        "required": [
+          "Action"
+        ]
+      }
+    },
+    "dependencies": {
+      "Action": {
+        "oneOf": [
+          {
+            "properties": {
+              "Action": {
+                "enum": [
+                  "install"
+                ]
+              },
+              "subversion": {
+                "type": "string",
+                "title": "Version",
+                "enum": [
+                  "19.010.20098"
+                ],
+                "default": "19.010.20098"
+              }
+            }
+          },
+          {
+            "properties": {
+              "Action": {
+                "enum": [
+                  "uninstall"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "uiSchema": {
+    "Action": {
+      "classNames": "col-sm-4 col-sm-offset-right-8",
+      "ui:autofocus": true
+    },
+    "subversion": {
+      "classNames": "col-sm-4 col-sm-offset-right-8"
+    }
+  },
+  "isHDScript": false
+}

@@ -1,0 +1,23 @@
+[Unit]
+Description=continuum Tasking Microservices REST Endpoint
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment="cfg_file=/opt/continuum/config/ctm_tasking_cfg.json"
+Environment="logDir=/opt/continuum/log"
+Environment="log_file=/opt/continuum/log/ctm_tasking_service.log"
+Restart=on-failure
+RestartSec=10s
+ExecStartPre=/bin/mkdir -p $logDir
+ExecStartPre=/bin/touch $log_file
+ExecStartPre=/bin/touch $cfg_file
+ExecStartPre=/bin/chmod o+r $log_file
+PIDFile=/var/run/platform-tasking-service.pid
+ExecStart=/opt/continuum/taskingService/platform-tasking-service -config $cfg_file
+LimitNOFILE=65535
+LimitNPROC=65535
+
+[Install]
+WantedBy=multi-user.target

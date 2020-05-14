@@ -1,0 +1,21 @@
+{
+  "id": "e5d41739-56fc-4f67-b48a-fb71af5c1769",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": ["Data Collection"],
+  "description": "Gathers information on last system reboot including date and time",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "Retrieve system last reboot date and time",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "c3lzdGVtaW5mbyB8IGZpbmQgIlN5c3RlbSBCb290IFRpbWUi",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

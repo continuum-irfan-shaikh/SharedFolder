@@ -1,0 +1,135 @@
+{
+  "id": "b899aa11-f22b-4056-b62a-ab5c2e227243",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Run chkdsk.exe to check the integrity of your file system",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 172800,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Check Disk was performed",
+  "internal": false,
+  "name": "Run Check Disk (chkdsk)",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGFyZ3MgPSBAKCRhcmdzKQokZHJpdmVzID0gQCgkZHJpdmVzKQoKW2Jvb2xdJEZpeEVycm9ycyA9ICRmYWxzZQpbYm9vbF0kVmlnb3JvdXNJbmRleENoZWNrID0gJGZhbHNlCltib29sXSRTa2lwRm9sZGVyQ3ljbGUgPSAkZmFsc2UKW2Jvb2xdJEZvcmNlRGlzbW91bnQgPSAkZmFsc2UKW2Jvb2xdJFJlY292ZXJCYWRTZWN0b3JzID0gJGZhbHNlCltib29sXSRPa1RvUnVuQXRCb290VXAgPSAkZmFsc2UKCmlmICgkYXJncyAtY29udGFpbnMgIkZpeEVycm9ycyIpIHskRml4RXJyb3JzID0gJHRydWV9CmlmICgkYXJncyAtY29udGFpbnMgIlZpZ29yb3VzSW5kZXhDaGVjayIpIHskVmlnb3JvdXNJbmRleENoZWNrID0gJHRydWV9CmlmICgkYXJncyAtY29udGFpbnMgIlNraXBGb2xkZXJDeWNsZSIpIHskU2tpcEZvbGRlckN5Y2xlID0gJHRydWV9CmlmICgkYXJncyAtY29udGFpbnMgIkZvcmNlRGlzbW91bnQiKSB7JEZvcmNlRGlzbW91bnQgPSAkdHJ1ZX0KaWYgKCRhcmdzIC1jb250YWlucyAiUmVjb3ZlckJhZFNlY3RvcnMiKSB7JFJlY292ZXJCYWRTZWN0b3JzID0gJHRydWV9CmlmICgkYXJncyAtY29udGFpbnMgIk9rVG9SdW5BdEJvb3RVcCIpIHskT2tUb1J1bkF0Qm9vdFVwID0gJHRydWV9Cgpmb3IgKCRpID0gMDsgJGkgLWxlICRkcml2ZXMubGVuZ3RoLTE7ICRpKyspIHsKCSRkcml2ZXNbJGldID0gJGRyaXZlc1skaV0gKyAiOiIKfQoKJGxvY2FsRGlza1R5cGUgPSAzCiRkcml2ZXNPYmplY3RzID0gR2V0LVdtaU9iamVjdCB3aW4zMl92b2x1bWUgfCBXaGVyZS1PYmplY3QgeyAkXy5Ecml2ZVR5cGUgLWVxICRsb2NhbERpc2tUeXBlIC1hbmQgJF8uRHJpdmVMZXR0ZXIgLW5lICRudWxsfQokYXZhaWxhYmxlRHJpdmVzID0gQCgpCkZvckVhY2ggKCRvYmogaW4gJGRyaXZlc09iamVjdHMpIHsKCSRhdmFpbGFibGVEcml2ZXMgKz0gJG9iai5Ecml2ZUxldHRlcgp9CgpGb3JFYWNoICgkZHJpdmUgaW4gJGRyaXZlcykgewoJaWYgKCRhdmFpbGFibGVEcml2ZXMgLWNvbnRhaW5zICRkcml2ZSkgewoJCSRkcml2ZU9iaiA9IEdldC1XbWlPYmplY3Qgd2luMzJfdm9sdW1lIHwgV2hlcmUtT2JqZWN0IHskXy5Ecml2ZUxldHRlciAtZXEgJGRyaXZlfQoKCQkjQ2hrZHNrIG1ldGhvZCBvZiB0aGUgV2luMzJfVm9sdW1lIGNsYXNzIGFjY29yZGluZyB0byBodHRwczovL21zZG4ubWljcm9zb2Z0LmNvbS9lbi11cy9saWJyYXJ5L2FhMzg0OTE1KHY9dnMuODUpLmFzcHgKCQkkcmVzdWx0ID0gJGRyaXZlT2JqLmNoa2RzaygkRml4RXJyb3JzLAoJCQkJCQkJJFZpZ29yb3VzSW5kZXhDaGVjaywKCQkJCQkJCSRTa2lwRm9sZGVyQ3ljbGUsCgkJCQkJCQkkRm9yY2VEaXNtb3VudCwKCQkJCQkJCSRSZWNvdmVyQmFkU2VjdG9ycywKCQkJCQkJCSRPa1RvUnVuQXRCb290VXApCgkJJHJlc3VsdENvZGUgPSAkcmVzdWx0LlJldHVyblZhbHVlCgkJSWYgKCRyZXN1bHRDb2RlIC1nZSAwIC1hbmQgJHJlc3VsdENvZGUgLWxlIDUpIHsKCQkJU3dpdGNoICgkcmVzdWx0Q29kZSkgewoJCQkJMHtXcml0ZS1PdXRwdXQgIkRyaXZlICRkcml2ZSBTdWNjZXNzIC0gQ2hrZHNrIENvbXBsZXRlZCJ9CgkJCQkxe1dyaXRlLU91dHB1dCAiRHJpdmUgJGRyaXZlIFN1Y2Nlc3MgLSBWb2x1bWUgTG9ja2VkIGFuZCBDaGtkc2sgU2NoZWR1bGVkIG9uIFJlYm9vdCJ9CgkJCQkye1dyaXRlLUVycm9yICJEcml2ZSAkZHJpdmUgRmFpbHVyZSAtIFVuc3VwcG9ydGVkIEZpbGUgU3lzdGVtIn0KCQkJCTN7V3JpdGUtRXJyb3IgIkRyaXZlICRkcml2ZSBGYWlsdXJlIC0gVW5rbm93biBGaWxlIFN5c3RlbSJ9CgkJCQk0e1dyaXRlLUVycm9yICJEcml2ZSAkZHJpdmUgRmFpbHVyZSAtIE5vIE1lZGlhIEluIERyaXZlIn0KCQkJCTV7V3JpdGUtRXJyb3IgIkRyaXZlICRkcml2ZSBGYWlsdXJlIC0gVW5rbm93biBFcnJvciJ9CgkJCX0KCQl9CgkJRWxzZSB7CgkJCVdyaXRlLUVycm9yICJEcml2ZSAkZHJpdmUgRmFpbHVyZSAtICpJbnZhbGlkIFJlc3VsdCBDb2RlKiA9PSAkcmVzdWx0Q29kZSIKCQkJQ29udGludWUKCQl9Cgl9CglFbHNlIHsKCQlXcml0ZS1FcnJvciAiRHJpdmUgJGRyaXZlIGRvZXMgbm90IGV4aXN0IgoJCUNvbnRpbnVlCgl9Cn0K",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "drives": {
+        "type": "array",
+        "minItems": 1,
+        "title": "Drives",
+        "items": {
+          "type": "string",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "enumNames": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "args": {
+        "type": "array",
+        "minItems": 1,
+        "title": "ChkDsk arguments",
+        "items": {
+          "type": "string",
+          "enum": [
+            "FixErrors",
+            "VigorousIndexCheck",
+            "SkipFolderCycle",
+            "ForceDismount",
+            "RecoverBadSectors",
+            "OkToRunAtBootUp"
+          ],
+          "enumNames": [
+            "Fix errors",
+            "Vigorous index check",
+            "Skip folder cycle",
+            "Force dismount",
+            "Recover bad sectors",
+            "Ok to run at boot up"
+          ]
+        },
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "drives",
+      "args"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "drives": {
+      "ui:widget": "checkboxes",
+      "ui:options": {
+        "inline": true
+      }
+    },
+    "args": {
+      "ui:widget": "checkboxes",
+      "ui:options": {
+        "inline": false
+      }
+    }
+  }
+}

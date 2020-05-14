@@ -1,0 +1,17 @@
+{
+    "name": "Postpone result",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "metadata",
+            "type": "string",
+            "description": "JSON metadata"
+        },
+        {
+            "name": "timestampUTC",
+            "type": "string",
+            "description": "UTC time"
+        }
+    ]
+}

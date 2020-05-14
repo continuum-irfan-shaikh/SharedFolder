@@ -1,0 +1,17 @@
+{
+  "name": "incident",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {"name": "id", "type": "string"},
+    {"name": "createdAt", "type": "string"},
+    {"name": "createdBy", "type": "string"},
+    {"name": "details", "type": "string"},
+    {"name": "externalNotes", "type": "string"},
+    {"name": "incidentId", "type": "string"},
+    {"name": "internalFlag", "type": "boolean"},
+    {"name": "PSANoteID", "type": "string"},
+    {"name": "PSANoteType", "type": "string"},
+    {"name": "origin", "type": "string"}
+    ]
+}

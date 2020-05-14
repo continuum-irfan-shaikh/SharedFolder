@@ -1,0 +1,9 @@
+{
+  "name": "partnerUserChange",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {"name": "action", "type": "string"},
+    {"name": "data", "type": "partnerUser"}
+  ]
+}

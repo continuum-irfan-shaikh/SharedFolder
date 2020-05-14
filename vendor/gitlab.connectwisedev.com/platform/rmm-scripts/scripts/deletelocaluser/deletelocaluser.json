@@ -1,0 +1,41 @@
+{
+  "id": "17636aef-2a56-4dfc-8524-71dd5973379f",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Management",
+    "Security"
+  ],
+  "description": "Remove local user account",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The user was successfully deleted",
+  "internal": false,
+  "name": "Delete local user",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "ZnVuY3Rpb24gaXNWYWxpZFVzZXIgewoJUGFyYW0oJHVzZXJOYW1lLCAkdXNlcnMpCglmb3JlYWNoICgkaVVzZXIgaW4gJHVzZXJzKSB7CgkJaWYgKCRpVXNlci5OYW1lIC1lcSAkdXNlcikgewoJCQlyZXR1cm4gJHRydWUKCQl9Cgl9CglyZXR1cm4gJGZhbHNlCn0KCmZ1bmN0aW9uIGlzTG9nZ2VkT25Vc2VyIHsKCVBhcmFtKCR1c2VyTmFtZSkKCUdldC1XbWlPYmplY3QgLUNsYXNzIFdpbjMyX0xvZ2dlZE9uVXNlciB8IEZvckVhY2gtT2JqZWN0IHsKCQkkbG9nZ2VkT25Vc2VyID0gKCRfLkFudGVjZWRlbnQuVG9TdHJpbmcoKSAtc3BsaXQgJ1tcPVwiXScpWzVdCgkJaWYgKCRsb2dnZWRPblVzZXIgLWVxICR1c2VyTmFtZSkgewoJCQlyZXR1cm4gJHRydWUKCQl9Cgl9CglyZXR1cm4gJGZhbHNlCn0KCiR1c2VycyA9IEdldC1XbWlPYmplY3QgLUNsYXNzIFdpbjMyX1VzZXJBY2NvdW50CmlmICgtbm90IChpc1ZhbGlkVXNlciAtdXNlck5hbWUgJHVzZXIgLXVzZXJzICR1c2VycykpIHsKCXJldHVybiBXcml0ZS1FcnJvciAiJHVzZXIgcHJvZmlsZSBpcyBub3QgcmVjb2duaXplZCIKfQoKaWYgKGlzTG9nZ2VkT25Vc2VyIC11c2VyTmFtZSAkdXNlcikgewoJcmV0dXJuIFdyaXRlLUVycm9yICJQbGVhc2UgbG9nIG9mZiAkdXNlciBmb3IgZGVsZXRpbmciCn0KCm5ldCB1c2VyICR1c2VyIC9kZWxldGUgPiRudWxsCldyaXRlLU91dHB1dCAiJHVzZXIgd2FzIGRlbGV0ZWQgc3VjY2Vzc2Z1bGx5Igo=",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "user": {
+        "type": "string",
+        "title": "User name"
+      }
+    },
+    "required": [
+      "user"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "user": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true
+    }
+  }
+}

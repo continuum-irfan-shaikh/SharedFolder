@@ -1,0 +1,48 @@
+{
+  "id": "492b6af3-aea9-4fb3-a58e-c335f305b9f5",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": ["Management", "Security"],
+  "description": "Allow users to connect remotely to the computer",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The Remote Desktop was configured",
+  "internal": false,
+  "name": "Enable remote desktop",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JFJlZ1BhdGggPSAiSEtMTTpcU1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcVGVybWluYWwgU2VydmVyIgpJZigtTm90KFRlc3QtUGF0aCAtUGF0aCAkUmVnUGF0aCkpewogICAgTmV3LUl0ZW0gLVBhdGggJFJlZ1BhdGggLUZvcmNlIHwgTmV3LUl0ZW1Qcm9wZXJ0eSAtTmFtZSAiZkRlbnlUU0Nvbm5lY3Rpb25zIiAtUHJvcGVydHlUeXBlIERXb3JkIC1WYWx1ZSAwIHwgT3V0LU51bGwKfQpTd2l0Y2ggKCRBY3Rpb24pewoJIkVuYWJsZSJ7CgkJU2V0LUl0ZW1Qcm9wZXJ0eSAtUGF0aCAkUmVnUGF0aCAtTmFtZSAiZkRlbnlUU0Nvbm5lY3Rpb25zIiAtVmFsdWUgMAoJCSRWYWwgPSBHZXQtSXRlbVByb3BlcnR5IC1QYXRoICRSZWdQYXRoIC1OYW1lICJmRGVueVRTQ29ubmVjdGlvbnMiCgkJaWYoJFZhbC5mRGVueVRTQ29ubmVjdGlvbnMgLWVxIDApewoJCQlSZXR1cm4gIlN1Y2Nlc3NmdWxseSBFbmFibGVkIFJlbW90ZSBEZXNrdG9wIgoJCX0gRWxzZSB7CgkJCVdyaXRlLUVycm9yICJFcnJvciBXaGlsZSBFbmFibGluZyBSZW1vdGUgRGVza3RvcCIKICAgICAgICAgICAgUmV0dXJuCgkJfQoJfQoJIkRpc2FibGUiewoJCVNldC1JdGVtUHJvcGVydHkgLVBhdGggJFJlZ1BhdGggLU5hbWUgImZEZW55VFNDb25uZWN0aW9ucyIgLVZhbHVlIDEKCQkkVmFsID0gR2V0LUl0ZW1Qcm9wZXJ0eSAtUGF0aCAkUmVnUGF0aCAtTmFtZSAiZkRlbnlUU0Nvbm5lY3Rpb25zIgoJCWlmKCRWYWwuZkRlbnlUU0Nvbm5lY3Rpb25zIC1lcSAxKXsKCQkJUmV0dXJuICJTdWNjZXNzZnVsbHkgRGlzYWJsZWQgUmVtb3RlIERlc2t0b3AiCgkJfSBFbHNlIHsKCQkJV3JpdGUtRXJyb3IgIkVycm9yIFdoaWxlIERpc2FibGluZyBSZW1vdGUgRGVza3RvcCIKICAgICAgICAgICAgUmV0dXJuCgkJfQoJfQp9Cg==",
+  "jsonSchema": {
+    "type":"object",
+    "properties":{
+      "action":{
+        "type":"string",
+        "title":"Action",
+        "enum":[
+          "enable",
+          "disable"
+        ],
+        "enumNames":[
+          "Enable",
+          "Disable"
+        ]
+      }
+    },
+    "required":[
+      "action"
+    ],
+    "additionalProperties": false
+  }
+,
+  "uiSchema": {
+    "action":{
+      "classNames":"col-sm-6",
+      "ui:autofocus":true,
+      "ui:placeholder":"Select action"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "6cc52f56-d998-4ca2-9b5e-77a7ad0bb34c",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": ["Maintenance"],
+  "description": "Create or modify Registry settings",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The register was successfully configured",
+  "internal": false,
+  "name": "Configure registry settings",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JHJlZ0RyaXZlLCAkcmVnUGF0aFRhaWwgPSAkcmVnaXN0cnlQYXRoLnNwbGl0KCc6JykKCmlmICghKEdldC1QU0RyaXZlIC1uYW1lICRyZWdEcml2ZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZSkpIHsKCXN3aXRjaCgkcmVnRHJpdmUpIHsKCQkiSEtDUiIgewoJCQlOZXctUFNEcml2ZSAtTmFtZSBIS0NSIC1QU1Byb3ZpZGVyIFJlZ2lzdHJ5IC1Sb290IEhLRVlfQ0xBU1NFU19ST09UID4kbnVsbAoJCX0KCQkiSEtDVSIgewoJCQlOZXctUFNEcml2ZSAtTmFtZSBIS0NVIC1QU1Byb3ZpZGVyIFJlZ2lzdHJ5IC1Sb290IEhLRVlfQ1VSUkVOVF9VU0VSID4kbnVsbAoJCX0KCQkiSEtMTSIgewoJCQlOZXctUFNEcml2ZSAtTmFtZSBIS0xNIC1QU1Byb3ZpZGVyIFJlZ2lzdHJ5IC1Sb290IEhLRVlfTE9DQUxfTUFDSElORSA+JG51bGwKCQl9CgkJIkhLVSIgewoJCQlOZXctUFNEcml2ZSAtTmFtZSBIS1UgLVBTUHJvdmlkZXIgUmVnaXN0cnkgLVJvb3QgSEtFWV9VU0VSUyA+JG51bGwKCQl9CgkJIkhLQ0MiIHsKCQkJTmV3LVBTRHJpdmUgLU5hbWUgSEtDQyAtUFNQcm92aWRlciBSZWdpc3RyeSAtUm9vdCBIS0VZX0NVUlJFTlRfQ09ORklHID4kbnVsbAoJCX0KCQlkZWZhdWx0IHsKCQkJV3JpdGUtRXJyb3IgIkludmFsaWQgUmVnaXN0cnkgZHJpdmU6ICRyZWdEcml2ZS4gU2hvdWxkIGJlIG9uZSBvZjogSEtDUiwgSEtDVSwgSEtMTSwgSEtVIG9yIEhLQ0MiCgkJCXJldHVybgoJCX0KCX0KfQoKZnVuY3Rpb24gaXNTZXR0aW5nRXhpc3RzIHsKCWlmIChUZXN0LVBhdGggJHJlZ2lzdHJ5UGF0aCAtUGF0aFR5cGUgY29udGFpbmVyKSB7CgkJJGtleSA9IEdldC1JdGVtIC1MaXRlcmFsUGF0aCAkcmVnaXN0cnlQYXRoCiAgICAgICAgaWYgKCRrZXkuR2V0VmFsdWUoJG5hbWUsICRudWxsKSAtbmUgJG51bGwpIHsKCQkJJHRydWUKICAgICAgICB9Cgl9CglyZXR1cm4gJGZhbHNlCn0KCnN3aXRjaCAoJGFjdGlvbikgewogICAgImNyZWF0ZSIgewoJCWlmICghKFRlc3QtUGF0aCAkcmVnaXN0cnlQYXRoIC1QYXRoVHlwZSBjb250YWluZXIpKSB7CgkJCU5ldy1JdGVtIC1QYXRoICRyZWdpc3RyeVBhdGggLUZvcmNlOiRmb3JjZSA+JG51bGwKCQl9CiAgICAgICAgaWYgKCEoaXNTZXR0aW5nRXhpc3RzKSkgewogICAgICAgICAgICBOZXctSXRlbVByb3BlcnR5IC1QYXRoICRyZWdpc3RyeVBhdGggLU5hbWUgJG5hbWUgLVZhbHVlICR2YWx1ZSAtUHJvcGVydHlUeXBlICR0eXBlIC1Gb3JjZTokZm9yY2UgPiRudWxsCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgV3JpdGUtRXJyb3IgIkludmFsaWQgYWN0aW9uOiAkYWN0aW9uLiBSZWdpc3RyeVNldHRpbmcgYWxyZWFkeSBleGlzdHMuIFRoZSAndXBkYXRlJyBhY3Rpb24gc2hvdWxkIGJlIHVzZWQuIgogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICB9CiAgICAidXBkYXRlIiB7CiAgICAgICAgaWYgKGlzU2V0dGluZ0V4aXN0cykgewogICAgICAgICAgICBTZXQtSXRlbVByb3BlcnR5IC1QYXRoICRyZWdpc3RyeVBhdGggLU5hbWUgJG5hbWUgLVZhbHVlICR2YWx1ZSAtRm9yY2U6JGZvcmNlCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgV3JpdGUtRXJyb3IgIkludmFsaWQgYWN0aW9uOiAkYWN0aW9uLiBSZWdpc3RyeVNldHRpbmcgZG9lc24ndCBleGlzdC4gVGhlICdjcmVhdGUnIGFjdGlvbiBzaG91bGQgYmUgdXNlZC4iCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgIH0KICAgICJkZWxldGUiIHsKICAgICAgICBpZiAoaXNTZXR0aW5nRXhpc3RzKSB7CiAgICAgICAgICAgIFJlbW92ZS1JdGVtUHJvcGVydHkgLVBhdGggJHJlZ2lzdHJ5UGF0aCAtTmFtZSAkTmFtZSAtRm9yY2U6JGZvcmNlCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgV3JpdGUtRXJyb3IgIkludmFsaWQgYWN0aW9uOiAkYWN0aW9uLiBSZWdpc3RyeVNldHRpbmcgZG9lc24ndCBleGlzdC4iCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgIH0KICAgIGRlZmF1bHQgewogICAgICAgIFdyaXRlLUVycm9yICJJbnZhbGlkIGFjdGlvbjogJGFjdGlvbi4gU2hvdWxkIGJlIG9uZSBvZjogY3JlYXRlLCB1cGRhdGUsIGRlbGV0ZSIKICAgICAgICByZXR1cm4KICAgIH0KfQoKSUYgKCQ/KXsKcmV0dXJuICIKCWFjdGlvbjogJGFjdGlvbiwKCWhpdmU6ICRyZWdpc3RyeVBhdGgsCglrZXk6ICROYW1lLAoJcmVndHlwZTogJHR5cGUsCglyZWd2YWx1ZTogJHZhbHVlLAoJZm9yY2U6ICRmYWxzZQoJIgp9Cg==",
+  "jsonSchema": {
+  "type":"object",
+  "properties":{
+    "action":{
+      "type":"string",
+      "title":"Action",
+      "enum":[
+        "create",
+        "update",
+        "delete"
+      ],
+      "enumNames":[
+        "Create",
+        "Update",
+        "Delete"
+      ]
+    },
+    "registryPath":{
+      "type":"string",
+      "title":"Registry path"
+    },
+    "force":{
+      "type":"boolean",
+      "title":"Force"
+    }
+  },
+  "required":[
+    "action",
+    "registryPath"
+  ],
+  "patternProperties":{
+    "^name$":{
+
+    },
+    "^value$":{
+
+    },
+    "^type$":{
+
+    }
+  },
+  "additionalProperties":false,
+  "dependencies":{
+    "action":{
+      "oneOf":[
+        {
+          "properties":{
+            "action":{
+              "enum":[
+                "create"
+              ]
+            },
+            "name":{
+              "type":"string",
+              "title":"Name"
+            },
+            "value":{
+              "type":"string",
+              "title":"Value",
+              "default":""
+            },
+            "type":{
+              "type":"string",
+              "title":"Type",
+              "enum":[
+                "QWord",
+                "DWord",
+                "String",
+                "Binary"
+              ],
+              "enumNames":[
+                "QWORD",
+                "DWORD",
+                "String value",
+                "Binary value"
+              ]
+            }
+          },
+          "required":[
+            "name",
+            "type"
+          ]
+        },
+        {
+          "properties":{
+            "action":{
+              "enum":[
+                "update"
+              ]
+            },
+            "name":{
+              "type":"string",
+              "title":"Name"
+            },
+            "value":{
+              "type":"string",
+              "title":"Value",
+              "default":""
+            }
+          },
+          "required":[
+            "name"
+          ]
+        },
+        {
+          "properties":{
+            "action":{
+              "enum":[
+                "delete"
+              ]
+            },
+            "name":{
+              "type":"string",
+              "title":"Name"
+            }
+          },
+          "required":[
+            "name"
+          ]
+        }
+      ]
+    }
+  }
+},
+  "uiSchema": {
+    "registryPath":{
+      "ui:autofocus":true,
+      "classNames":"col-sm-6"
+    },
+    "action":{
+      "classNames":"col-sm-6",
+      "ui:placeholder":"Select action"
+    },
+    "name":{
+      "classNames":"col-sm-6"
+    },
+    "value":{
+      "classNames":"col-sm-6"
+    },
+    "type":{
+      "classNames":"col-sm-6 col-sm-offset-right-6",
+      "ui:placeholder":"Select type"
+    },
+    "force":{
+      "classNames":"col-sm-12"
+    },
+    "ui:order":[
+      "action",
+      "registryPath",
+      "type",
+      "name",
+      "value",
+      "force"
+    ]
+  }
+}

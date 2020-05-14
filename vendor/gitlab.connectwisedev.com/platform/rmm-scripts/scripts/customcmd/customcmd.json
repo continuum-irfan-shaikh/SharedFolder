@@ -1,0 +1,59 @@
+{
+  "id": "e3d2c26b-c5ba-49cf-a089-7637f6de949e",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Root"
+  ],
+  "description": "Runs cmd commands (old MS-DOS for 16-bit version) as a .cmd file on the Windows devices",
+  "engine": "cmd",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "Command Prompt (CMD) Script",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "string",
+        "title": "Command Prompt Script"
+      },
+      "expectedExecutionTimeSec": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 10000,
+        "title": "Expected time of script execution in seconds",
+        "default": 300
+      }
+    },
+    "required": [
+      "body",
+      "expectedExecutionTimeSec"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "body": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true,
+      "ui:help": "Warning: Run only commands that you trust. It is recommended to do the first launch of the cmd commands on one test device, and if successful, repeat this for the rest of the devices.",
+      "ui:widget": "textarea",
+      "ui:options": {
+        "rows": 15
+      }
+    },
+    "expectedExecutionTimeSec": {
+      "classNames": "col-sm-6",
+      "ui:widget": "updown",
+      "minToSec": true,
+      "ui:help": "Expected time of script execution in seconds"
+    }
+  }
+}

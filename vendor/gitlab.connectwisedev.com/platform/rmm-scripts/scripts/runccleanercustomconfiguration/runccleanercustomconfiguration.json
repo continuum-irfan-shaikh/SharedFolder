@@ -1,0 +1,47 @@
+{
+  "id": "ee27d2be-4a4c-11e9-afc3-00155d130b01",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Adds custom configurations to .INI file",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Excecution success",
+  "internal": false,
+  "name": "Run CCleaner (custom configuration)",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "IyRjdXN0b21jb25maWd1cmF0aW9uCgpGdW5jdGlvbiBFeGVjdXRlX3Byb2Nlc3MoJHBhdGgsICRiaXQpIHsKICAgICRwaW5mbyA9IE5ldy1PYmplY3QgU3lzdGVtLkRpYWdub3N0aWNzLlByb2Nlc3NTdGFydEluZm8KICAgIGlmICgkYml0IC1lcSAzMiAtYW5kICh0ZXN0LXBhdGggIiRwYXRoXENDbGVhbmVyLmV4ZSIpKSB7CiAgICAgICAgJHBpbmZvLkZpbGVOYW1lID0gIiRwYXRoXENDbGVhbmVyLmV4ZSIKICAgIH0KICAgIGVsc2VpZiAoJGJpdCAtZXEgNjQgLWFuZCAodGVzdC1wYXRoICIkcGF0aFxDQ2xlYW5lcjY0LmV4ZSIpKSB7CiAgICAgICAgJHBpbmZvLkZpbGVOYW1lID0gIiRwYXRoXENDbGVhbmVyNjQuZXhlIgogICAgfQogICAgZWxzZSB7CiAgICAgICAgcmV0dXJuIC0xCiAgICB9CiAgICAkcGluZm8uUmVkaXJlY3RTdGFuZGFyZEVycm9yID0gJHRydWUKICAgICRwaW5mby5SZWRpcmVjdFN0YW5kYXJkT3V0cHV0ID0gJHRydWUKICAgICRwaW5mby5Vc2VTaGVsbEV4ZWN1dGUgPSAkZmFsc2UKICAgICRwaW5mby5Bcmd1bWVudHMgPSAnL2NsZWFuICJsb2cudHh0IicKICAgICRwID0gTmV3LU9iamVjdCBTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwogICAgJHAuU3RhcnRJbmZvID0gJHBpbmZvCiAgICAkcC5TdGFydCgpIHwgT3V0LU51bGwKICAgICRwLldhaXRGb3JFeGl0KCkKICAgIHJldHVybiAkcC5FeGl0Q29kZQp9CmZ1bmN0aW9uIENyZWF0ZV9JTkkoJHBhdGgpIHsKICAgIGlmICgoVGVzdC1wYXRoICIkcGF0aFxDQ2xlYW5lci5pbmkiKSAtZXEgJGZhbHNlKSB7CiAgICAgICAgTmV3LUl0ZW0gLVBhdGggJHBhdGggLU5hbWUgIkNDbGVhbmVyLmluaSIgLUl0ZW1UeXBlICJGaWxlIiB8IE91dC1OdWxsCiAgICAgICAgU2V0LUNvbnRlbnQgLXBhdGggIiRwYXRoXENDbGVhbmVyLmluaSIgLVZhbHVlICRjdXN0b21jb25maWd1cmF0aW9uIC1Gb3JjZQogICAgfQp9CgppZiAoKFRlc3QtcGF0aCAiQzpcUHJvZ3JhbSBGaWxlc1xDQ2xlYW5lciIpIC1vciAoVGVzdC1QYXRoICJDOlxQcm9ncmFtIEZpbGVzICh4ODYpXENDbGVhbmVyIikpIHsKICAgIFdyaXRlLU91dHB1dCAiQ0NsZWFuZXIgZXhlY3V0aW9uIGlzIHN0YXJ0ZWQsIGl0IG1heSB0YWtlIHRpbWUgdG8gY29tcGxldGUgdGhlIGV4ZWN1dGlvbiIKICAgICRvc2FyY2hpdGVjdHVyZSA9IChnZXQtd21pb2JqZWN0IC1DbGFzcyB3aW4zMl9vcGVyYXRpbmdzeXN0ZW0pLk9zYXJjaGl0ZWN0dXJlCiAgICBpZiAoJG9zYXJjaGl0ZWN0dXJlIC1lcSAiMzItYml0IikgewogICAgICAgICRwYXRoID0gSm9pbi1QYXRoICJDOlxQcm9ncmFtIEZpbGVzIiAiQ2NsZWFuZXIiCiAgICAgICAgQ3JlYXRlX0lOSSAtcGF0aCAkcGF0aAogICAgICAgIGlmICh0ZXN0LXBhdGggJHBhdGgpIHsKICAgICAgICAgICAgJHN1Y2Nlc3MgPSBFeGVjdXRlX3Byb2Nlc3MgLXBhdGggJHBhdGggLWJpdCAzMgogICAgICAgIH0KICAgIH0KCiAgICBlbHNlaWYgKCRvc2FyY2hpdGVjdHVyZSAtZXEgIjY0LWJpdCIpCiAgICB7CiAgICAgICAgJHBhdGgzMiA9IEpvaW4tUGF0aCAiQzpcUHJvZ3JhbSBGaWxlcyAoeDg2KSIgIkNjbGVhbmVyIgogICAgICAgICRwYXRoNjQgPSBKb2luLVBhdGggIkM6XFByb2dyYW0gRmlsZXMiICJDY2xlYW5lciIKICAgICAgICBpZiAoVGVzdC1QYXRoICRwYXRoNjQpIHsKICAgICAgICAgICAgQ3JlYXRlX0lOSSAtcGF0aCAkcGF0aDY0CiAgICAgICAgICAgICRzdWNjZXNzID0gRXhlY3V0ZV9wcm9jZXNzIC1wYXRoICRwYXRoNjQgLWJpdCA2NAogICAgICAgIH0gCiAgICAgICAgZWxzZWlmIChUZXN0LVBhdGggJHBhdGgzMikgewogICAgICAgICAgICBDcmVhdGVfSU5JIC1wYXRoICRwYXRoMzIKICAgICAgICAgICAgJHN1Y2Nlc3MgPSBFeGVjdXRlX3Byb2Nlc3MgLXBhdGggJHBhdGgzMiAtYml0IDMyCiAgICAgICAgfQogICAgfQogICAgaWYgKCRzdWNjZXNzIC1lcSAwKSB7CiAgICAgICAgV3JpdGUtT3V0cHV0ICJDQ2xlYW5lciBwcm9jZXNzIGV4ZWN1dGVkIHN1Y2Nlc3NmdWxseSIKICAgIH0KICAgIGVsc2VpZiAoJHN1Y2Nlc3MgLWVxIC0xKSB7CiAgICAgICAgV3JpdGUtRXJyb3IgIkNDbGVhbmVyLmV4ZSBmaWxlIGlzIG1pc3NpbmcgZnJvbSBDOlxQcm9ncmFtIGZpbGVzXENDbGVhbmVyIgogICAgfQogICAgZWxzZSB7CiAgICAgICAgV3JpdGUtRXJyb3IgIkFjdGlvbiBDb3VsZCBub3QgYmUgY29tcGxldGVkIgogICAgfQp9CkVsc2UgewogICAgV3JpdGUtT3V0cHV0ICJDQ2xlYW5lciBpcyBub3QgaW5zdGFsbGVkIG9uIHRoaXMgc3lzdGVtIgogICAgZXhpdAp9Cg==",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "customconfiguration": {
+        "type": "string",
+        "title": "Enter custom configurations"
+      }
+    },
+    "required": [
+      "customconfiguration"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "customconfiguration": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true,
+      "ui:help": "Input ccleaner custom configurations (INI file entries)",
+      "ui:widget": "textarea",
+      "ui:options": {
+        "rows": 15
+      }
+    }
+  },
+  "isHDScript": false
+}
+

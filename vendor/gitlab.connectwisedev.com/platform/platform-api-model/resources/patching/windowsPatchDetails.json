@@ -1,0 +1,87 @@
+{
+  "name": "Windows Patch Details",
+  "type": "resource",
+  "version": "1.0",
+  "attributes": [
+    {
+      "name": "isInstalled",
+      "type": "boolean",
+      "description": "Indicates whether this patch is installed"
+    },
+    {
+      "name": "isDownloaded",
+      "type": "boolean",
+      "description": "Indicates whether all the update content is cached on the computer"
+    },
+    {
+      "name": "isUninstallable",
+      "type": "boolean",
+      "description": "Indicates whether a patch can be uninstalled"
+    },
+    {
+      "name": "rebootBehavior",
+      "type": "string",
+      "description": "Reboot behavior of the patch (alwaysRequiresReboot, canRequestReboot, neverReboots)"
+    },
+    {
+      "name": "pendingReboot",
+      "type": "boolean",
+      "description": "If this patch pends a reboot"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Localized title of the update"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Localized description of the update"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Type of the update (software or driver)"
+    },
+    {
+      "name": "kbArticleIDs",
+      "type": "string[]",
+      "description": "List of KB numbers"
+    },
+    {
+      "name": "updateID",
+      "type": "[16]byte",
+      "description": "Update UUID"
+    },
+    {
+      "name": "categories",
+      "type": "[]string",
+      "description": "List of categories (like type, platform, etc.)"
+    },
+    {
+      "name": "categoryIDs",
+      "type": "[][16]byte",
+      "description": "List of categories IDs"
+    },
+    {
+      "name": "revisionNumber",
+      "type": "int",
+      "description": "Revision number"
+    },
+    {
+      "name": "lastDeploymentChangeTime",
+      "type": "Time",
+      "description": "Last published date of the update (UTC)"
+    },
+    {
+      "name": "msrcSeverity",
+      "type": "string",
+      "description": "Microsoft Security Response Center severity rating of the update"
+    },
+    {
+      "name": "supportUrl",
+      "type": "string",
+      "description": "Hyperlink to the language-specific support information"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+package: gitlab.connectwisedev.com/platform/Platform-Infrastructure-lib
+import: 
+# Kafka Dependencies Start
+- package: github.com/Shopify/sarama
+  version: 35324cf48e33d8260e1c7c18854465a904ade249
+#  repo: https://github.com/ContinuumLLC/godep-shopify-sarama
+- package: github.com/bsm/sarama-cluster
+  version: d5779253526cc8a3129a0e5d7cc429f4b4473ab4
+#  repo: https://github.com/ContinuumLLC/godep-bsm-sarama-cluster
+- package: github.com/eapache/go-resiliency
+  version: ea41b0fad31007accc7f806884dcdf3da98b79ce
+ # repo: https://github.com/ContinuumLLC/godep-eapache-go-resiliency
+  subpackages:
+  - breaker
+- package: github.com/golang/snappy
+  version: 2e65f85255dbc3072edf28d6b5b8efc472979f5a
+#  repo: https://github.com/ContinuumLLC/godep-golang-snappy
+- package: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+#  repo: https://github.com/ContinuumLLC/godep-davecgh-go-spew
+  subpackages:
+  - spew
+- package: github.com/eapache/go-xerial-snappy
+  version: 776d5712da21bc4762676d614db1d8a64f4238b0
+#  repo: https://github.com/ContinuumLLC/godep-eapache-go-xerial-snappy
+- package: github.com/eapache/queue
+  version: 093482f3f8ce946c05bcba64badd2c82369e084d
+#  repo: https://github.com/ContinuumLLC/godep-eapache-queue
+- package: github.com/klauspost/crc32
+  version: 22a7f3e6e2308cfd5c10b0512d2bba0a5a7875b2
+#  repo: https://github.com/ContinuumLLC/godep-klauspost-crc32
+- package: github.com/pierrec/lz4
+  version: 623b5a2f4d2a41e411730dcdfbfdaeb5c0c4564e
+#  repo: https://github.com/ContinuumLLC/godep-pierrec-lz4
+- package: github.com/pierrec/xxHash
+  version: be086f0f67405de2fac6bc563bf8d0f22fa2a6b2
+#  repo: https://github.com/ContinuumLLC/godep-pierrec-xxHash
+  subpackages:
+  - xxHash32
+- package: github.com/rcrowley/go-metrics
+  version: 3113b8401b8a98917cde58f8bbd42a1b1c03b1fd
+#  repo: https://github.com/ContinuumLLC/godep-rcrowley-go-metrics
+# Kafka Dependencies End
+- package: github.com/lkumarjain/work
+  version: 571e26db7ad28f7672604ef9bc081095cd3f4676
+#Command line parameter parsing
+- package: gopkg.in/urfave/cli.v1
+  version: e6cf83ec39f6e1158ced1927d4ed14578fda8edb
+# Cassandra Dependencies Start
+- package: github.com/gocql/gocql
+  version: 56a164ee9f3135e9cfe725a6d25939f24cb2d044
+- package: github.com/scylladb/gocqlx
+  version: 5526e6046474cc92ad405b58d490d1caf9aaa8f4
+- package: github.com/cheekybits/genny
+  version: 9127e812e1e9e501ce899a18121d316ecb52e4ba
+- package: github.com/OneOfOne/xxhash
+# Cassandra Dependencies End
+- package: gitlab.connectwisedev.com/platform/platform-common-lib
+  repo: git@gitlab.connectwisedev.com:platform/platform-common-lib.git
+- package: gitlab.connectwisedev.com/platform/platform-api-model
+  subpackages:
+  - clients/model/Golang/resourceModel/entitlement
+  - clients/model/Golang/resourceModel/healthCheck
+  - clients/model/Golang/resourceModel/tasking
+  - clients/model/Golang/resourceModel/version
+  - clients/model/Golang/resourceModel/errorCodePair
+  repo: git@gitlab.connectwisedev.com:platform/platform-api-model.git
+# Circuit breaker
+- package: github.com/afex/hystrix-go
+  version: 4f7f0a216ae56fb0ef5f800521762de684b5598f
+  repo: https://github.com/ContinuumLLC/hystrix-go
+#Elasticsearch Dependencies
+- package: github.com/olivere/elastic
+  version: d00d2ad2f98b5bedbc8da0821338bf8b2c1b695a
+- package: github.com/stretchr/testify
+  version: 221dbe5ed46703ee255b1da0dec05086f5035f62

@@ -1,0 +1,44 @@
+{
+  "id": "d98e99d4-eef1-404b-97c8-d556af39b694",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "HD Automation"
+  ],
+  "description": "This script will delete print job of a printer gracefully",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Gracefully Clear Print Job of a Printer Successful",
+  "internal": false,
+  "name": "HD Clear Print Job of a printer Graceful",
+  "tags": [
+    "Windows 7",
+    "Windows 2008 R2"
+  ],
+  "sequence": true,
+  "content": "I0RldmVsb3BlZCBCeSA6ICBHUlQgLCBDb250aW51dW0KI0ZpbGUgVmVzaW9uICA6ICAxLjAKdHJ5ewogICAgJE91dHB1dE1TRyA9IEAoKQogICAgJFByaW50ZXJJbmZvID0gR2V0LVdtaU9iamVjdCAtQ2xhc3MgV2luMzJfcHJpbnRlciAgLW5hbWVzcGFjZSAicm9vdFxDSU1WMiIgLWZpbHRlciAibmFtZT0nJFByaW50ZXJOYW1lJyIKICAgIElmKCRQcmludGVySW5mbykKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgICRQcmludGVySW5mbyB8IEZvcmVhY2h7JF8uQ2FuY2VsQWxsSm9icygpfSB8IG91dC1udWxsCiAgICAgICAgICAgICRQcmludFF1ZXVlU3RhdHVzID0gR2V0LVdNSU9iamVjdCBXaW4zMl9QZXJmRm9ybWF0dGVkRGF0YV9TcG9vbGVyX1ByaW50UXVldWUgLWZpbHRlciAibmFtZT0nJFByaW50ZXJOYW1lJyIgfCAgU2VsZWN0IE5hbWUsIEB7RXhwcmVzc2lvbj17JF8uam9ic307TGFiZWw9IkN1cnJlbnRKb2JzIn0sIEpvYkVycm9ycwogICAgICAgICAgICAkT3V0cHV0TVNHICs9ICRQcmludFF1ZXVlU3RhdHVzIHxmdAogICAgICAgIH0KICAgICAgICBDYXRjaAogICAgICAgIHsKICAgICAgICAgICAgJE91dHB1dE1TRyArPSAiRmFpbGVkIHRvIGNhbmNlbCBwcmludCBqb2JzIHN0dWNrIGluIHRoZSBwcmludCBxdWV1ZS5QbGVhc2UgdHJ5IEZvcmNlIGRlbGV0aW9uIG9mIFByaW50IEpvYiIKICAgICAgICB9CiAgICB9CiAgICBFbHNlCiAgICB7CiAgICAgICAgJE91dHB1dE1TRyArPSAiQ2Fubm90IGZpbmQgYW55IHByaW50ZXIgbmFtZSA6ICAkUHJpbnRlck5hbWUgLiBQbGVhc2UgY2hlY2sgZnJvbSB0aGUgYmVsb3cgbGlzdCIKICAgICAgICAkUHJpbnRRdWV1ZVN0YXR1cyA9IEdldC1XTUlPYmplY3QgV2luMzJfUGVyZkZvcm1hdHRlZERhdGFfU3Bvb2xlcl9QcmludFF1ZXVlIHwgIFNlbGVjdCBOYW1lLCBAe0V4cHJlc3Npb249eyRfLmpvYnN9O0xhYmVsPSJDdXJyZW50Sm9icyJ9LCBKb2JFcnJvcnMKICAgICAgICAkT3V0cHV0TVNHICs9ICRQcmludFF1ZXVlU3RhdHVzCiAgICB9CiAgICBXcml0ZS1PdXRwdXQgJE91dHB1dE1TRwp9Y2F0Y2h7IFdyaXRlLU91dHB1dCAiRVJST1Igd2hpbGUgZGVsZXRpbmcgcHJpbnQgam9iIG9mIGEgcHJpbnRlciAkXy5leGNlcHRpb24ubWVzc2FnZSIgfQ==",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "PrinterName": {
+        "type": "string",
+        "title": "Printer name",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "PrinterName"
+    ]
+  },
+  "uiSchema": {
+    "PrinterName": {
+      "ui:autofocus": true,
+      "classNames": "col-sm-12"
+    },
+    "ui:order": [
+      "PrinterName"
+    ]
+  },
+  "isHDScript": true
+}

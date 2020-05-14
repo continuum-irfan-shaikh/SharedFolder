@@ -1,0 +1,13 @@
+{ "name": "itsm-integration",
+  "type":  "domain",
+  "version": "2.0",
+  "applicableEntities": [
+    { "name": "incident", "type": "resource", "version": "2.0"},
+    { "name": "knowledgeArticle", "type": "resource", "version": "2.0"},
+    { "name": "notificationTemplate", "type":"resource", "version": "2.0"},
+    { "name": "scheduledAction", "type":"resource", "version": "2.0"},
+    { "name": "serviceCatalog", "type":"resource", "version": "2.0"},
+    { "name": "userInfo", "type":"resource", "version": "2.0"},
+    { "name": "journalNote", "type":"resource", "version": "2.0"}
+  ]
+}

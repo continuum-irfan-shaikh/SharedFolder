@@ -1,0 +1,28 @@
+{
+    "ResType":103,
+    "ResDescription":"Client response for cdc",
+    "EventOriginatedAt":"2018-12-13T03:22:53.873Z",
+    "Data":{
+       "Client_Address":"4500 Biscayne Boulevard",
+       "Client_Address2":"Suite 360",
+       "Client_CallerGreeting":null,
+       "Client_City":"MIAMI",
+       "Client_Code":"DR",
+       "Client_Country":"US",
+       "Client_CreatedDate":"2008-04-15T10:11:20Z",
+       "Client_DisabledOn":null,
+       "Client_Id":22508,
+       "Client_Name":"Rediant",
+       "Client_PostalCode":"33137",
+       "Client_PrimaryPhoneNo":"",
+       "Client_Proxy":false,
+       "Client_Proxy_UserName":"",
+       "Client_State":"FL",
+       "Client_Status":true,
+       "Client_Timezone":"EST",
+       "Operation":4,
+       "Partner_Id":2049,
+       "Status":0,
+       "TimeStamp":"2018-12-13T03:22:53.873Z"
+    }
+ }

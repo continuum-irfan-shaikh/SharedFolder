@@ -1,0 +1,17 @@
+{
+  "name": "profile",
+  "type":  "resource",
+  "version": "2.0",
+    "attributes": [
+      { "name": "id", "type": "gocql.UUID" },
+      { "name": "description", "type": "string" },
+      { "name": "tag", "type": "string" },
+      { "name": "targets", "type": "extendedEndpointID[]" },
+      { "name": "condition", "type": "string" },
+      { "name": "configurations", "type": "delta[]" },
+      { "name": "createdTime", "type": "time.Time" },
+      { "name": "createdBy" , "type": "string" },
+      { "name": "modifiedTime", "type": "time.Time" },
+      { "name": "modifiedBy", "type": "string" }
+   ]
+}

@@ -1,0 +1,32 @@
+{
+  "ResType": 5001,
+  "ResDescription": "Ticket change data",
+  "OperationType": 1,
+  "Data": {
+    "NOCID": 201809110000002,
+    "NOCType": "Ticket",
+    "PartnerID": 123,
+    "ClientID": 234,
+    "SiteID": 345,
+    "IncidentStatus": "New",
+    "LegacyStatus": "New",
+    "AssignedTo": "",
+    "Title": "",
+    "Description": "",
+    "Source": "Phone",
+    "PSATicketID": "",
+    "PSAType": "",
+    "Priority": "3",
+    "IncidentType": "",
+    "ServiceCatalog": "",
+    "CreatedBy": "alpha",
+    "CreatedOn": "",
+    "UpdatedOn": "",
+    "IncidentID": "CH12345",
+    "Origin": "CHERWELL",
+    "ResourceID": 0,
+    "ConditionID":0,
+    "PartnerCode":"",
+    "SiteCode":""
+  }
+}

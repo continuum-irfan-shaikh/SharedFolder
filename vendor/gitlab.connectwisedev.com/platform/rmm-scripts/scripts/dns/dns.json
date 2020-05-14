@@ -1,0 +1,23 @@
+{
+  "id": "9a8297e2-792e-4599-8be6-ab5d5868eaa8",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Scan and return the current DNS configuration across RMM Desktop and Server Agents",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The Domain Name System (DNS) info was obtained",
+  "internal": false,
+  "name": "Retrieve DNS information",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGRuc1NlcnZlcnMgPSBHZXQtV21pT2JqZWN0IFdpbjMyX05ldHdvcmtBZGFwdGVyQ29uZmlndXJhdGlvbiB8ICUgeyAkXy5ETlNTZXJ2ZXJTZWFyY2hPcmRlciB9CndyaXRlLW91dHB1dCAkZG5zU2VydmVycyB8IHNlbGVjdCBAe049IkROUyBTZXJ2ZXJzIjtFPXskX319Cgo=",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

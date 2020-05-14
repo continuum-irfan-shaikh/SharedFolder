@@ -1,0 +1,2026 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Tasking API
+schemes:
+  - http
+host: localhost:12121
+basePath: /tasking
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+
+  /health:
+    get:
+      description: Retrieve health status of a Tasking MS
+      responses:
+        200:
+          description: Successfully made health check
+          schema:
+            $ref: '#/definitions/Health'
+
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /version:
+    get:
+      description: Retrieve version status of Tasking MS
+      responses:
+        200:
+          description: Successfully retreived version
+          schema:
+            $ref: '#/definitions/Version'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/triggers:
+    put:
+      description: Uploads lists of trigger definition from remote repositiry
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: triggers-pack-file
+          type: file
+          description: File must be in zip format.
+      responses:
+        200:
+          description: Successfully uploaded triggers to DB.
+        400:
+          description: Cannot decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/count:
+    get:
+      description: Retrieve Task count for all Targets for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved Task count for all Targets for specific partner
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskCount'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/managed-endpoints/{managedEndpointId}/count:
+    get:
+      description: Retrieve Task count for specific Target and Partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved Task count for specific partner and target
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskCount'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+
+  /v1/partners/{partnerId}/tasks:
+    post:
+      description: Create a new task
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/Task'
+        - $ref: '#/parameters/Uid'
+      responses:
+        201:
+          description: Task successfully submitted
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        403:
+          description: Access denied. Partner is not authorized due to ACL on resource
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Template is not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/data:
+    get:
+      description: Get tasking summary data
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved tasks summary data
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TasksSummaryData'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/data/recent:
+    get:
+      description: Get tasking summary data
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/From'
+        - $ref: '#/parameters/To'
+        - $ref: '#/parameters/IsScheduled'
+      responses:
+        200:
+          description: Successfully retrieved tasks summary data for last 48 hours
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskDetailsWithStatuses'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/data/script/{originId}:
+    get:
+      description: Get tasking data by originID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/OriginId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved tasks summary data for last 48 hours
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskDetailsWithStatuses'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/postpone:
+    put:
+      description: Postponing whole task by postponed time
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/Postpone'
+      responses:
+        200:
+          description: Successfully postponed task
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Bad taskID/deviceID/postponeTime format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task by TaskID was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/managed-endpoints/{managedEndpointId}/postpone:
+    put:
+      description: Postponing task for device by postponed time
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/Postpone'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully postponed task for device
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Bad taskID/deviceID/postponeTime format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task or TaskInstance by TaskID and device ID was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/cancel:
+    put:
+      description: Cancel nearest task execution for all managed endpoints.
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully canceled task's nearest execution
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Bad taskID format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task by TaskID was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/managed-endpoint/{managedEndpointId}/cancel:
+    put:
+      description: Cancel task's nearest execution for one device
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully canceled task's nearest execution
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Bad taskID or managedEnpointID format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task by TaskID was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+
+  /v1/partners/{partnerId}/tasks/{taskId}/data:
+    get:
+      description: Get the details of Task execution on managed endpoints
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved details of Task execution on managed endpoints
+          schema:
+            $ref: '#/definitions/SubRecent'
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Can't find Task
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/management/partners/{partnerId}/tasks/{taskId}:
+    delete:
+      description: Delete specific Task for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        204:
+          description: Task was successfully deleted
+        400:
+          description: Task ID has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}:
+    get:
+      description: Retrieve a Task by taskId for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved a Task by taskId for specific partner
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Task ID has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      description: Edit specific task for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/Uid'
+      responses:
+        200:
+          description: Task was successfully edited
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        403:
+          description: Access denied. Partner is not authorized due to ACL on resource
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Template or Task was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/enable:
+    put:
+      description: Enable or disable task for all targets
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/AllTargetsEnable'
+      responses:
+        200:
+          description: Task enabled/disabled successfully
+        400:
+          description: Can't decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task with ID (UUID=%s) not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/enable/targets:
+    put:
+      description: Enable or disable task for selected targets
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/SelectedTargetsEnable'
+      responses:
+        200:
+          description: Task enabled/disabled successfully
+        400:
+          description: Can't decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task with ID (UUID=%s) not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/task-instances/stop:
+    put:
+      description: Stops future executions for task instances on managed endpoints with scheduled or pending status
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/InstanceIDs'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Future executions by instanceIDs on managed endpoints with scheduled or pending status are stopped
+        400:
+          description: Can't decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/managed-endpoints/{managedEndpointId}:
+    get:
+      description: Retrieve the list of Tasks by targetId for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of Tasks by targetId for specific partner
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Task'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks-definition-templates:
+    get:
+      description: Retrieve the list of TasksDefinitionTemplates by partner ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of TasksDefinitionTemplates by partner ID
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TasksDefinitionTemplateDetails'
+        500:
+          description: Internal server errorx
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/partners/{partnerId}/tasks-definition-templates/{type}:
+    get:
+      description: Retrieve the list of partnerID specific TasksDefinitionTemplates by type
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TemplateType'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of partnerID specific TasksDefinitionTemplates by type
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TasksDefinitionTemplateDetails'
+        400:
+          description: type is invalid
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/partners/{partnerId}/tasks-definition-templates/{type}/{originId}:
+    get:
+      description: Retrieve partnerID specific TasksDefinitionTemplate by originID and type
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TemplateType'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/OriginId'
+      responses:
+        200:
+          description: Successfully retrieved partnerID specific TasksDefinitionTemplate by type and originID
+          schema:
+            $ref: '#/definitions/TasksDefinitionTemplateDetails'
+        400:
+          description: OriginID is invalid
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Couldn't find TasksDefinitionTemplate by OriginID
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+  /v1/partners/{partnerId}/task-execution-results/managed-endpoints/{managedEndpointId}/task-instances/{taskInstanceId}/logs/stdout:
+    get:
+      description: Returns stdout logs after task execution
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/TaskInstanceId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved stdout logs after task execution
+          schema:
+            type: string
+        400:
+          description: Managed endpoint ID or task instance ID has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-execution-results/managed-endpoints/{managedEndpointId}/task-instances/{taskInstanceId}/logs/stderr:
+    get:
+      description: Returns stderr logs after task execution
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/TaskInstanceId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved logs after task execution
+          schema:
+            type: string
+        400:
+          description: Managed endpoint ID or task instance ID has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-execution-results/managed-endpoints/{managedEndpointId}:
+    get:
+      description: Retrieve the list of ExecutionResult by partner ID and Managed Endpoint ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/Count'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of ExecutionResult by managedEndpointId for specific partner
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ExecutionResultView'
+        400:
+          description: Can't decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-execution-results/tasks/{taskId}/managed-endpoints/{managedEndpointId}/history:
+    get:
+      description: Retrieve the list of ExecutionResult by partner ID, task ID and endpoint ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/ManagedEndpointId'
+        - $ref: '#/parameters/Count'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of ExecutionResult by taskID for specific partner
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ExecutionResultView'
+        400:
+          description: Can't decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: No task found with taskId
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-execution-results/task-instances/{taskInstanceId}:
+    post:
+      description: Updates task and taskInstance statuses according to the recieved execution result
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/ExecutionResults'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/TaskInstanceId'
+      responses:
+        201:
+          description: Statuses updated
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-definitions:
+    get:
+      description: Retrieve the list of TasksDefinitions by partner ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved the list of TasksDefinitions by partner ID
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskDefinitionDetails'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      description: Save new Task Definition Details
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskDefReq'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/Uid'
+      responses:
+        201:
+          description: Task Definition successfully saved
+          schema:
+            $ref: '#/definitions/TaskDefinitionDetails'
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/task-definitions/{definitionId}:
+    get:
+      description: Retrieve Task Definition Details by ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/DefinitionId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved Task Definition Details by ID
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TaskDefinitionDetails'
+        400:
+          description: Bad request, can't parse definition ID
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task Definition not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      description: Delete Task Definition Details by ID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/DefinitionId'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/Uid'
+      responses:
+        204:
+          description: Successfully removed Task Definition Details by ID
+        400:
+          description: Bad request, can't parse definition ID
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task Definition not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      description: UpdateTask Definition Details
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/DefinitionId'
+        - $ref: '#/parameters/TaskDefReq'
+        - $ref: '#/parameters/AcceptLanguage'
+        - $ref: '#/parameters/Uid'
+      responses:
+        201:
+          description: Task Definition successfully updated
+          schema:
+            $ref: '#/definitions/TaskDefinitionDetails'
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task Definition not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/task-instances/count:
+    get:
+      description: Get task-instances counters for taskID
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        200:
+          description: Successfully retrieved Task Instance counters by Task ID
+          schema:
+            $ref: '#/definitions/TaskInstancesCount'
+        400:
+          description: Task ID  has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/{taskId}/task-instances/{taskInstanceId}:
+    delete:
+      description: Delete specific task instance and its results for specific partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskId'
+        - $ref: '#/parameters/TaskInstanceId'
+        - $ref: '#/parameters/AcceptLanguage'
+      responses:
+        204:
+          description: Executions were successfully deleted
+        400:
+          description: Task ID or Task Instance ID has bad format
+          schema:
+            $ref: '#/definitions/Error'
+        403:
+          description: Client is an authenticated user but is not authorized to delete executions
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Task with such task instance was not found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/data/closest:
+    post:
+      description: Get last executed and next scheduled Tasks for every endpoint of partner
+      parameters:
+        - $ref: '#/parameters/EndpointIDs'
+        - $ref: '#/parameters/PartnerId'
+      responses:
+        200:
+          description: Successfully retrieved closest tasks
+          schema:
+            $ref: '#/definitions/EndpointClosestTasks'
+        400:
+          description: Bad requesr
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/tasks/data/scheduled:
+    get:
+      description: Get all scheduled tasks with last execution, failed and sucess info of a partner
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+      responses:
+        200:
+          description: Successfully retrieved scheduled tasks
+          schema:
+            $ref: '#/definitions/ScheduledTasks'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: No partner or user were given
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      description: Inactivates requested tasks
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/TaskIDs'
+      responses:
+        204:
+          description: Successfully deleted tasks
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: No partnerID were given
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+  /v1/partners/{partnerId}/clients/{clientId}/sites/{siteId}/endpoints/{endpointId}/triggers/{triggerType}/execute-trigger:
+    post:
+      description: Executes trigger of a given type for a given endpoint
+      parameters:
+        - $ref: '#/parameters/PartnerId'
+        - $ref: '#/parameters/EndpointId'
+        - $ref: '#/parameters/ClientId'
+        - $ref: '#/parameters/SiteId'
+        - $ref: '#/parameters/TriggerType'
+        - $ref: '#/parameters/TriggerExecutionPayload'
+      responses:
+        201:
+          description: Trigger executed
+        400:
+          description: Can not decode input data
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/Error'
+
+definitions:
+  TasksSummaryData:
+    type: object
+    properties:
+      name:
+        type: string
+      taskID:
+        type: string
+      type:
+        type: string
+        enum: [TASK]
+      runOn:
+        type: object
+        properties:
+          count:
+            type: integer
+      regularity:
+        type: string
+        enum: [RunNow, OneTime, Recurrent, Trigger]
+      initiatedBy:
+        type: string
+      lastRunTime:
+        type: integer
+        format: long
+      createdAt:
+        type: integer
+        format: long
+      status:
+        type: string
+        enum: [Active, Inactive, Disabled]
+      modifiedAt:
+        type: integer
+        format: long
+      modifiedBy:
+        type: string
+      nearestNextRunTime:
+        type: integer
+        format: long
+      triggerTypes:
+        type: array
+        items:
+          type: string
+
+  TaskDetailsWithStatuses:
+    type: object
+    properties:
+      Task:
+        $ref: '#/definitions/Task'
+      TaskInstance:
+        $ref: '#/definitions/TaskInstance'
+      Statuses:
+        type: object
+        additionalProperties:
+          type: string
+      OverallStatus:
+        type: string
+        enum: [Running, Success, Failed, Scheduled, Disabled, Some Failures]
+      CanBePostponed:
+        type: boolean
+      CanBeCanceled:
+        type: boolean
+
+  TaskInstancesCount:
+    type: object
+    properties:
+      instancesCount:
+        type: integer
+
+  TaskInstance:
+    type: object
+    properties:
+      id:
+        type: string
+        format: UUID
+      partnerID:
+        type: string
+      taskID:
+        type: string
+        format: UUID
+      originID:
+        type: string
+        format: UUID
+      startedAt:
+        type: string
+        format: time
+      lastRunTime:
+        type: string
+        format: time
+      statuses:
+        type: object
+        additionalProperties:
+          type: string
+      overallStatus:
+        type: string
+      failureCount:
+        type: integer
+      successCount:
+        type: integer
+      triggeredBy:
+        type: string
+
+  DeviceStatuses:
+    type: object
+    properties:
+      statuses:
+        $ref: '#/definitions/Statuses'
+      deviceCount:
+        type: integer
+
+  Statuses:
+    type: object
+    properties:
+      Success:
+        type: integer
+      Failed:
+        type: integer
+      Running:
+        type: integer
+      Scheduled:
+        type: integer
+      Pending:
+        type: integer
+      Postponed:
+        type: integer
+      Canceled:
+        type: integer
+      Stopped:
+        type: integer
+      Disabled:
+        type: integer
+      Some Failures:
+        type: integer
+
+  SubRecent:
+    type: object
+    properties:
+      taskSummary:
+        type: object
+        properties:
+          name:
+            type: string
+          taskID:
+            type: string
+          type:
+            type: string
+            enum: [TASK]
+          runOn:
+            type: object
+            properties:
+              count:
+                type: integer
+          regularity:
+            type: string
+            enum: [RunNow, OneTime, Recurrent, Trigger]
+          initiatedBy:
+            type: string
+          status:
+            type: string
+            enum: [Active, Inactive, Disabled]
+          lastRunTime:
+            type: integer
+            format: long
+          createdAt:
+            type: string
+            format: dateTime
+          modifiedAt:
+            type: string
+            format: dateTime
+          modifiedBy:
+            type: string
+          nearestNextRunTime:
+            type: string
+            format: dateTime
+          triggerTypes:
+            type: array
+            items:
+              type: string
+      instanceSummary:
+        type: array
+        items:
+          $ref: '#/definitions/TaskInstanceSummary'
+
+  TaskInstanceSummary:
+    type: object
+    properties:
+      taskInstanceID:
+        type: string
+        format: uuid
+      runTime:
+        type: string
+        format: dateTime
+      deviceStatuses:
+        $ref: '#/definitions/DeviceStatuses'
+      targetSummaries:
+        type: array
+        items:
+          $ref: '#/definitions/TargetSummary'
+
+  TargetSummary:
+    type: object
+    properties:
+      internalTaskState:
+        type: string
+        enum: [Active, Inactive, Disabled]
+      endpointID:
+        type: string
+        format: uuid
+      originID:
+        type: string
+        format: uuid
+      runStatus:
+        type: integer
+      statusDetails:
+        type: string
+      output:
+        type: string
+      nextRunTime:
+        type: string
+      lastRunTime:
+        type: string
+      postponedTime:
+        type: string
+      canBePostponed:
+        type: boolean
+      canBeCanceled:
+        type: boolean
+
+  Task:
+    type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+      name:
+        type: string
+      description:
+        type: string
+      resourceType:
+        type: string
+        enum: [Desktop, Server]
+      managedEndpoints:
+        type: array
+        items:
+          $ref: '#/definitions/ManagedEndpoint'
+      targets:
+        $ref: '#/definitions/Target'
+      targetsByType:
+        $ref: '#/definitions/TargetsByType'
+      createdAt:
+        type: string
+        format: dateTime
+      modifiedAt:
+        type: string
+        format: dateTime
+      postponedTime:
+        type: string
+        format: dateTime
+      originalNextRunTime:
+        type: string
+        format: dateTime
+      nextRunTime:
+        type: string
+        format: dateTime
+      createdBy:
+        type: string
+      modifiedBy:
+        type: string
+      partnerId:
+        type: string
+      originId:
+        type: string
+        format: uuid
+      definitionID:
+        type: string
+        format: uuid
+      isRequireNOCAccess:
+        type: boolean
+      state:
+        type: string
+        enum: [Active, Inactive, Disabled]
+      schedule:
+        type: object
+        properties:
+          regularity:
+            type: string
+            enum: [RunNow, OneTime, Recurrent, Trigger]
+            description:
+              When RunNow \'startRunTime\', \'endRunTime\', \'runTime\', \'trigger\' fields should not be specified
+              When OneTime \'runTime\', \'endRunTime\' fields should not be specified
+          triggerTypes:
+            type: array
+            items:
+              type: string
+            description: trigger types
+          triggerFrames:
+            type: array
+            items:
+              $ref: '#/definitions/TriggerFrame'
+          startDate:
+            type: string
+            format: dateTime
+            description: required when \'regularity\':\'OneTime\' if \'trigger\' has not been specified and when \'regularity\':\'Recurrent\'
+          timeZone:
+            type: string
+          endDate:
+            type: string
+            format: dateTime
+          betweenEndTime:
+            type: string
+            format: dateTime
+          repeat:
+            type: object
+            properties:
+              every:
+                type: integer
+              runTime:
+                type: string
+                format: dateTime
+                description: required when \'regularity\':\'Recurrent\'
+              frequency:
+                type: string
+                enum: [hourly, daily, weekly, monthly]
+                description: required when \'regularity\':\'Recurrent\'
+              daysOfWeek:
+                type: array
+                items:
+                  type: integer
+                description:  required when \'frequency\':\'Weekly\'
+              daysOfMonth:
+                type: array
+                items:
+                  type: integer
+                description: required when \'frequency\':\'Monthly\'. Should be set only 1 of 2 objects - daysOfMonth or weekDays.
+              period:
+                type: integer
+              weekDays:
+                type: array
+                items:
+                  $ref: '#/definitions/WeekDay'
+                description: required when \'frequency\':\'Monthly\'. Should be set only 1 of 2 objects - daysOfMonth or weekDays. Could contain up to 4 weekDay entries.
+
+      parameters:
+        type: string
+        format: json
+      type:
+        type: string
+      externalTask:
+        type: boolean
+      resultWebhook:
+        type: string
+        format: url
+
+  WeekDay:
+    type: object
+    properties:
+      day:
+        type: integer
+        enum: [0, 1, 2, 3, 4, 5 ,6]
+      index:
+        type: integer
+        enum: [0, 1, 2, 3, 4]
+    description: describes special day of month like \"second friday\" or \"last wednesday\"
+
+  TasksDefinitionTemplateDetails:
+    type: object
+    properties:
+      originId:
+        type: string
+        format: uuid
+      partnerId:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      type:
+        type: string
+        enum: [script]
+      categories:
+        type: array
+        items:
+          type: string
+      tags:
+        type: array
+        items:
+          type: string
+      createdBy:
+        type: string
+        format: uuid
+      createdAt:
+        type: string
+        format: dateTime
+      JSONSchema:
+        type: string
+      UISchema:
+        type: string
+      isParameterized:
+        type: boolean
+      expectedExecutionTimeSec:
+        type: integer
+      successMessage:
+        type: string
+      failureMessage:
+        type: string
+      isRequireNOCAccess:
+        type: boolean
+      engine:
+        type: string
+
+  TaskDefinitionDetails:
+    type: object
+    required:
+      - originId
+      - name
+      - description
+      - type
+      - categories
+      - userParameters
+    properties:
+      id:
+        type: string
+        format: uuid
+      originId:
+        type: string
+        format: uuid
+      partnerId:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      type:
+        type: string
+        enum: [script]
+      categories:
+        type: array
+        items:
+          type: string
+      createdAt:
+        type: string
+        format: dateTime
+      createdBy:
+        type: string
+      updatedAt:
+        type: string
+        format: dateTime
+      updatedBy:
+        type: string
+      userParameters:
+        type: string
+        format: json
+      JSONSchema:
+        type: string
+        format: json
+      UISchema:
+        type: string
+        format: json
+      engine:
+        type: string
+      credentials:
+        $ref: '#/definitions/Credentials'
+
+  Credentials:
+    type: object
+    properties:
+      use_current_user:
+        type: boolean
+      username:
+        type: string
+      domain:
+        type: string
+      password:
+        type: string
+
+  TriggerFrame:
+    type: object
+    properties:
+      triggerType:
+        type: string
+      startTimeFrame:
+        type: string
+        format: dateTime
+      endTimeFrame:
+        type: string
+        format: dateTime
+
+  Error:
+    type: object
+    properties:
+      message:
+        type: string
+
+  Version:
+    type: object
+    properties:
+      type:
+        type: string
+      buildCommitSHA:
+        type: string
+      repository:
+        type: string
+      supportedAPIVersions:
+        type: array
+        items:
+          type: string
+      buildNumber:
+        type: string
+
+  Health:
+    type: object
+    properties:
+      timeStampUTC:
+        type: string
+      serviceName:
+        type: string
+      serviceProvider:
+        type: string
+      serviceVersion:
+        type: string
+      name:
+        type: string
+      type:
+        type: string
+      status:
+        type: string
+      lastStartTimeUTC:
+        type: string
+      networkInterfaces:
+        type: array
+        items:
+          type: string
+      outboundConnectionStatus:
+        type: array
+        items:
+          $ref: '#/definitions/OutboundConnectionStatus'
+
+  OutboundConnectionStatus:
+    type: object
+    properties:
+      timeStampUTC:
+        type: string
+      type:
+        type: string
+      name:
+        type: string
+      connectionType:
+        type: string
+      connectionURLs:
+        type: array
+        items:
+          type: string
+      connectionStatus:
+        type: string
+
+  TaskCount:
+    type: object
+    properties:
+      managedEndpointId:
+        type: string
+      count:
+        type: integer
+
+  ManagedEndpoint:
+    type: object
+    properties:
+      id:
+        type: string
+      state:
+        type: string
+      nextRunTime:
+        type: string
+        format: dateTime
+
+  ExecutionResultView:
+    type: object
+    properties:
+      partnerId:
+        type: string
+      managedEndpointId:
+        type: string
+        format: uuid
+      taskId:
+        type: string
+        format: uuid
+      executionId:
+        type: string
+        format: uuid
+      originId:
+        type: string
+        format: uuid
+        description:
+          This is ID of corresponding entity based on the Task Type
+      taskName:
+        type: string
+      type:
+        type: string
+      description:
+        type: string
+      regularity:
+        type: string
+        enum: [RunNow, OneTime, Recurrent, Trigger]
+      initiatedBy:
+        type: string
+      status:
+        type: string
+        enum: [Active, Inactive, Disabled]
+      lastRunTime:
+        type: string
+        format: dateTime
+      lastRunStatus:
+        type: string
+        enum: [Running, Success, Failed, Scheduled, Disabled]
+      lastRunStdOut:
+        type: string
+      lastRunStdErr:
+        type: string
+      resultMessage:
+        type: string
+      deviceCount:
+        type: integer
+      modifiedBy:
+        type: string
+      canBePostponed:
+        type: boolean
+      canBeCanceled:
+        type: boolean
+      nextRunTime:
+        type: string
+        format: dateTime
+
+  ExecutionResult:
+    type: object
+    required:
+      - endpointId
+      - updateTime
+      - completionStatus
+    properties:
+      endpointId:
+        type: string
+        format: uuid
+      updateTime:
+        type: string
+        format: dateTime
+      completionStatus:
+        type: string
+        enum: [Success, Failed]
+      errorDetails:
+        type: string
+      resultDetails:
+        type: string
+
+  Target:
+    type: object
+    properties:
+      ids:
+        type: array
+        items:
+          type: string
+        description: ids should be in UUID format when type is DYNAMIC_GROUP or MANAGED_ENDPOINT
+      type:
+        type: string
+        enum: [DYNAMIC_GROUP, MANAGED_ENDPOINT, SITE, DYNAMIC_SITE]
+
+  TargetsByType:
+    properties:
+      MANAGED_ENDPOINT:
+        type: array
+        items:
+          type: string
+      SITE:
+        type: array
+        items:
+          type: string
+      DYNAMIC_GROUP:
+        type: array
+        items:
+          type: string
+      DYNAMIC_SITE:
+        type: array
+        items:
+          type: string
+
+  EndpointClosestTasks:
+    type: object
+    description: closest tasks by endpoint data representation
+    additionalProperties:
+      $ref: '#/definitions/ClosestTasks'
+    example:
+      e8dda53d-f0b3-4c9c-a802-23a091da1478:
+        previous:
+          name: Retrieve all printers
+          runDate: 1563266703
+          status: Failed
+        next:
+          name: PowerShell script
+          runDate: 1567061340
+
+  ScheduledTasks:
+    type: array
+    description: scheduled tasks by partner data representation
+    items:
+      $ref: '#/definitions/ScheduledTask'
+
+  ScheduledTask:
+    type: object
+    description: scheduled task
+    properties:
+      id:
+        type: string
+        format: uuid
+      name:
+        type: string
+      status:
+        type: string
+      lastRunTime:
+        type: string
+        format: time
+      nextRunTime:
+        type: string
+        format: time
+      description:
+        type: string
+      createBy:
+        type: string
+      createdAt:
+        type: string
+        format: time
+      modifiedBy:
+        type: string
+      canBeCanceled:
+        type: boolean
+      modifiedAt:
+        type: string
+        format: time
+      executionInfo:
+        $ref: '#/definitions/ExecutionInfo'
+
+  ExecutionInfo:
+    type: object
+    description: last execution info container
+    properties:
+      deviceCount:
+        type: number
+      successCount:
+        type: number
+      failedCount:
+        type: number
+
+  ClosestTasks:
+    type: object
+    description: closest tasks container
+    properties:
+      previous:
+        $ref: '#/definitions/ClosestPreviousTask'
+      next:
+        $ref: '#/definitions/ClosestNextTask'
+
+  ClosestPreviousTask:
+    type: object
+    description: closest previous task details
+    properties:
+      name:
+        type: string
+      runDate:
+        type: integer
+      status:
+        type: string
+        enum:
+          - Success
+          - Failed
+
+  ClosestNextTask:
+    type: object
+    description: closest next task details
+    properties:
+      name:
+        type: string
+      runDate:
+        type: integer
+
+parameters:
+  ClientId:
+    name: clientId
+    in: path
+    type: string
+    required: true
+    description: identifier for client
+
+  SiteId:
+    name: siteId
+    in: path
+    type: string
+    required: true
+    description: identifier for site of a client
+
+  EndpointId:
+    name: endpointId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for endpoint id
+
+  TriggerType:
+    name: triggerType
+    in: path
+    type: string
+    required: true
+    description: identifier for trigger type (id)
+
+  Uid:
+    name: uid
+    in: header
+    type: string
+    required: true
+    description: identifier of the author of the request
+
+  PartnerId:
+    name: partnerId
+    in: path
+    type: string
+    required: true
+    description: identifier for partner
+
+  OriginId:
+    name: originId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for origin
+
+  DefinitionId:
+    name: definitionId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for Task Definition
+
+  TaskInstanceId:
+    name: taskInstanceId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for task instance
+
+  TaskId:
+    name: taskId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for task
+
+  AllTargetsEnable:
+    name: allTargetsEnable
+    in: body
+    schema:
+      type: object
+      properties:
+        active:
+          description: 'This property is set when task should be disabled/enabled for all endpoints.'
+          type: boolean
+
+  SelectedTargetsEnable:
+    name: selectedTargetsEnable
+    in: body
+    schema:
+      type: object
+      properties:
+        targets:
+          type: object
+          description: 'Map of selected endpoints to disable/enable task.'
+          additionalProperties:
+            type: boolean
+
+  Postpone:
+    name: task
+    in: body
+    description: Object for 'postpone' put request
+    schema:
+      type: object
+      required:
+        - duration
+      properties:
+        duration:
+          type: string
+          format: integer
+          description:
+            Time in minutes
+
+  InstanceIDs:
+    name: iterationIDs
+    in: body
+    description: object has {["uuid","uuid"]} format
+    schema:
+      type: object
+      properties:
+        instanceIDs:
+          type: array
+          items:
+            type: string
+
+  Task:
+    name: task
+    in: body
+    description: Object for 'create task' post request
+    schema:
+      type: object
+      required:
+        - originId
+        - type
+        - targets
+        - schedule
+      properties:
+        targets:
+          $ref: '#/definitions/Target'
+        targetsByType:
+          $ref: '#/definitions/TargetsByType'
+        originId:
+          type: string
+          format: uuid
+        type:
+          type: string
+        name:
+          type: string
+        resourceType:
+          type: string
+          enum: [Desktop, Server]
+        schedule:
+          type: object
+          properties:
+            regularity:
+              type: string
+              enum: [RunNow, OneTime, Recurrent, Trigger]
+              description:
+                When RunNow \'startRunTime\', \'endRunTime\', \'runTime\', \'trigger\' fields should not be specified
+                When OneTime \'runTime\', \'endRunTime\' fields should not be specified
+                When Recurrent \'trigger\' fields should not be specified
+            triggerTypes:
+              type: string
+              items:
+                type: string
+            triggerFrames:
+              type: array
+              items:
+                $ref: '#/definitions/TriggerFrame'
+              description: holds data about trigger and its execution timeframes if needed
+            startDate:
+              type: string
+              format: dateTime
+              description: required when \'regularity\':\'OneTime\' if \'trigger\' has not been specified and when \'regularity\':\'Recurrent\'
+            timeZone:
+              type: string
+            endDate:
+              type: string
+              format: dateTime
+              description: optional
+            betweenEndTime:
+              type: string
+              format: dateTime
+              description: optional
+            repeat:
+              type: object
+              properties:
+                every:
+                  type: integer
+                runTime:
+                  type: string
+                  format: dateTime
+                  description: required when \'regularity\':\'Recurrent\'
+                frequency:
+                  type: string
+                  enum: [hourly, daily, weekly, monthly]
+                  description: required when \'regularity\':\'Recurrent\'
+                daysOfWeek:
+                  type: array
+                  items:
+                    type: integer
+                  description:  required when \'frequency\':\'Weekly\'
+                daysOfMonth:
+                  type: array
+                  items:
+                    type: integer
+                weekDays:
+                  type: array
+                  items:
+                    $ref: '#/definitions/WeekDay'
+
+        trigger:
+          type: string
+          description: required when \'regularity\':\'OneTime\' if \'runTime\' has not been specified
+        parameters:
+          type: string
+          format: json
+        parametersObject:
+          type: object
+          format: json
+          description: used for the same as parameters fied, but here you can send parameters as object.
+        externalTask:
+          type: boolean
+          description: set it to true if this task is created by another MS and should not be displayed as an ordinar task
+        resultWebhook:
+          type: string
+          format: url
+
+  TaskDefReq:
+    name: taskDefinition
+    in: body
+    description: Object for 'create task definition' post request
+    schema:
+      $ref: '#/definitions/TaskDefinitionDetails'
+
+  TriggerExecutionPayload:
+    name: triggerExecutionPayload
+    in: body
+    description: Object for execute trigger request
+    schema:
+      type: object
+      properties:
+        dynamicGroupID:
+          type: string
+        alertType:
+          type: string
+
+  TaskIDs:
+    name: taskIDs
+    in: body
+    description: List of task ids
+    schema:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: string
+
+  EndpointIDs:
+    name: endpointIDs
+    in: body
+    description: List of endpoint ids
+    schema:
+      type: array
+      items:
+        type: string
+
+  IsScheduled:
+    name: isScheduled
+    in: query
+    type: boolean
+    required: true
+    description: schedule filter identifier
+
+  ManagedEndpointId:
+    name: managedEndpointId
+    in: path
+    type: string
+    format: uuid
+    required: true
+    description: identifier for managed endpoint
+
+  TemplateType:
+    name: type
+    in: path
+    type: string
+    enum: [script]
+    required: true
+    description: type of the task definition template
+
+  Count:
+    name: count
+    in: query
+    type: integer
+    required: false
+    description: the max number of the latest Execution Results
+
+  ExecutionResults:
+    name: executionResults
+    description: ExecutionResults result from Origin microservice
+    in: body
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/ExecutionResult'
+
+  AcceptLanguage:
+    name: Accept-Language
+    in: header
+    description: language header
+    required: false
+    type: string
+
+  From:
+    type: string
+    format: datetime
+    name: from
+    description: query string for restricting time frame
+    in: query
+    required: true
+
+
+  To:
+    type: string
+    format: datetime
+    name: to
+    description: query string for restricting time frame
+    in: query
+    required: true

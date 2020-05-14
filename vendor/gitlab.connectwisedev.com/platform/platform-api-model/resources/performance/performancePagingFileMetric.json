@@ -1,0 +1,9 @@
+{
+    "name": "performancePagingFileMetric",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "PercentUsage", "type": "double"},
+       { "name": "PercentPeakUsage", "type": "double"}
+    ]
+}

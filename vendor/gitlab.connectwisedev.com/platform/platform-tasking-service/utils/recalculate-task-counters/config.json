@@ -1,0 +1,6 @@
+{
+    "CassandraURL":                  "127.0.0.1:9042",
+    "CassandraKeyspace":             "platform_tasking_db",
+    "CassandraTimeoutSec":           60,
+    "CassandraConnNumber":           30
+}

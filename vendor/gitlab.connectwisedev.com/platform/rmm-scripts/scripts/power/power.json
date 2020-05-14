@@ -1,0 +1,159 @@
+{
+	"id": "0ffc46c3-f17d-47ee-9aad-4557221c5651",
+	"partnerId": "00000000-0000-0000-0000-000000000000",
+	"category": ["Green Computing",
+	"Management"],
+	"description": "Configure power management for Windows Vista and Windows 7",
+	"engine": "powershell",
+	"engineMaxVersion": 5,
+	"expectedExecutionTimeSec": 300,
+	"failureMessage": "Executed with errors",
+	"successMessage": "The power management plan was changed",
+	"internal": false,
+	"name": "Configure power management",
+	"tags": ["Windows 7",
+	"Windows 10"],
+	"sequence": true,
+	"content": "JFR1cm5PZmZEaXNwbGF5QUMgPSBbaW50XSRUdXJuT2ZmRGlzcGxheUFDICogNjAKJFR1cm5PZmZEaXNwbGF5REMgPSBbaW50XSRUdXJuT2ZmRGlzcGxheURDICogNjAKCmZ1bmN0aW9uIGdldFBvd2VyUGxhbklEQnlOYW1lIHsKICAgIHBhcmFtKFtzdHJpbmddJG5hbWUpCgogICAgJEd1aWRTdHJpbmcgPSBHZXQtV21pT2JqZWN0IC1OYW1lc3BhY2UgJ3Jvb3RcY2ltdjJccG93ZXInIC1DbGFzcyBXaW4zMl9Qb3dlclBsYW4gfCBXaGVyZXsoJF8uRWxlbWVudE5hbWUgLWVxICIkbmFtZSIpfSB8IFNlbGVjdCAtRXhwYW5kUHJvcGVydHkgSW5zdGFuY2VJRAogICAgaWYgKCRHdWlkU3RyaW5nIC1uZSAkbnVsbCkgewogICAgICAgICRSZWdleCA9IFtyZWdleF0ieyguKj8pfSQiCiAgICAgICAgJFBvd2VyU2NoZW1lR3VpZCA9ICRSZWdleC5NYXRjaCgkR3VpZFN0cmluZykuR3JvdXBzWzFdLlZhbHVlCiAgICB9CiAgICByZXR1cm4gJFBvd2VyU2NoZW1lR3VpZAp9CgpmdW5jdGlvbiBzZXRVcFBvd2VyUGxhbiB7CiAgICBwYXJhbSgKICAgICAgICBbZ3VpZF0kZ3VpZCwKICAgICAgICBbaW50XSR2YWx1ZUZvckFDLAogICAgICAgIFtpbnRdJHZhbHVlRm9yREMsCiAgICAgICAgW2Jvb2xdJHNldEFjdGl2ZVZhbHVlCiAgICApCgogICAgSW52b2tlLUV4cHJlc3Npb24gIlBvd2VyY2ZnIFNldEFDVmFsdWVJbmRleCAkZ3VpZCBTVUJfVklERU8gVklERU9JRExFICR2YWx1ZUZvckFDIiB8IE91dC1OdWxsCiAgICBJbnZva2UtRXhwcmVzc2lvbiAiUG93ZXJjZmcgU2V0RENWYWx1ZUluZGV4ICRndWlkIFNVQl9WSURFTyBWSURFT0lETEUgJHZhbHVlRm9yREMiIHwgT3V0LU51bGwKICAgIGlmICgkc2V0QWN0aXZlVmFsdWUpIHsKICAgICAgICBJbnZva2UtRXhwcmVzc2lvbiAiUG93ZXJjZmcgU2V0QWN0aXZlICRndWlkIiB8IE91dC1OdWxsCiAgICB9Cn0KCmZ1bmN0aW9uIGNvbmZpZ1Bvd2VyUGxhbiB7CiAgICBwYXJhbSgKICAgICAgICBbVmFsaWRhdGVOb3ROdWxsT3JFbXB0eSgpXSBbc3RyaW5nXSRBY3Rpb24sCiAgICAgICAgW1ZhbGlkYXRlTm90TnVsbE9yRW1wdHkoKV0gW3N0cmluZ10kUG93ZXJQbGFuLAogICAgICAgIFtzdHJpbmddJEJhc2VQb3dlclBsYW4sCiAgICAgICAgW1ZhbGlkYXRlU2NyaXB0KHskXyAtZ2UgMH0pXSBbaW50XSRUdXJuT2ZmRGlzcGxheUFDLAogICAgICAgIFtWYWxpZGF0ZVNjcmlwdCh7JF8gLWdlIDB9KV0gW2ludF0kVHVybk9mZkRpc3BsYXlEQywKICAgICAgICBbYm9vbF0kU2V0QWN0aXZlCiAgICApCgogICAgJEJhc2VQb3dlclBsYW5zID0gQCgiQmFsYW5jZWQiLCAiSGlnaCBQZXJmb3JtYW5jZSIsICJQb3dlciBzYXZlciIpCgogICAgc3dpdGNoICgkQWN0aW9uKSB7CiAgICAgICAgImRlbGV0ZSIgewogICAgICAgICAgICAkQ3VycmVudFBvd2VyUGxhbiA9IEdldC1XbWlPYmplY3QgLU5hbWVzcGFjZSAncm9vdFxjaW12Mlxwb3dlcicgLUNsYXNzIFdpbjMyX1Bvd2VyUGxhbiB8IFdoZXJleyRfLklzQWN0aXZlIC1lcSAkdHJ1ZX0gfCBTZWxlY3QgLUV4cGFuZFByb3BlcnR5IEVsZW1lbnROYW1lCiAgICAgICAgICAgIElmKCgkQmFzZVBvd2VyUGxhbnMgLWNvbnRhaW5zICIkUG93ZXJQbGFuIikgLW9yICgkUG93ZXJQbGFuIC1lcSAiJEN1cnJlbnRQb3dlclBsYW4iKSkgewogICAgICAgICAgICAgICAgV3JpdGUtRXJyb3IgIllvdSBjYW4ndCBkZWxldGUgdGhlIHBsYW5zLCB3aGljaCBhcmUgcHJvdmlkZWQgYnkgdGhlIFBDIG1hbnVmYWN0dXJlcignQmFsYW5jZWQnLCAnSGlnaCBQZXJmb3JtYW5jZScsICdQb3dlciBzYXZlcicpLCBvciB0aGUgcGxhbiB0aGF0IHlvdSdyZSBjdXJyZW50bHkgdXNpbmciCiAgICAgICAgICAgICAgICByZXR1cm4KICAgICAgICAgICAgfQoKICAgICAgICAgICAgJFBvd2VyU2NoZW1lR3VpZCA9IGdldFBvd2VyUGxhbklEQnlOYW1lIC1uYW1lICRQb3dlclBsYW4KICAgICAgICAgICAgSWYoW3N0cmluZ106OklzTnVsbE9yRW1wdHkoJFBvd2VyU2NoZW1lR3VpZCkpIHsKICAgICAgICAgICAgICAgIFdyaXRlLUVycm9yICJUaGUgcG93ZXIgcGxhbiB3aXRoIG5hbWUgJyRQb3dlclBsYW4nIHdhcyBub3QgZm91bmQsIHBsZWFzZSBpbnB1dCB0aGUgY29ycmVjdCB2YWx1ZSIKICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICB9CiAgICAgICAgICAgIEludm9rZS1FeHByZXNzaW9uICJQb3dlcmNmZyAvZCAkUG93ZXJTY2hlbWVHdWlkIiB8IE91dC1OdWxsCiAgICAgICAgICAgIFdyaXRlLU91dHB1dCAiU3VjY2Vzc2Z1bGx5IHJlbW92ZWQgdGhlIHBvd2VyIHBsYW46JyRQb3dlclBsYW4nIgogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgImNyZWF0ZSIgewogICAgICAgICAgICAkUG93ZXJTY2hlbWVHdWlkID0gZ2V0UG93ZXJQbGFuSURCeU5hbWUgLW5hbWUgJFBvd2VyUGxhbgogICAgICAgICAgICBJZigkUG93ZXJTY2hlbWVHdWlkIC1uZSAkbnVsbCkgewogICAgICAgICAgICAgICAgV3JpdGUtRXJyb3IgIlRoZSBwb3dlciBwbGFuIHdpdGggbmFtZSAnJFBvd2VyUGxhbicgYWxyZWFkeSBleGlzdHMiCiAgICAgICAgICAgICAgICByZXR1cm4KICAgICAgICAgICAgfQoKICAgICAgICAgICAgJFBvd2VyU2NoZW1lR3VpZCA9IGdldFBvd2VyUGxhbklEQnlOYW1lIC1uYW1lICRCYXNlUG93ZXJQbGFuCiAgICAgICAgICAgIElmKFtzdHJpbmddOjpJc051bGxPckVtcHR5KCRQb3dlclNjaGVtZUd1aWQpKSB7CiAgICAgICAgICAgICAgICBXcml0ZS1FcnJvciAiVGhlIGJhc2UgcG93ZXIgcGxhbiB3aXRoIG5hbWUgJyRCYXNlUG93ZXJQbGFuJyB3YXMgbm90IGZvdW5kLCBwbGVhc2UgaW5wdXQgdGhlIGNvcnJlY3QgdmFsdWUiCiAgICAgICAgICAgICAgICByZXR1cm4KICAgICAgICAgICAgfQoKICAgICAgICAgICAgJE5ld1BsYW5HdWlkID0gW2d1aWRdOjpOZXdHdWlkKCkKICAgICAgICAgICAgSW52b2tlLUV4cHJlc3Npb24gIlBvd2VyY2ZnIER1cGxpY2F0ZVNjaGVtZSAkUG93ZXJTY2hlbWVHdWlkICROZXdQbGFuR3VpZCIgfCBPdXQtTnVsbAogICAgICAgICAgICBJbnZva2UtRXhwcmVzc2lvbiAiUG93ZXJjZmcgQ2hhbmdlTmFtZSAkTmV3UGxhbkd1aWQgJyRQb3dlclBsYW4nIiB8IE91dC1OdWxsCiAgICAgICAgICAgIHNldFVwUG93ZXJQbGFuIC1ndWlkICROZXdQbGFuR3VpZCAtdmFsdWVGb3JBQyAkVHVybk9mZkRpc3BsYXlBQyAtdmFsdWVGb3JEQyAkVHVybk9mZkRpc3BsYXlEQyAtc2V0QWN0aXZlVmFsdWUgJFNldEFjdGl2ZQogICAgICAgICAgICBXcml0ZS1PdXRwdXQgIlN1Y2Nlc3NmdWxseSBjcmVhdGVkIHRoZSBwb3dlciBwbGFuOickUG93ZXJQbGFuJyIKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgICAgICJ1cGRhdGUiIHsKICAgICAgICAgICAgJFBvd2VyU2NoZW1lR3VpZCA9IGdldFBvd2VyUGxhbklEQnlOYW1lIC1uYW1lICRQb3dlclBsYW4KICAgICAgICAgICAgSWYoW3N0cmluZ106OklzTnVsbE9yRW1wdHkoJFBvd2VyU2NoZW1lR3VpZCkpIHsKICAgICAgICAgICAgICAgIFdyaXRlLUVycm9yICJUaGUgcG93ZXIgcGxhbiB3aXRoIG5hbWUgJyRQb3dlclBsYW4nIHdhcyBub3QgZm91bmQsIHBsZWFzZSBpbnB1dCB0aGUgY29ycmVjdCB2YWx1ZSIKICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICB9CgogICAgICAgICAgICBzZXRVcFBvd2VyUGxhbiAtZ3VpZCAkUG93ZXJTY2hlbWVHdWlkIC12YWx1ZUZvckFDICRUdXJuT2ZmRGlzcGxheUFDIC12YWx1ZUZvckRDICRUdXJuT2ZmRGlzcGxheURDIC1zZXRBY3RpdmVWYWx1ZSAkU2V0QWN0aXZlCiAgICAgICAgICAgIFdyaXRlLU91dHB1dCAiU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQgdGhlIHBvd2VyIHBsYW46JyRQb3dlclBsYW4nIgogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgZGVmYXVsdCB7CiAgICAgICAgICAgIFdyaXRlLUVycm9yICJJbnZhbGlkIGFjdGlvbjogJEFjdGlvbi4gU2hvdWxkIGJlIG9uZSBvZjogY3JlYXRlLCB1cGRhdGUsIGRlbGV0ZSIKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgfQp9CgppZiAoJE15SW52b2NhdGlvbi5JbnZvY2F0aW9uTmFtZSAtbmUgJy4nKQp7CiAgICBpZiAoJFNldEFjdGl2ZSAtZXEgJG51bGwpIHsKICAgICAgICAkU2V0QWN0aXZlID0gJGZhbHNlCiAgICB9CiAgICBjb25maWdQb3dlclBsYW4gLUFjdGlvbiAkQWN0aW9uIC1Qb3dlclBsYW4gJFBvd2VyUGxhbiAtQmFzZVBvd2VyUGxhbiAkQmFzZVBvd2VyUGxhbiAtVHVybk9mZkRpc3BsYXlBQyAkVHVybk9mZkRpc3BsYXlBQyAtVHVybk9mZkRpc3BsYXlEQyAkVHVybk9mZkRpc3BsYXlEQyAtU2V0QWN0aXZlICRTZXRBY3RpdmUKfQo=",
+	"jsonSchema": {
+		"additionalProperties": false,
+		"dependencies": {
+			"action": {
+				"oneOf": [{
+					"properties": {
+						"action": {
+							"enum": ["create"]
+						},
+						"basePowerPlan": {
+							"enum": ["Balanced",
+							"High Performance",
+							"Power saver"],
+							"title": "Base Power plan",
+							"type": "string"
+						},
+						"setActive": {
+							"title": "Set active",
+							"type": "boolean"
+						},
+						"turnOffDisplayAC": {
+							"minimum": 0,
+							"maximum": 600,
+							"title": "Turn off display (plugged in)",
+							"type": "integer"
+						},
+						"turnOffDisplayDC": {
+							"minimum": 0,
+							"maximum": 600,
+							"title": "Turn off display (on battery)",
+							"type": "integer"
+						}
+					},
+					"required": ["basePowerPlan",
+					"turnOffDisplayAC",
+					"turnOffDisplayDC"]
+				},
+				{
+					"properties": {
+						"action": {
+							"enum": ["update"]
+						},
+						"setActive": {
+							"title": "Set active",
+							"type": "boolean"
+						},
+						"turnOffDisplayAC": {
+							"minimum": 0,
+							"maximum": 600,
+							"title": "Turn off display (plugged in)",
+							"type": "integer"
+						},
+						"turnOffDisplayDC": {
+							"minimum": 0,
+							"maximum": 600,
+							"title": "Turn off display (on battery)",
+							"type": "integer"
+						}
+					},
+					"required": ["turnOffDisplayAC",
+					"turnOffDisplayDC"]
+				},
+				{
+					"properties": {
+						"action": {
+							"enum": ["delete"]
+						}
+					}
+				}]
+			}
+		},
+		"patternProperties": {
+			"^basePowerPlan$": {
+				
+			},
+			"^setActive$": {
+				
+			},
+			"^turnOffDisplayAC$": {
+				
+			},
+			"^turnOffDisplayDC$": {
+				
+			}
+		},
+		"properties": {
+			"action": {
+				"enum": ["create",
+				"update",
+				"delete"],
+				"enumNames": ["Create",
+				"Update",
+				"Delete"],
+				"title": "Action",
+				"type": "string"
+			},
+			"powerPlan": {
+				"title": "Power Plan name",
+				"type": "string"
+			}
+		},
+		"required": ["action",
+		"powerPlan"],
+		"type": "object"
+	},
+	"uiSchema": {
+		"action": {
+			"classNames": "col-sm-6",
+			"ui:autofocus": true,
+			"ui:placeholder": "Select action"
+		},
+		"basePowerPlan": {
+			"classNames": "col-sm-6 col-sm-offset-right-6",
+			"ui:placeholder": "Select base power plan"
+		},
+		"powerPlan": {
+			"classNames": "col-sm-6"
+		},
+		"setActive": {
+			"classNames": "col-sm-12"
+		},
+		"turnOffDisplayAC": {
+			"classNames": "col-sm-6",
+			"ui:widget": "updown",
+			"minToSec": true,
+			"ui:help": "Timeout in minutes"
+		},
+		"turnOffDisplayDC": {
+			"classNames": "col-sm-6",
+			"ui:widget": "updown",
+			"minToSec": true,
+			"ui:help": "Timeout in minutes"
+		},
+		"ui:order": ["action",
+		"powerPlan",
+		"basePowerPlan",
+		"turnOffDisplayDC",
+		"turnOffDisplayAC",
+		"setActive"]
+	},
+	"isHDScript": false
+}

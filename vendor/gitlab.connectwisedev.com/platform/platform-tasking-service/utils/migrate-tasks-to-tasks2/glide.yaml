@@ -1,0 +1,8 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/utils/migrate-tasks-to-tasks2
+import:
+- package: github.com/gocql/gocql
+  version: bd5f930c6137a4b1cd4bd7bd5ff9ffdfc84f8ca9
+- package: github.com/urfave/cli
+- package: gitlab.connectwisedev.com/platform/platform-tasking-service
+ignore:
+- github.com/cpuguy83/go-md2man/v2/md2man

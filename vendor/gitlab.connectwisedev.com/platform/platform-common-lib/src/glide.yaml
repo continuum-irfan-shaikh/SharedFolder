@@ -1,0 +1,237 @@
+package: gitlab.connectwisedev.com/platform/platform-common-lib/src
+import:
+
+# In-House Packages Start
+- package: gitlab.connectwisedev.com/platform/platform-api-model
+  subpackages:
+  - clients/model/Golang/resourceModel/entitlement
+  - clients/model/Golang/resourceModel/healthCheck
+  - clients/model/Golang/resourceModel/tasking
+  - clients/model/Golang/resourceModel/version
+  - clients/model/Golang/resourceModel/errorCodePair
+# repo: git@gitlab.connectwisedev.com:platform/platform-api-model.git
+# In-House Packages Ends
+
+# Kafka Dependencies Start
+- package: github.com/Shopify/sarama
+  version: 9daa115cef80e66cc176ea27ebd0ec45605dde46
+- package: github.com/bsm/sarama-cluster
+  version: 8cd6c692710bfa7fbc1bfb6abd7c26d7d2fe0602
+- package: github.com/eapache/go-resiliency
+  version: ea41b0fad31007accc7f806884dcdf3da98b79ce
+  subpackages:
+  - breaker
+- package: github.com/golang/snappy
+  version: 2e65f85255dbc3072edf28d6b5b8efc472979f5a
+- package: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- package: github.com/eapache/go-xerial-snappy
+  version: 776d5712da21bc4762676d614db1d8a64f4238b0
+- package: github.com/eapache/queue
+  version: 093482f3f8ce946c05bcba64badd2c82369e084d
+- package: github.com/klauspost/crc32
+  version: 22a7f3e6e2308cfd5c10b0512d2bba0a5a7875b2
+- package: github.com/pierrec/lz4
+  version: 623b5a2f4d2a41e411730dcdfbfdaeb5c0c4564e
+- package: github.com/pierrec/xxHash
+  version: be086f0f67405de2fac6bc563bf8d0f22fa2a6b2
+  subpackages:
+  - xxHash32
+# Kafka Dependencies End
+
+# Matrics dependency Start
+- package: github.com/rcrowley/go-metrics
+  version: 3113b8401b8a98917cde58f8bbd42a1b1c03b1fd
+- package: github.com/prometheus/client_golang
+  version: 50c4339db732beb2165735d2cde0bff78eb3c5a5
+  subpackages:
+  - prometheus
+  - prometheus/promauto
+  - prometheus/promhttp
+# Matrics dependency End
+
+#Cassandra Dependencies Start
+- package: github.com/gocql/gocql
+  version: db20ccb04312b6ec04b837f17558d22b99db8565
+- package: github.com/hailocab/go-hostpool
+  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
+#Cassandra Dependencies Ends
+
+#Mocks Dependency Start
+- package: gopkg.in/jarcoal/httpmock.v1
+  version: ac2099de8d3789d30b99b740d1a9d242097462df
+- package: github.com/maraino/go-mock
+  version: 4c74c434cd3a9e9a70ed1eeb56646a1d3fac372f
+- package: github.com/golang/mock
+  version: d74b93584564161b2de771089ee697f07d8bd5b5
+  subpackages:
+  - gomock
+- package: github.com/DATA-DOG/go-sqlmock 
+  version: e64ef33e8bdaf17d91e3ecb35b9c1d0e420b3309  
+#Mocks Dependency Ends
+
+#Database Dependencies Start
+- package: github.com/jinzhu/gorm
+  version: b7156195f7f3415f97c20abbd6aff894b847fee8
+  subpackages:
+  - dialects/sqlite
+- package: github.com/jinzhu/inflection
+  version: 04140366298a54a039076d798123ffa108fff46c
+- package: github.com/mattn/go-sqlite3
+  version: 03cb0c0623bd3dd467afdec9f3e1d4deeca7890c
+- package: github.com/snowflakedb/gosnowflake
+  version: 9baa3151d07674df59b48a0ccd62066657f12ee6
+- package: github.com/denisenkom/go-mssqldb
+  version: 4e0d7dc8888fbb59764060e99b7b68e77a6f9698
+#Database Dependencies End
+
+#In-Memory Cache
+- package: github.com/patrickmn/go-cache
+  version: a3647f8e31d79543b2d0f0ae2fe5c379d72cedc0
+#In-Memory Cache End  
+
+#UUID Dependencies Start
+- package: github.com/google/uuid
+  version: 0cd6bf5da1e1c83f8b45653022c74f71af0538a4
+- package: github.com/satori/go.uuid
+  version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
+#UUID Dependencies End
+
+#Logger and Error Dependencies Start
+- package: gopkg.in/natefinch/lumberjack.v2
+  version: a96e63847dc3c67d17befa69c303767e2f84e54f
+- package: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- package: github.com/rs/zerolog
+  version: aa55558e4cb2e8f05cd079342d430f77e946d00a
+- package: github.com/pkg/errors
+  version: ba968bfe8b2f7e042a574c888954fccecfa385b4
+#Logger and Error Dependencies End
+
+#Redis Dependencies Start
+- package: github.com/go-redis/redis
+  version: 75795aa4236dc7341eefac3bbe945e68c99ef9df
+
+#Redis Dependencies End
+
+- package: github.com/StackExchange/wmi
+  version: e0a55b97c70558c92ce14085e41b35a894e93d3d
+- package: github.com/coocood/freecache
+  version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+- package: github.com/gorilla/mux
+  version: v1.7.4
+- package: github.com/kardianos/service
+  version: 0e5bec1b9eec14f9070a6f49ad7e0242f1545d66
+- package: github.com/robfig/cron
+  version: 736158dc09e10f1911ca3a1e1b01f11b566ce5db
+- package: github.com/samuel/go-zookeeper
+  version: 6916e6f21dd586774f64f1e66529b82a05813f34
+  repo: https://github.com/ContinuumLLC/go-zookeeper
+  subpackages:
+  - zk
+- package: golang.org/x/net
+  version: 04a2e542c03f1d053ab3e4d6e5abcd4b66e2be8e
+  subpackages:
+  - http2
+- package: golang.org/x/sys
+  version: 9dae0f8f577553e0f21298e18926efc9644c281d
+  subpackages:
+  - windows
+  - windows/registry
+  - windows/svc
+  - windows/svc/mgr
+- package: gopkg.in/ini.v1
+  version: f55231ca73a76c1d61eb05fe0d64a1ccebf93cba
+- package: gopkg.in/urfave/cli.v1
+  version: e6cf83ec39f6e1158ced1927d4ed14578fda8edb
+- package: github.com/beorn7/perks
+  version: 3a771d992973f24aa725d07868b467d1ddfceafb
+  subpackages:
+  - quantile
+- package: github.com/coocood/freecache
+  version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+- package: github.com/go-ole/go-ole
+  version: ae2e2a20879aabdd3a51104ab6a4328af27739
+  subpackages:
+  - oleutil
+- package: github.com/golang/protobuf
+  version: b5d812f8a3706043e23a9cd5babf2e5423744d30
+  subpackages:
+  - proto
+- package: github.com/hailocab/go-hostpool
+  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
+- package: github.com/kr/pretty
+  version: 73f6ac0b30a98e433b289500d779f50c1a6f0712
+- package: github.com/kr/text
+  version: e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f
+- package: github.com/matttproud/golang_protobuf_extensions
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+  subpackages:
+  - pbutil
+- package: github.com/Microsoft/go-winio
+  version: 97e4973ce50b2ff5f09635a57e2b88a037aae829
+- package: github.com/pkg/browser
+  version: 0a3d74bf9ce488f035cf5bc36f753a711bc74334
+- package: github.com/spaolacci/murmur3
+  version: f09979ecbc725b9e6d41a297405f65e7e8804acc
+- package: golang.org/x/crypto
+  version: 3d3f9f413869b949e48070b5bc593aa22cc2b8f2
+  subpackages:
+  - ocsp
+- package: golang.org/x/text
+  version: 4d1c5fb19474adfe9562c9847ba425e7da817e81
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- package: gopkg.in/inf.v0
+  version: d2d2541c53f18d2a059457998ce2876cc8e67cbf
+- package: github.com/kennygrant/sanitize
+  version: 06ec0d0dbcd497d01e5189b16f5263f712e61a8e
+# Downloader dependencies Start
+- package: github.com/cavaliercoder/grab
+  version: 228f991ef22e03a6e6454847f36e3fd17facabf7
+# Downloader dependencies End
+- package: github.com/Comcast/go-leaderelection
+  version: 272fd9e2bddcda3cce5ba4c7266f36c7414775f0
+# ieproxy
+- package: github.com/mattn/go-ieproxy
+  version: d68ae853b89e54da30318305a68aaccaaa9f9b53
+  repo: https://github.com/ContinuumLLC/go-ieproxy
+#Histrix
+- package: github.com/afex/hystrix-go
+  version: 4f7f0a216ae56fb0ef5f800521762de684b5598f
+  repo: https://github.com/ContinuumLLC/hystrix-go
+#Avast Retry
+- package: github.com/avast/retry-go
+  version: a8f6dc7e8f46a5d11c01d9da1e887bb5a51fd107
+#Aws-sdk-Go   
+- package: github.com/aws/aws-sdk-go 
+  version: v1.29.10
+- package: github.com/stretchr/objx
+  version: 1a9d0bb9f541897e62256577b352fdbc1fb4fd94
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  - mock
+- package: github.com/pmezard/go-difflib
+  subpackages:
+  - difflib
+- package: github.com/alicebob/miniredis
+  version: 3657542c8629876a1fa83e0b30a0246a67ffa652
+  subpackages:
+  - server
+  - geohash
+- package: github.com/elliotchance/redismock
+  version: 91b9024debed73fbf8e21095a52af851d66e72aa
+- package: github.com/gomodule/redigo
+  version: e8fc0692a7e26a05b06517348ed466349062eb47
+  subpackages:
+  - redis
+- package: github.com/alicebob/gopher-json
+  version: 5a6b3ba71ee69b77cf64febf8b5a7526ca5eaef0
+- package: github.com/jinzhu/copier

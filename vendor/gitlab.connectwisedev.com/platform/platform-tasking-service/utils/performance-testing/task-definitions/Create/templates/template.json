@@ -1,0 +1,8 @@
+{
+	"originId":"b89deb02-54a9-4880-8a13-0c8055e447b6",
+	"name":"cool_name",
+	"type":"script",
+	"categories":["Security"],
+	"description":"Clear internet explorer history",
+	"userParameters":"{\"cookies\":true}"
+}

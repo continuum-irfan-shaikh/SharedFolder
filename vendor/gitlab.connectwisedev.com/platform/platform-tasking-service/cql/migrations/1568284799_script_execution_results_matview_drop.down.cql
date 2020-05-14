@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS script_execution_results_by_task_instance_id_mv;

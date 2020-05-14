@@ -1,0 +1,165 @@
+{
+    "ListenURL":                     ":12121",
+    "CassandraURL":                  "127.0.0.1:9042",
+    "CassandraKeyspace":             "platform_tasking_db",
+    "CassandraTimeoutSec":           60,
+    "CassandraConnNumber":           30,
+    "CassandraConcurrentCallNumber": 30,
+    "CassandraBatchSize":            5,
+    "ConcurrentRESTCalls":           75,
+    "ScriptingMsURL":                "http://127.0.0.1:8888/scripting/v1",
+    "TaskingMsURL":                  "http://127.0.0.1:12121/tasking/v1",
+    "AssetMsURL":                    "http://internal-continuum-asset-service-elb-int-1972580147.ap-south-1.elb.amazonaws.com/asset/v1",
+    "EntitlementMsURL":              "http://internal-entitlement-partnerspecific-72155629.ap-south-1.elb.amazonaws.com/entitlement/v1",
+    "DynamicGroupsMsURL":            "http://internal-continuum-dg-service-elb-int-1291521176.ap-south-1.elb.amazonaws.com/dg/v1",
+    "GraphQLMsURL":                  "http://127.0.0.1:8080/GraphQL/",
+    "SitesMsURL":                    "https://rmmitswebapi.dtitsupport247.net/v1",
+    "SitesNoTokenURL":               "http://rmmitsapi.dtitsupport247.net/rmmitsapi/v1",
+    "AgentConfigMsURL":              "http://internal-intplatformagentconfigurationser-2019980644.ap-south-1.elb.amazonaws.com/agent-configuration/v1",
+    "AutomationEngineURL":           "http://internal-continuum-ae-service-elb-int-561715420.ap-south-1.elb.amazonaws.com",
+    "AgentServiceURL":               "http://localhost:8082/agent/v1",
+    "AssetCacheEnabled":             true,
+    "HTTPClientTimeoutSec":          60,
+    "HTTPClientResultsTimeoutSec": 120,
+    "HTTPClientMaxIdleConnPerHost":  100,
+    "ClosestTasksWorkersTimeoutSec": 15,
+
+    "KafkaBrokers":               "localhost:9092",
+    "ManagedEndpointChangeTopic": "managed-endpoint-change",
+    "DynamicGroupMonitoring":     "dynamic_group_monitoring",
+    "TaskingEventsTopic":         "tasking-events",
+    "KafkaConsumerGroup":         "platform-tasking-service",
+    "KafkaRetryIntervalSec": 10,
+
+    "ExecutionResultKafkaTopic": "script_execution_result",
+
+    "InMemoryCacheSize": 1073741274,
+    "TriggersReloadCacheIntervalSec" : 60,
+    "Memcached": {
+        "MemcachedURL":       "127.0.0.1:11211",
+        "DefaultDataTTLSec": 86400,
+        "MaxIdleConns":      2000,
+        "TimeoutSec":        5
+    },
+
+    "PartnerSitesCacheExpiration": 7200,
+
+    "Version": {
+        "SolutionName":           "Tasking",
+        "ServiceName":            "Tasking Microservice",
+        "ServiceProvider":        "Continuum LLC"
+    },
+
+    "Log": {
+        "logLevel": "INFO",
+        "filename": "platform-tasking-service.log",
+        "maxsize": 100,
+        "destination": "FILE",
+        "CallDepth": 5,
+        "servicename" : "platform_tasking_service"
+    },
+
+    "Kafka": {
+        "BrokerHosts": ["localhost:9092"],
+        "ConsumerGroup": "platform-tasking-service",
+        "GoroutineLimitsPerOneCore": {
+            "managed-endpoint-change": 25,
+            "dynamic_group_monitoring": 25,
+            "tasking-events": 25
+        }
+    },
+    "KafkaProducerSettings": {
+        "TimeoutInSecond": 3,
+        "MaxMessageBytes": 20242880,
+        "CompressionType": "GZIP",
+        "MaxRetry": 20,
+        "ReconnectIntervalInSecond": 10
+    },
+    "CircuitBreakerSettings": {
+        "EnableCircuitBreaker": true,
+        "MaxConcurrentRequests": 15000,
+        "ErrorPercentThreshold": 25,
+        "RequestVolumeThreshold": 1,
+        "SleepWindowInSecond": 3,
+        "RetryAfterLowerBoundInMinutes": 1,
+        "RetryAfterUpperBoundInMinutes": 3
+    },
+
+    "TDTCacheSettings": {
+        "Size":              1073741274,
+        "GCPercent":         20,
+        "ReloadIntervalSec": 600
+    },
+
+    "EntitlementCacheSettings": {
+        "Size":       104857600,
+        "GCPercent":  20,
+        "DataTTLSec": 600
+    },
+
+    "ZookeeperHosts":      "localhost:2181",
+    "ZookeeperBasePath":   "/tasking-service",
+    "ScheduledJobs": [
+        {
+            "Name":        "Check for tasks, new scheduler",
+            "Task":        "processTasks",
+            "Schedule":    "@every 1m"
+        },
+        {
+            "Name":        "Check for retained data",
+            "Task":        "checkForRetainedData",
+            "Schedule":    "@every 24h"
+        },
+        {
+            "Name":        "Check for expired executions",
+            "Task":        "checkForExpiredExecutions",
+            "Schedule":    "@every 1m"
+        },
+        {
+            "Name":        "Recalculate counts of Tasks",
+            "Task":        "recalculateTasks",
+            "Schedule":    "@every 24h"
+        },
+        {
+            "Name":        "Load active triggers data to cache",
+            "Task":        "loadTriggersToCache",
+            "Schedule":    "@every 1m"
+        },
+        {
+            "Name":        "Recalculate devices in trigger tasks",
+            "Task":        "activeTriggersReopening",
+            "Schedule":    "@every 30m"
+        }
+    ],
+    "JobSchedulingInterval": 5,
+    "JobListeningInterval":  3,
+
+    "WSIncomeQueueSize":  10,
+    "WSOutcomeQueueSize": 100,
+
+    "TaskTypes": {
+        "alerting": "http://internal-intplatformalertingservice-1115287148.ap-south-1.elb.amazonaws.com/alerting/v2",
+        "profiling": "http://internal-continuum-profiling-service-int-856030625.ap-south-1.elb.amazonaws.com/profiling/v1",
+        "patching": "http://internal-intplatformpatchingservice-1434186522.ap-south-1.elb.amazonaws.com/patching/v1",
+        "sequence": "http://internal-int-sequence-service-816701407.ap-south-1.elb.amazonaws.com/sequence/v1",
+        "webroot": "http://internal-intplatformwebrootservice-1860101463.ap-south-1.elb.amazonaws.com/webroot/v1",
+        "script": "http://127.0.0.1:8888/scripting/v1"
+    },
+
+    "DefaultLanguage": "en-US",
+
+    "RetryStrategy":{
+        "MaxNumberOfRetries":    10,
+        "RetrySleepIntervalSec": 5
+    },
+
+    "DataRetentionIntervalDay": 90,
+    "DataRetentionRemoveBatchSize": 100,
+
+    "EncryptionKey": "dev-env",
+
+    "FeaturesForRoutes":{
+        "/tasking/v1/partners/{partnerID}/tasks/data":           "TASKING_TASKS_HOME_PAGE"
+    }
+}
+

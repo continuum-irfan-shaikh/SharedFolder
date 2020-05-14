@@ -1,0 +1,9 @@
+{
+      "type": "vCenter", // vCenter or ESXi
+      "eventType": "Reboot", // Reboot, UpFromReboot, ConnectionLost, Shutdown
+      "uuid": "844ddbe8-9062-416c-adad-5e2204f2e15c",
+      "hostname": "testhostname",
+      "eventTimestampUtc": "2009-11-10 23:00:00 +0000 UTC", // UTC format
+      "state": "poweredOff" // poweredOff or poweredOn
+}
+

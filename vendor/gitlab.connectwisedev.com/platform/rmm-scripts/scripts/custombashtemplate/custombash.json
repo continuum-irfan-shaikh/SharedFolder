@@ -1,0 +1,57 @@
+{
+  "id": "37f7f19f-40e8-11e9-a643-e0d55e1ce78a",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Root"
+  ],
+  "description": "Runs custom Bash scripts",
+  "engine": "bash",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "Bash script",
+  "tags": [
+    "Linux"
+  ],
+  "sequence": true,
+  "content": "",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "string",
+        "title": "Bash Script"
+      },
+      "expectedExecutionTimeSec": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 10000,
+        "title": "Expected time of script execution in seconds",
+        "default": 300
+      }
+    },
+    "required": [
+      "body",
+      "expectedExecutionTimeSec"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "body": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true,
+      "ui:help": "You are responsible for the consequences of running the script",
+      "ui:widget": "textarea",
+      "ui:options": {
+        "rows": 15
+      }
+    },
+    "expectedExecutionTimeSec": {
+      "classNames": "col-sm-6",
+      "minToSec": true,
+      "ui:help": "Expected execution time in seconds"
+    }
+  }
+}

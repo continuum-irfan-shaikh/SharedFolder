@@ -1,0 +1,11 @@
+{
+  "name": "extendedEndpointID",
+  "type":  "resource",
+  "version": "2.0",
+    "attributes": [
+      { "name": "partnerID", "type": "string" },
+      { "name": "clientID", "type": "string" },
+      { "name": "siteID", "type": "string" },
+      { "name": "endpointID", "type": "gocql.UUID" }
+   ]
+}

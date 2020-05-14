@@ -1,0 +1,28 @@
+{ "name": "client",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "Client_Id", "type": "int"},
+      { "name": "Client_CallerGreeting", "type": "string"},
+      { "name": "Client_PrimaryPhoneNo", "type": "string"},
+      { "name": "Client_CreatedDate", "type": "string"},
+      { "name": "Client_DisabledOn", "type": "string"},
+      { "name": "Client_Status", "type": "boolean"},
+      { "name": "Partner_Id", "type": "int"},
+      { "name": "Client_Proxy", "type": "boolean"},
+      { "name": "Client_Address", "type": "string"},
+      { "name": "Client_Address2", "type": "string"},
+      { "name": "Client_City", "type": "string"},
+      { "name": "Client_Country", "type": "string"},
+      { "name": "Client_Name", "type": "string"},
+      { "name": "Client_PostalCode", "type": "string"},
+      { "name": "Client_State", "type": "string"},
+      { "name": "Client_Code", "type": "string"},
+      { "name": "Status", "type": "int"},
+      { "name": "TimeStamp", "type": "string"},
+      { "name": "Client_Timezone", "type": "string"},
+      { "name": "Client_Proxy_UserName", "type": "string"},
+      { "name": "Operation", "type": "int"}
+    ]
+  }
+  

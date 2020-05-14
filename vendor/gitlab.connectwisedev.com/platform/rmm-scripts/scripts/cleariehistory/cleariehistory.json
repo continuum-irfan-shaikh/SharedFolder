@@ -1,0 +1,57 @@
+{
+  "id": "b89deb02-54a9-4880-8a13-0c8055e447b6",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance"
+  ],
+  "description": "Clear Internet Explorer history and record history, cookies, and size of temporary files in the Data Center",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "IE browser Cache was cleared",
+  "internal": false,
+  "name": "Clear Internet Explorer history",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGRhdGFUb0NsZWFyID0gQCgkZGF0YVRvQ2xlYXIpCgppZiAoJGRhdGFUb0NsZWFyIC1jb250YWlucyAiaGlzdG9yeSIpIHskSGlzdG9yeSA9ICR0cnVlfQppZiAoJGRhdGFUb0NsZWFyIC1jb250YWlucyAiY29va2llcyIpIHskQ29va2llcyA9ICR0cnVlfQppZiAoJGRhdGFUb0NsZWFyIC1jb250YWlucyAiVGVtcElFRmlsZXMiKSB7JFRlbXBJRUZpbGVzID0gJHRydWV9CgokTWFqb3JPc1ZlcnNpb24gPSAoW2Vudmlyb25tZW50XTo6T1NWZXJzaW9uLlZlcnNpb24pLk1ham9yCiRNaW5vck9zVmVyc2lvbiA9IChbZW52aXJvbm1lbnRdOjpPU1ZlcnNpb24uVmVyc2lvbikuTWlub3IKCmZ1bmN0aW9uIHJlbW92ZUl0ZW1zIHsKCVBhcmFtKCRpdGVtc1BhdGgsICRpdGVtc05hbWUpCgogICAgJGl0ZW1zID0gR2V0LUNoaWxkSXRlbSAtUGF0aCAkaXRlbXNQYXRoIC1FeGNsdWRlICouZGF0IC1SZWN1cnNlIC1Gb3JjZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZQoJaWYgKCRpdGVtcyAtbmUgJG51bGwpIHsKICAgICAgICAkY291bnQgPSAkaXRlbXMuTGVuZ3RoCiAgICAgICAgZm9yZWFjaCAoJGl0ZW0gaW4gJGl0ZW1zKSB7CiAgICAgICAgICAgIFJlbW92ZS1pdGVtICRpdGVtLkZ1bGxOYW1lIC1SZWN1cnNlIC1Gb3JjZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZQogICAgICAgIH0KCX0gZWxzZSB7CgkgICAgJGNvdW50ID0gMAoJfQoJV3JpdGUtT3V0cHV0ICJEZWxldGVkICRpdGVtc05hbWUgOiAkY291bnQgZWxlbWVudHMuIgp9CgpmdW5jdGlvbiBjbGVhckRhdGEgewogICAgUGFyYW0oJHVzZXJOYW1lLCAkdXNlclNJRCkKCiAgICAkSGlzdG9yeVBhdGggPSAiJGVudjpTeXN0ZW1Ecml2ZVxVc2Vyc1wkdXNlck5hbWVcQXBwRGF0YVxMb2NhbFxNaWNyb3NvZnRcV2luZG93c1xIaXN0b3J5IgogICAgSWYgKCgkTWFqb3JPc1ZlcnNpb24gLWVxIDYpIC1BbmQgKCRNaW5vck9zVmVyc2lvbiAtZXEgMSkpewogICAgICAgICRDb29raWVzUGF0aCA9ICIkZW52OlN5c3RlbURyaXZlXFVzZXJzXCR1c2VyTmFtZVxBcHBEYXRhXFJvYW1pbmdcTWljcm9zb2Z0XFdpbmRvd3NcQ29va2llcyIKICAgICAgICAkVGVtcEZpbGVzUGF0aCA9ICIkZW52OlN5c3RlbURyaXZlXFVzZXJzXCR1c2VyTmFtZVxBcHBEYXRhXExvY2FsXE1pY3Jvc29mdFxXaW5kb3dzXFRlbXBvcmFyeSBJbnRlcm5ldCBGaWxlcyIKICAgIH0gRWxzZUlmICgkTWFqb3JPc1ZlcnNpb24gLWVxIDEwKXsKICAgICAgICAkVGVtcEZpbGVzUGF0aCA9ICIkZW52OlN5c3RlbURyaXZlXFVzZXJzXCR1c2VyTmFtZVxBcHBEYXRhXExvY2FsXE1pY3Jvc29mdFxXaW5kb3dzXElOZXRDYWNoZSIKICAgICAgICAkQ29va2llc1BhdGggPSAiJGVudjpTeXN0ZW1Ecml2ZVxVc2Vyc1wkdXNlck5hbWVcQXBwRGF0YVxMb2NhbFxNaWNyb3NvZnRcV2luZG93c1xJTmV0Q29va2llcyIKICAgIH0KCiAgICBpZiAoJEhpc3RvcnkpIHsKICAgICAgICBpZiAoLW5vdCAoR2V0LVBTRHJpdmUgLW5hbWUgIkhLVSIgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUpKSB7CiAgICAgICAgICAgICAgICAgICAgTmV3LVBTRHJpdmUgLU5hbWUgSEtVIC1QU1Byb3ZpZGVyIFJlZ2lzdHJ5IC1Sb290IEhLRVlfVVNFUlMgPiRudWxsCiAgICAgICAgfQoKICAgICAgICAkcmVnUGF0aCA9ICJIS1U6XCR1c2VyU0lEXFNvZnR3YXJlXE1pY3Jvc29mdFxJbnRlcm5ldCBFeHBsb3JlclxUeXBlZFVSTHMiCiAgICAgICAgR2V0LUl0ZW0gLWxpdGVyYWxQYXRoICRyZWdQYXRoIC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlIHwgRm9yRWFjaC1PYmplY3QgewogICAgICAgICAgICAka2V5ID0gJF8KICAgICAgICAgICAgJGtleS5HZXRWYWx1ZU5hbWVzKCkgfCBGb3JFYWNoLU9iamVjdCB7CiAgICAgICAgICAgICAgICAkdmFsdWUgPSAkXwogICAgICAgICAgICAgICAgUmVtb3ZlLUl0ZW1Qcm9wZXJ0eSAtUGF0aCAkcmVnUGF0aCAtTmFtZSAkdmFsdWUKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICByZW1vdmVJdGVtcyAtaXRlbXNQYXRoICRIaXN0b3J5UGF0aCAtaXRlbXNOYW1lICJoaXN0b3J5IgoJCUludm9rZS1FeHByZXNzaW9uIC1Db21tYW5kICIkZW52OlN5c3RlbURyaXZlXFdpbmRvd3NcU3lzdGVtMzJcUnVuRGxsMzIuZXhlIEluZXRDcGwuY3BsLCBDbGVhck15VHJhY2tzQnlQcm9jZXNzIDEiCiAgICB9CgogICAgaWYgKCRDb29raWVzKSB7CiAgICAJcmVtb3ZlSXRlbXMgLWl0ZW1zUGF0aCAkQ29va2llc1BhdGggLWl0ZW1zTmFtZSAiY29va2llcyIKICAgIH0KCiAgICBpZiAoJFRlbXBJRUZpbGVzKSB7CiAgICAJcmVtb3ZlSXRlbXMgLWl0ZW1zUGF0aCAkVGVtcEZpbGVzUGF0aCAtaXRlbXNOYW1lICJ0ZW1wb3JhcnkgZmlsZXMiCiAgICB9Cn0KCiRQYXR0ZXJuU0lEID0gJ1MtMS01LTIxLVxkKy1cZCtcLVxkK1wtXGQrJCcKJHVzZXJzID0gQCgpCiR1c2VycyA9IEdldC1JdGVtUHJvcGVydHkgJ0hLTE06XFNPRlRXQVJFXE1pY3Jvc29mdFxXaW5kb3dzIE5UXEN1cnJlbnRWZXJzaW9uXFByb2ZpbGVMaXN0XConIHwgV2hlcmUtT2JqZWN0IHsgJF8uUFNDaGlsZE5hbWUgLW1hdGNoICRQYXR0ZXJuU0lEIH0gfAogICAgU2VsZWN0ICBAeyBuYW1lID0gIlNJRCI7IGV4cHJlc3Npb24gPSB7ICRfLlBTQ2hpbGROYW1lIH0gfSwKCQkJQHsgbmFtZSA9ICJOYW1lIjsgZXhwcmVzc2lvbiA9IHsgJF8uUHJvZmlsZUltYWdlUGF0aCAtcmVwbGFjZSAnXiguKltcXFwvXSknLCAnJyB9IH0KCmZvcmVhY2ggKCR1c2VyIGluICR1c2VycykgewogICAgJHVOYW1lID0gJHVzZXIuTmFtZQogICAgJHVTSUQgPSAkdXNlci5TSUQKICAgIFdyaXRlLU91dHB1dCAiVXNlciAkdU5hbWUgOiIKICAgIGNsZWFyRGF0YSAtdXNlck5hbWUgJHVOYW1lIC11c2VyU0lEICR1U0lECiAgICBXcml0ZS1PdXRwdXQgImBuIgp9Cg==",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "dataToClear": {
+        "type": "array",
+        "minItems": 1,
+        "title": "Clear browsing data",
+        "items": {
+          "type": "string",
+          "enum": [
+            "history",
+            "cookies",
+            "TempIEFiles"
+          ],
+          "enumNames": [
+            "Clear history",
+            "Clear cookies",
+            "Clear temporary files"
+          ]
+        },
+        "uniqueItems":true
+      }
+    },
+    "required": [
+      "dataToClear"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "dataToClear": {
+      "ui:widget": "checkboxes",
+      "ui:options": {
+        "inline": true
+      }
+    }
+  }
+}

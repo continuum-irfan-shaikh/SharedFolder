@@ -1,0 +1,23 @@
+{
+  "id": "1cb7f2ab-0d7b-41f4-9aef-e43c3bb916fc",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "Retrieves Domain user details",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Domain user details were obtained successfully",
+  "internal": false,
+  "name": "Retrieve domain user details",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JERvbWFpbkdyb3VwcyA9IGdldC13bWlvYmplY3Qgd2luMzJfZ3JvdXAgLUZpbHRlciAiTmFtZT0nRG9tYWluIEFkbWlucyciCgppZiAoISREb21haW5Hcm91cHMpIHsKICBXcml0ZS1PdXRwdXQgIkRvbWFpbiB1c2VycyBhcmUgbm90IGZvdW5kIgogIHJldHVybgp9CgokbGlzdFVzZXJzID0gQCgpOwpmb3JlYWNoICgkZ3JvdXAgaW4gJERvbWFpbkdyb3VwcykgewogICRxdWVyeSA9ICJHcm91cENvbXBvbmVudCA9IGAiV2luMzJfR3JvdXAuRG9tYWluPSckKCRncm91cC5kb21haW4pJ2AsTmFtZT0nJCgkZ3JvdXAubmFtZSknYCIiCiAgJGxpc3QgPSBHZXQtV21pT2JqZWN0IHdpbjMyX2dyb3VwdXNlciAtRmlsdGVyICRxdWVyeQogICRsaXN0VXNlcnMgKz0gJGxpc3QgfCAleyRfLlBhcnRDb21wb25lbnR9IHwgJSB7JF8uc3Vic3RyaW5nKCRfLmxhc3RpbmRleG9mKCJEb21haW49IikgKyA3KS5yZXBsYWNlKCJgIixOYW1lPWAiIiwiXCIpfQp9CgppZiAoISRsaXN0VXNlcnMpIHsKICBXcml0ZS1PdXRwdXQgIkRvbWFpbiB1c2VycyBhcmUgbm90IGZvdW5kIgogIHJldHVybgp9CgokdXNlcnMgPSBHZXQtV21pT2JqZWN0IC1DbGFzcyBXaW4zMl9Vc2VyQWNjb3VudCAtRmlsdGVyICAiTG9jYWxBY2NvdW50IT0nVHJ1ZSciCmZvcmVhY2ggKCR1c2VyIGluICR1c2VycykgewogICRhZG1pbiA9ICRmYWxzZQogIGZvcmVhY2ggKCR1c2VyYWRtaW4gaW4gJGxpc3RVc2VycykgewoKICAkdXNlcmFkbWluID0gJHVzZXJhZG1pbi5TdWJzdHJpbmcoMCwkdXNlcmFkbWluLkxlbmd0aC0xKQogICR1c2VyYWRtaW4gPSAkdXNlcmFkbWluLlN1YnN0cmluZygxKQogICAgaWYgKCR1c2VyYWRtaW4gLWVxICR1c2VyLkNhcHRpb24pewogICAgICAkYWRtaW4gPSAkdHJ1ZQogICAgfQogIH0KICBXcml0ZS1PdXRwdXQgIiQoKCR1c2VyKS5DYXB0aW9uKSwgQWRtaW4gOiAkYWRtaW4iCn0K",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

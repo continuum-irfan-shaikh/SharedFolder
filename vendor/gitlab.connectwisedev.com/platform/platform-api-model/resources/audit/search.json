@@ -1,0 +1,62 @@
+{
+  "name": "Search",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    {
+      "name": "first",
+      "type": "integer",
+      "description": "First index of a record"
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "#records to be returned"
+    },
+    {
+      "name": "freeText",
+      "type": "string",
+      "description": "free text to be searched"
+    },
+    {
+      "name": "partnerID",
+      "type": "string",
+      "description": "Partner ID"
+    },
+    {
+      "name": "clientID",
+      "type": "string",
+      "description": "Client ID"
+    },
+    {
+      "name": "siteID",
+      "type": "string",
+      "description": "Site ID"
+    },
+    {
+      "name": "endpointID",
+      "type": "string",
+      "description": "Endpoint ID"
+    },
+    {
+      "name": "objectName",
+      "type": "string",
+      "description": "This is an entity in the domain space, like endpoint, task, sequence, alert, mailbox, ticket, auto-update etc"
+    },
+    {
+      "name": "eventType",
+      "type": "string",
+      "description": "Event Type - Some of the values are Automation, Site Create, Endpoint Create etc"
+    },
+    {
+      "name": "serviceName",
+      "type": "string",
+      "description": "Service Name - Will be a binary/executable name"
+    },
+    {
+      "name": "timeframe",
+      "type": "Timeframe",
+      "description": "Timeframe - Start and End time"
+    }
+  ]
+}

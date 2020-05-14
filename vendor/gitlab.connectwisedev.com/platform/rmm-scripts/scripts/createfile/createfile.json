@@ -1,0 +1,76 @@
+{
+  "id": "798480d5-4c00-4f0a-ad81-2c6efcc5123a",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Maintenance",
+    "Management"
+  ],
+  "description": "Create a file on end client desktops and/or servers",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The file was created",
+  "internal": false,
+  "name": "Create file",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JGFycmF5ID0gJHBhdGguU3BsaXQoIlwiKQokZm9sZGVyUGF0aCA9ICRhcnJheVswLi4oJGFycmF5Lmxlbmd0aC0yKV0KJGZvbGRlclBhdGggPSAkZm9sZGVyUGF0aCAtam9pbiAiXCIKCmlmICghJGNyZWF0ZUZvbGRlciAtYW5kICEoVGVzdC1QYXRoICRmb2xkZXJQYXRoKSl7CiAgV3JpdGUtRXJyb3IgIkZvbGRlciBkb2Vzbid0IGV4aXN0IgogIHJldHVybn0KCmlmIChOZXctSXRlbSAkcGF0aCAtdHlwZSBmaWxlIC12YWx1ZSAkdmFsdWUgLUZvcmNlOiRmb3JjZSkgewogIFdyaXRlLU91dHB1dCAiU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQgZmlsZS4gUGF0aDogJHBhdGgifQo=",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "path": {
+        "type": "string",
+        "title": "Path"
+      },
+      "value": {
+        "type": "string",
+        "title": "Content"
+      },
+      "force": {
+        "type": "boolean",
+        "title": "Force"
+      },
+      "createFolder": {
+        "type": "boolean",
+        "title": "Create folder"
+      }
+    },
+    "required": [
+      "path"
+    ],
+    "additionalProperties": false
+  },
+  "uiSchema": {
+    "path": {
+      "classNames": "col-sm-12",
+      "ui:autofocus": true,
+      "validationSchema": {
+        "type": "isValidWindowsFullPath",
+        "path": "path"
+      }
+    },
+    "value": {
+      "classNames": "col-sm-12",
+      "ui:widget": "textarea",
+      "ui:options": {
+        "rows": 15
+      }
+    },
+    "force": {
+      "classNames": "col-sm-6"
+    },
+    "createFolder": {
+      "classNames": "col-sm-6"
+    },
+    "ui:order": [
+      "path",
+      "value",
+      "createFolder",
+      "force"
+    ]
+  }
+}

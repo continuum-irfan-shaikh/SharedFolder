@@ -1,0 +1,23 @@
+{
+  "id": "088010af-b602-4552-8938-2211c973544f",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Security"
+  ],
+  "description": "Force an update to a group policy",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The machine policy was updated successfully",
+  "internal": false,
+  "name": "Update group policy",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "Z3B1cGRhdGUgL2ZvcmNl",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

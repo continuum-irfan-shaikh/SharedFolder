@@ -1,0 +1,24 @@
+{
+  "id": "fe8d6a09-9c29-4278-a4a3-a80f4a78f49f",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Management",
+    "Security"
+  ],
+  "description": "Disable Windows Update on desktops and servers",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The windows updates rule was updated",
+  "internal": false,
+  "name": "Disable Windows Updates",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JFJlZ1BhdGggPSAiSEtMTTpcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcV2luZG93c1VwZGF0ZVxBVSIKSWYoLU5vdChUZXN0LVBhdGggLVBhdGggJFJlZ1BhdGgpKXsKICAgIE5ldy1JdGVtIC1QYXRoICRSZWdQYXRoIC1Gb3JjZSB8IE5ldy1JdGVtUHJvcGVydHkgLU5hbWUgIk5vQXV0b1VwZGF0ZSIgLVByb3BlcnR5VHlwZSBEV29yZCAtVmFsdWUgMSB8IE91dC1OdWxsCn0KU2V0LUl0ZW1Qcm9wZXJ0eSAtUGF0aCAkUmVnUGF0aCAtTmFtZSAiTm9BdXRvVXBkYXRlIiAtVmFsdWUgMQpSZXR1cm4gR2V0LUl0ZW1Qcm9wZXJ0eSAkUmVnUGF0aA==",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

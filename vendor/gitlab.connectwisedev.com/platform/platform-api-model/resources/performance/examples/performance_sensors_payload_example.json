@@ -1,0 +1,23 @@
+{
+	"createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+	"type": "performanceSmartSensors",
+	"endpointID": "",
+	"partnerID": "",
+	"clientID": "",
+	"siteID": "",
+	"LastAccessedDateUTC": "2016-10-04T11:24:53.489110939Z"
+	"lastAccessedDateUTC": "0001-01-01T00:00:00Z",
+	"createTimeUTC": "0001-01-01T00:00:00Z",
+	"createdBy": "",
+	"sensorsInfo": [{
+		"sensorName": "",
+		"adapter": "",
+		"type": [{
+			"@typeName": "",
+			"@tempVol": "",
+			"@range": "",
+			"@alarmStatus": ""
+		}]
+	}]
+}

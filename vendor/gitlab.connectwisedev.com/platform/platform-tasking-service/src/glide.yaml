@@ -1,0 +1,108 @@
+package: gitlab.connectwisedev.com/platform/platform-tasking-service/src
+ignore:
+  - gitlab.connectwisedev.com/platform/platform-tasking-service/src
+import:
+  - package: github.com/afex/hystrix-go
+    version: 4f7f0a216ae56fb0ef5f800521762de684b5598f
+    repo: https://github.com/ContinuumLLC/hystrix-go
+  - package: gitlab.connectwisedev.com/platform/Platform-Infrastructure-lib
+    repo: git@gitlab.connectwisedev.com:platform/Platform-Infrastructure-lib.git
+  - package: github.com/Shopify/sarama
+    version: 35324cf48e33d8260e1c7c18854465a904ade249
+  - package: github.com/bsm/sarama-cluster
+    version: d5779253526cc8a3129a0e5d7cc429f4b4473ab4
+  - package: github.com/eapache/go-resiliency
+    version: ea41b0fad31007accc7f806884dcdf3da98b79ce
+    subpackages:
+      - breaker
+  - package: github.com/golang/snappy
+    version: 2e65f85255dbc3072edf28d6b5b8efc472979f5a
+  - package: github.com/davecgh/go-spew
+    version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+    subpackages:
+      - spew
+  - package: github.com/eapache/go-xerial-snappy
+    version: 776d5712da21bc4762676d614db1d8a64f4238b0
+  - package: github.com/eapache/queue
+    version: 093482f3f8ce946c05bcba64badd2c82369e084d
+  - package: github.com/klauspost/crc32
+    version: 22a7f3e6e2308cfd5c10b0512d2bba0a5a7875b2
+  - package: github.com/pierrec/lz4
+    version: 623b5a2f4d2a41e411730dcdfbfdaeb5c0c4564e
+  - package: github.com/pierrec/xxHash
+    version: be086f0f67405de2fac6bc563bf8d0f22fa2a6b2
+    subpackages:
+      - xxHash32
+  - package: github.com/rcrowley/go-metrics
+    version: 3113b8401b8a98917cde58f8bbd42a1b1c03b1fd
+  - package: github.com/kelseyhightower/envconfig
+    version: ^1.3.0
+  - package: github.com/urfave/negroni
+    version: ^0.2.0
+  - package: github.com/pkg/errors
+    version: ^0.8.0
+  - package: github.com/meatballhat/negroni-logrus
+    version: 259659cbe5df2a5732a3c677d040058215be1ee7
+  - package: github.com/gorilla/mux
+    version: ^1.3.0
+  - package: golang.org/x/sync
+  - package: golang.org/x/net
+    subpackages:
+      - context
+      - context/ctxhttp
+  - package: github.com/gocql/gocql
+    version: 56a164ee9f3135e9cfe725a6d25939f24cb2d044
+  - package: github.com/scylladb/gocqlx
+    version: 5526e6046474cc92ad405b58d490d1caf9aaa8f4
+  - package: github.com/sirupsen/logrus
+    version: 3d4380f53a34dcdc95f0c1db702615992b38d9a4
+  - package: github.com/rs/cors
+    version: ^1.1.0
+  - package: gitlab.connectwisedev.com/platform/platform-common-lib
+    subpackages:
+      - lock
+      - queue
+      - leader-election
+      - scheduler
+      - zookeeper
+      - logging
+      - kafka
+      - messaging
+      - user
+      - utils
+    repo: git@gitlab.connectwisedev.com:platform/platform-common-lib.git
+  - package: gitlab.connectwisedev.com/platform/platform-api-model
+    repo: git@gitlab.connectwisedev.com:platform/platform-api-model.git
+    version: 9c61a7fb8529b88fb300e16dd819e43e199b6f6f
+  - package: github.com/ContinuumLLC/godep-govalidator
+    version: acafb75b6e41efc7db97f711c860c07511a9e0d8
+  - package: github.com/coocood/freecache
+    version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+  - package: gopkg.in/jarcoal/httpmock.v1
+    version: cf52904a3cf0f78f199ecade6a6df8e245d5b25a
+  - package: github.com/nicksnyder/go-i18n
+    version: ^1.9.0
+    subpackages:
+      - i18n
+  - package: github.com/bradfitz/gomemcache
+    version: 1952afaa557dc08e8e0d89eafab110fb501c1a2b
+    subpackages:
+      - memcache
+  - package: github.com/robfig/cron
+    version: 736158dc09e10f1911ca3a1e1b01f11b566ce5db
+  - package: github.com/grsmv/goweek
+    version: 523a631ad28c04485c02e046120dd9abff12de68
+  - package: github.com/stretchr/testify
+  - package: github.com/golang/mock
+    version: ^v1.2.0
+    subpackages:
+      - gomock
+      - mockgen
+  - package: github.com/xeipuuv/gojsonschema
+    version: f58b4a9e3d67bfbe3744e3cb0fc0bba167ad253f
+  - package: github.com/gorilla/websocket
+    version: 95ba29eb981bbb27d92e1f70bf8a1949452d926b
+  - package: gopkg.in/natefinch/lumberjack.v2
+    version: 7d6a1875575e09256dc552b4c0e450dcd02bd10e
+  - package: github.com/onsi/gomega
+    version: 1.4.1

@@ -1,0 +1,14 @@
+{
+    "partnerId":50110521,
+    "siteId": 50110522,
+    "outData": [
+        {
+            "endpointId": "9ef94031-6fac-48dc-a8d9-45e3586db854",
+            "success": true
+        },
+        {
+            "endpointId": "e4c5fd18-13fc-4166-9a01-838b1092230d",
+            "success": false
+        }
+    ]
+}

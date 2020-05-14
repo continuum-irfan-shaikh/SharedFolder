@@ -1,0 +1,10 @@
+glide.lock
+/vendor/*
+static-analysis.xml
+messaging/publisher/example/example
+messaging/test.go
+messaging/consumer/example/example
+*.log
+cover.out
+cover-all.out
+cover-cobertura.xml

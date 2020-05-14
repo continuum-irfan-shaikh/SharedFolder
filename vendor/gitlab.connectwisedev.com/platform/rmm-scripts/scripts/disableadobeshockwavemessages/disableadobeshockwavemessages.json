@@ -1,0 +1,23 @@
+{
+  "id": "3de25f64-c719-4c5c-a370-50737c04599e",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Management"
+  ],
+  "description": "Turns off update messages for Shockwave",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "Adobe Shockwave policies was updated",
+  "internal": false,
+  "name": "Disable Adobe Shockwave update messages",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JFJlZ1BhdGhzID0gIkhLTE06XFNPRlRXQVJFXEFkb2JlIiwiSEtMTTpcU09GVFdBUkVcV09XNjQzMk5vZGVcQWRvYmUiCiRFcnJvckNvdW50ID0gMApGb3JFYWNoICgkUmVnUGF0aCBpbiAkUmVnUGF0aHMpewoJSWYoLU5vdChUZXN0LVBhdGggLVBhdGggJFJlZ1BhdGgpKXsKCQkkRXJyb3JDb3VudCsrCgl9IEVsc2UgewoJCSRSZWdLZXlzICs9IChHZXQtQ2hpbGRJdGVtICRSZWdQYXRoIC1SZWN1cnNlKSB8IFdoZXJlLU9iamVjdCB7JF8uTmFtZSAtTWF0Y2ggIlNob2Nrd2F2ZSIgLUFuZCAoJF8uTmFtZSAtTWF0Y2ggIkF1dG9VcGRhdGUiKX0KCX0KfQpJZiAoKCRFcnJvckNvdW50IC1lcSAkUmVnUGF0aHMuQ291bnQpIC1PciAoJFJlZ0tleXMgLWVxICRudWxsKSl7CglXcml0ZS1PdXRwdXQgIlNob2Nrd2F2ZSBpcyBub3QgaW5zdGFsbGVkIgoJUmV0dXJuCn0gRWxzZSB7CglGb3JFYWNoICgkUmVnS2V5IGluICRSZWdLZXlzKXsKCQlTZXQtSXRlbVByb3BlcnR5IC1QYXRoIFJlZ2lzdHJ5OjokUmVnS2V5IC1OYW1lICIoZGVmYXVsdCkiIC1WYWx1ZSAiIgoJCSRSZXN1bHQgPSAoR2V0LUl0ZW1Qcm9wZXJ0eSAtUGF0aCBSZWdpc3RyeTo6JFJlZ0tleSkKCQlXcml0ZS1PdXRwdXQgJFJlc3VsdAoJfQp9Cg==",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

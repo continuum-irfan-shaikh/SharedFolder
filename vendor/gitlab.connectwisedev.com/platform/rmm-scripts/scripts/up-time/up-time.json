@@ -1,0 +1,23 @@
+{
+  "id": "5662db33-8744-4936-afae-923c038b6ae9",
+  "partnerId": "00000000-0000-0000-0000-000000000000",
+  "category": [
+    "Data Collection"
+  ],
+  "description": "List the system uptime using WMI",
+  "engine": "powershell",
+  "engineMaxVersion": 5,
+  "expectedExecutionTimeSec": 300,
+  "failureMessage": "Executed with errors",
+  "successMessage": "The operation completed successfully",
+  "internal": false,
+  "name": "Retrieve system uptime",
+  "tags": [
+    "Windows 7",
+    "Windows 10"
+  ],
+  "sequence": true,
+  "content": "JG9zID0gR2V0LVdtaU9iamVjdCB3aW4zMl9vcGVyYXRpbmdzeXN0ZW0KJHVwdGltZSA9IChHZXQtRGF0ZSkgLSAoJG9zLkNvbnZlcnRUb0RhdGVUaW1lKCRvcy5sYXN0Ym9vdHVwdGltZSkpCiREaXNwbGF5ID0gIlVwdGltZTogIiArICRVcHRpbWUuRGF5cyArICIgZGF5cywgIiArICRVcHRpbWUuSG91cnMgKyAiIGhvdXJzLCAiICsgJFVwdGltZS5NaW51dGVzICsgIiBtaW51dGVzIiAKV3JpdGUtT3V0cHV0ICREaXNwbGF5Cg==",
+  "jsonSchema": {},
+  "uiSchema": {}
+}

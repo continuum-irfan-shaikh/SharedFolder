@@ -1,0 +1,1 @@
+DROP MATERIALIZED VIEW IF EXISTS task_definitions_by_deleted;
